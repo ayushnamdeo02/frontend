@@ -1,0 +1,27 @@
+.successstory-page{
+    margin-bottom: 20px;
+    .successstory-header{
+        background-color: black;
+    padding: 12% 5% 2%;
+    font-weight: 700;
+    color: white;
+    font-size: 90px;
+    }
+}
+@media (max-width: 720px) {
+    .successstory-page {
+      .successstory-header {
+        padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
+        font-size: 60px; /* Reduced font size */
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .successstory-page {
+      .successstory-header {
+        padding: 15% 5% 2%; /* More padding-top for mobile header */
+        font-size: 40px; /* Further reduced font size for mobile */
+      }
+  }
+}

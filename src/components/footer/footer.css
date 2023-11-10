@@ -1,0 +1,263 @@
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer .footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer .footer-buttons .footer-button {
+  width: 50%;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 34px;
+  font-weight: 600;
+}
+.footer .footer-buttons .footer-button .aa {
+  color: rgb(255, 255, 255);
+}
+.footer .footer-buttons .footer-button:hover {
+  background-color: yellow;
+  color: black;
+}
+.footer .footer-buttons .footer-button:hover .aa {
+  color: rgb(0, 0, 0);
+}
+.footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  color: white;
+}
+.footer .footer-columns .footer-column-resources {
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer .footer-columns .footer-column-resources ul li .linkss {
+  color: white;
+}
+.footer .footer-columns .footer-column-resources ul li .linkss:hover {
+  color: yellow;
+}
+.footer .footer-columns .footer-column-find-us h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: auto;
+}
+.footer .footer-columns .footer-column-find-us p {
+  font-size: 19px;
+  font-weight: 400;
+}
+.footer .footer-columns .footer-column-contact-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: auto;
+}
+.footer .footer-columns .footer-column-contact-info h3:hover {
+  color: yellow;
+}
+.footer .footer-columns .footer-column-contact-info p {
+  font-size: 19px;
+  font-weight: 400;
+}
+.footer .footer-columns .footer-column-contact-info p span {
+  color: white;
+}
+.footer .footer-columns .footer-column-contact-info p span:hover {
+  color: blue;
+}
+.footer .footer-columns .footer-column-contact-info p:hover {
+  color: yellow;
+}
+.footer .footer-columns .social-links-footer {
+  display: flex;
+}
+.footer .footer-columns .social-links-footer .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin: 5px;
+}
+.footer .footer-columns .social-links-footer .social-icon i {
+  color: black;
+}
+.footer .footer-columns .social-links-footer .social-icon:hover {
+  background-color: rgb(61, 61, 253);
+}
+.footer .footer-columns .social-links-footer .social-icon:hover i {
+  color: white;
+}
+.footer .footer-column-pages {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 40px;
+  font-size: 20px;
+  gap: 200px;
+}
+.footer .footer-column-pages .page-linkss {
+  color: white;
+}
+.footer .footer-column-pages .page-linkss:hover {
+  color: yellow;
+}
+.footer .lower {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: center;
+  gap: 60%;
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+.footer .lower .p1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .lower .p2 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .footer .footer-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+  .footer .footer-buttons .footer-button {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .footer .footer-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 30px;
+    gap: 20px;
+  }
+  .footer .footer-columns .footer-column-resources {
+    display: flex;
+    font-size: 26px;
+    font-weight: 500;
+    justify-content: center;
+  }
+  .footer .footer-columns .footer-column-resources ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer .footer-columns .footer-column-find-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .footer-columns .footer-column-find-us h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: yellow;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .footer .footer-columns .footer-column-find-us p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .footer .footer-columns .footer-column-contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .footer-columns .footer-column-contact-info h3 {
+    font-size: 34px;
+    color: yellow;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .footer .footer-columns .footer-column-contact-info p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .footer .footer-columns .footer-column-contact-info p:hover {
+    color: yellow;
+  }
+  .footer .footer-columns .social-links-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer-columns .social-links-footer .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 5px;
+  }
+  .footer .footer-columns .social-links-footer .social-icon i {
+    color: black;
+  }
+  .footer .footer-columns .social-links-footer .social-icon:hover {
+    background-color: rgb(61, 61, 253);
+  }
+  .footer .footer-columns .social-links-footer .social-icon:hover i {
+    color: white;
+  }
+  .footer .footer-column-pages {
+    display: flex;
+    padding-top: 40px;
+    font-size: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .lower {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .footer .lower .p1 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .footer .lower .p2 {
+    font-size: 21px;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=footer.css.map */

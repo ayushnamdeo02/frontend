@@ -1,0 +1,369 @@
+.main .header-section {
+  position: sticky;
+  background-color: transparent;
+  padding: 1px 15px;
+}
+.main .header-section .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+}
+.main .header-section .dte-code {
+  font-weight: lighter;
+  color: #000000;
+}
+.main .header-section .social-media {
+  display: flex;
+  gap: 10px;
+  margin-left: -700px;
+}
+.main .header-section .social-media a {
+  margin: 0 2px;
+  text-decoration: none;
+  color: #ff742f;
+}
+.main .header-section .erp-info {
+  display: flex;
+  align-items: center;
+}
+.main .header-section .erp-info .contact, .main .header-section .erp-info .email {
+  margin-left: 10px;
+}
+.main .navbar-container {
+  position: fixed;
+  max-width: 100%;
+  max-height: 60px;
+  top: 25px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: #ffffff solid 1px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.main .navbar-container:hover {
+  background-color: rgb(255, 255, 255);
+  border-bottom: #000000 solid 1px;
+}
+.main .navbar-container:hover .nav-item {
+  border-right: rgb(0, 0, 0) solid 1px;
+}
+.main .navbar-container:hover .nav-item .nav-link {
+  color: rgb(0, 0, 0) !important; /* Change the text color to black on hover */
+}
+.main .navbar-container.scrolled {
+  background-color: #ffffff;
+  border-bottom: #000000 solid 1px;
+  top: 0;
+}
+.main .navbar-container.scrolled .nav-item {
+  border-right-color: black; /* Change the border color to black when scrolled */
+}
+.main .navbar-container.scrolled .nav-item .nav-link {
+  color: #000000 !important; /* Change the text color to black when scrolled */
+}
+.main .navbar-container .navbar-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.main .navbar-container .navbar-left .navbar-brand img {
+  padding-left: 30px;
+  width: 160px;
+}
+.main .navbar-container .navbar-mid {
+  display: flex;
+  height: 60px;
+  margin-left: 30px;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  border: #ffffff solid 1px;
+}
+.main .navbar-container .navbar-mid:hover {
+  border-color: #000000;
+}
+.main .navbar-container .navbar-mid:hover .nav-item {
+  border-right-color: black; /* Change the border color to black on hover */
+}
+.main .navbar-container .navbar-mid:hover .nav-item .nav-link {
+  color: black !important; /* Change the text color to black on hover */
+}
+.main .navbar-container .navbar-mid.scrolled {
+  border-color: #000000;
+}
+.main .navbar-container .navbar-mid .menu-button {
+  display: none;
+  color: #fffefe;
+}
+.main .navbar-container .navbar-mid .menu-button.scrolled {
+  color: #000000;
+}
+.main .navbar-container .navbar-list {
+  margin-left: -40px;
+  display: flex;
+  align-items: center;
+}
+.main .navbar-container .navbar-list .nav-item {
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-right: rgb(255, 255, 255) solid 1px;
+  position: relative;
+}
+.main .navbar-container .navbar-list .nav-item.scrolled {
+  border-right: rgb(0, 0, 0) solid 1px;
+}
+.main .navbar-container .navbar-list .nav-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background-color: yellow;
+  transition: height 1s ease, width 1s ease, background-color 0.3s ease;
+}
+.main .navbar-container .navbar-list .nav-item .nav-link {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  align-self: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: color 1s ease;
+}
+.main .navbar-container .navbar-list .nav-item .nav-link.scrolled {
+  color: #000000;
+}
+.main .navbar-container .navbar-list .nav-item:hover {
+  border-right: rgb(0, 0, 0) solid 1px;
+}
+.main .navbar-container .navbar-list .nav-item:hover .nav-link {
+  color: rgb(255, 255, 255);
+}
+.main .navbar-container .navbar-list .nav-item:hover::before {
+  height: 3px;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  border-right: rgb(0, 0, 0) solid 1px;
+}
+.main .navbar-container .nav-item {
+  color: #000000;
+  border-right: #000000 solid 1px;
+  background-color: yellow;
+}
+.main .navbar-container .nav-item .nav-link {
+  color: rgb(254, 254, 254) !important;
+}
+.main .navbar-container .nav-item:hover {
+  border-right: #000000 solid 1px;
+  background-color: yellow;
+}
+.main .navbar-container .nav-item:hover .nav-link {
+  color: rgb(0, 0, 0) !important;
+}
+.main .navbar-container .navbar-right {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.main .navbar-container .navbar-right .nav-right-button {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.main .navbar-container .navbar-right .nav-right-button li {
+  margin-right: 10px;
+}
+.main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav {
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+  background: transparent;
+  border: #000000 solid 1px;
+  background-color: yellow;
+  padding: 19.5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: blue;
+  transition: height 0.9s ease;
+}
+.main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+.main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav:hover::before {
+  height: 100%;
+  z-index: -1000;
+}
+.main .navbar-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.main .navbar-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+.main .navbar-container .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  min-height: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100000000;
+}
+.main .navbar-container .dropdown-content .nav-link {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .main .header-section {
+    position: relative;
+    padding: 1px 15px;
+  }
+  .main .header-section .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+  }
+  .main .header-section .dte-code {
+    font-weight: lighter;
+    color: #000000;
+  }
+  .main .header-section .social-media {
+    display: None;
+  }
+  .main .header-section .erp-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  .main .header-section .erp-info .contact {
+    display: None;
+  }
+  .main .header-section .erp-info .email {
+    margin-left: 1px;
+  }
+  .main .navbar-container {
+    max-width: 100%;
+    top: 25px;
+    left: 0%;
+    right: 0;
+  }
+  .main .navbar-container.scrolled {
+    top: 0;
+  }
+  .main .navbar-container .navbar-left {
+    border: none;
+  }
+  .main .navbar-container .navbar-left .navbar-brand img {
+    margin-left: -35px;
+    width: 140px;
+  }
+  .main .navbar-container .navbar-mid {
+    flex-grow: 0;
+    border: none;
+    margin-left: 40px;
+    padding: 0px;
+  }
+  .main .navbar-container .navbar-mid .menu-button {
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 20px 20px;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .main .navbar-container .navbar-mid .navbar-list {
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    border: none;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8901960784);
+    padding: auto;
+    visibility: hidden;
+    z-index: 1000;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  .main .navbar-container .navbar-mid .navbar-list.mobile-menu-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  .main .navbar-container .navbar-mid .navbar-list .nav-item {
+    background: transparent;
+    border-right: none;
+    font-size: 20px;
+  }
+  .main .navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
+    margin-left: 0px;
+    display: block;
+    color: #000;
+    padding: 12px 16px;
+  }
+  .main .navbar-container .navbar-mid .navbar-list .dropdown-content {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .main .navbar-container .navbar-mid .navbar-list .dropdown-content .nav-link {
+    color: #000000;
+    font-weight: normal;
+  }
+  .main .navbar-container .navbar-right {
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .main .navbar-container .navbar-right .nav-right-button {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .main .navbar-container .navbar-right .nav-right-button li {
+    margin-right: auto;
+  }
+  .main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav {
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    background: transparent;
+    border: #000000 solid 1px;
+    background-color: yellow;
+    padding: 19.5px;
+  }
+}/*# sourceMappingURL=navbar.css.map */

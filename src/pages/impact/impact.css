@@ -1,0 +1,23 @@
+.impact-page {
+  margin-bottom: 20px;
+}
+.impact-page .impact-header {
+  background-color: black;
+  padding: 12% 5% 2%;
+  font-weight: 700;
+  color: white;
+  font-size: 90px;
+}
+
+@media (max-width: 720px) {
+  .impact-page .newsletter-header {
+    padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
+    font-size: 60px; /* Reduced font size */
+  }
+}
+@media (max-width: 480px) {
+  .impact-page .impact-header {
+    padding: 15% 5% 2%; /* More padding-top for mobile header */
+    font-size: 40px; /* Further reduced font size for mobile */
+  }
+}/*# sourceMappingURL=impact.css.map */

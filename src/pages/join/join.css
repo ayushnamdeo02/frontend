@@ -1,0 +1,234 @@
+.volunteer-container {
+  background-color: #ebebeb;
+}
+.volunteer-container .title-volunteer {
+  background-color: black;
+  padding: 12% 5% 2%;
+  font-weight: 700;
+  color: white;
+  font-size: 90px;
+}
+.volunteer-container .volunteer-detail-page {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.volunteer-container .volunteer-detail-page .impactpage {
+  background-color: #000000;
+  margin-top: 20px;
+}
+.volunteer-container .volunteer-detail-page .impactpage .impactheading {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 52px;
+  color: #ffa200;
+  margin-bottom: 50px;
+}
+.volunteer-container .volunteer-detail-page .impactpage .impact_content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 20px;
+}
+.volunteer-container .volunteer-detail-page .impactpage .impact_content .li_content_impact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.volunteer-container .volunteer-detail-page .impactpage .impact_content .li_content_impact .logo {
+  width: 100px;
+}
+.volunteer-container .volunteer-detail-page .impactpage .impact_content .li_content_impact .logo-desc-impact {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+.volunteer-container .volunteer-detail-page .volunteer-subheading1 {
+  padding-top: 50px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 47px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.volunteer-container .volunteer-detail-page .line {
+  width: 95%;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form {
+  position: relative;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form {
+  padding-left: 10px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .role,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .emailid,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .fullName,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .gender,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .dateOfBirth,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .contactNo,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .address {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form select,
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form input[type=text],
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form input[type=tel],
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form textarea {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  border: 0.5px solid #000000;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form textarea {
+  height: 200px;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .declaration {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form .declaration input[type=checkbox] {
+  margin-right: 5px;
+}
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form button[type=submit] {
+  width: 200px;
+  margin-top: 50px;
+  padding: 10px 15px;
+  background-color: #fffb00;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .volunteer-container {
+    max-width: 100%;
+  }
+  .volunteer-container .title-volunteer {
+    padding-top: 80px;
+    padding-left: 40px;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+  }
+  .volunteer-container .volunteer-detail-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .volunteer-container .volunteer-detail-page .impactpage {
+    background-color: #000000;
+    margin-top: 20px;
+  }
+  .volunteer-container .volunteer-detail-page .impactpage .impactheading {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 52px;
+    color: #ffa200;
+    margin-bottom: 50px;
+  }
+  .volunteer-container .volunteer-detail-page .impactpage .impact_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  .volunteer-container .volunteer-detail-page .impactpage .impact_content .li_content_impact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .volunteer-container .volunteer-detail-page .impactpage .impact_content .li_content_impact .logo {
+    width: 100px;
+  }
+  .volunteer-container .volunteer-detail-page .impactpage .impact_content .li_content_impact .logo-desc-impact {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-subheading1 {
+    padding-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47px;
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  .volunteer-container .volunteer-detail-page .line {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form {
+    position: relative;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .role,
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .emailid,
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .fullName,
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .gender,
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .dateOfBirth,
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .contactNo,
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .address {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .declaration {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form .declaration input[type=checkbox] {
+    margin-right: 5px;
+  }
+  .volunteer-container .volunteer-detail-page .volunteer-form .body-form button[type=submit] {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 75px;
+    padding: 10px 15px;
+    background-color: #fffb00;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=join.css.map */

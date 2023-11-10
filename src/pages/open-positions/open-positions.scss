@@ -1,0 +1,62 @@
+.open-positions-page {
+  margin-bottom: 50px;
+
+  .open-positions-header {
+    background-color: black;
+    padding: 12% 5% 2%;
+    font-weight: 700;
+    color: white;
+    font-size: 90px;
+  }
+
+  .opp-elements {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+
+    .opp-img {
+      max-width: 420px;
+      box-shadow: -5px -5px 10px 5px rgba(44, 44, 44, 0.5);
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .open-positions-page {
+    .open-positions-header {
+      padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
+      font-size: 60px; /* Reduced font size */
+    }
+
+    .opp-elements {
+      margin-left: 20px;
+      margin-right: 20px;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns layout for mid-sized devices */
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .open-positions-page {
+    .open-positions-header {
+      padding: 15% 5% 2%; /* More padding-top for mobile header */
+      font-size: 40px; /* Further reduced font size for mobile */
+    }
+
+    .opp-elements {
+      margin-left: 10px;
+      margin-right: 10px;
+      grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
+      
+      .opp-img {
+        max-width: 100%; /* Image takes full width */
+        margin: 0 auto; /* Center align image */
+        box-shadow: -3px -3px 8px 3px rgba(44, 44, 44, 0.3); /* Slightly lighter shadow */
+      }
+    }
+  }
+}

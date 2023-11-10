@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+  }
+  .welcome-message {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 24px;
+    /* Add more styling as needed */
+  }
+  @media (max-width:480px) {
+    .welcome-message {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 24px;
+    /* Add more styling as needed */
+  } 
+  }
