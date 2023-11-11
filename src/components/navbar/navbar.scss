@@ -113,9 +113,11 @@
 
   .menu-button {
     display: none;
-    color: #fffefe;
-
+    color: #ffffff;
     &.scrolled {
+      color: #000000;
+    }
+    &.hover {
       color: #000000;
     }
   }
@@ -508,6 +510,10 @@
           display: block;
           cursor: pointer;
           font-size: 18px;
+
+          &:hover{
+            color: #000;
+          }
         }
 
         .navbar-list {

@@ -97,9 +97,12 @@
 }
 .main .navbar-container .navbar-mid .menu-button {
   display: none;
-  color: #fffefe;
+  color: #ffffff;
 }
 .main .navbar-container .navbar-mid .menu-button.scrolled {
+  color: #000000;
+}
+.main .navbar-container .navbar-mid .menu-button.hover {
   color: #000000;
 }
 .main .navbar-container .navbar-list {
@@ -430,6 +433,9 @@
     display: block;
     cursor: pointer;
     font-size: 18px;
+  }
+  .main .navbar-container .navbar-mid .menu-button:hover {
+    color: #000;
   }
   .main .navbar-container .navbar-mid .navbar-list {
     flex-direction: column;
