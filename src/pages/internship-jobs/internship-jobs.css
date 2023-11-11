@@ -59,7 +59,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .internship-jobs-page {
     max-width: 100%;
   }
@@ -88,5 +88,27 @@
   }
   .internship .internship-jobs-table thead th, .internship .internship-jobs-table tbody td {
     padding: 8px 10px; /* Reduce padding */
+  }
+}
+@media (min-width: 621px) and (max-width: 850px) {
+  .internship-jobs-page {
+    max-width: 100%;
+  }
+  .internship-jobs-page .internship-jobs-header {
+    background-color: black;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .internship-jobs-page .internshipjobheader img {
+    margin-top: -20px;
+  }
+  .internship-jobs-page .internshipjobheader .internshipjobheading {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 42px;
+    color: #ffa200;
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=internship-jobs.css.map */

@@ -86,7 +86,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .contact-container .contact-header {
     padding-top: 100px;
     padding-left: 20px;

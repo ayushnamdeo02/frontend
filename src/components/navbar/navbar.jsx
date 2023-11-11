@@ -47,15 +47,22 @@ class Navbar extends Component {
       this.setState({ isScrolled: false });
     }
   };
+  closeMenu = () => {
+    this.setState({ isMenuOpen: false });
+  };
 
   toggleMenu = () => {
     this.setState((prevState) => ({
       isMenuOpen: !prevState.isMenuOpen,
     }));
   };
-
+  handleMenuAndLinkClick = () => {
+    this.closeMenu();
+    this.handleLinkClick();
+  };
   toggleSubmenu = (menuName) => {
     this.setState(prevState => ({
+      isMenuOpen: false,
       submenuOpen: {
         ...prevState.submenuOpen,
         [menuName]: !prevState.submenuOpen[menuName]
@@ -99,15 +106,15 @@ class Navbar extends Component {
           </button>
           <ul className={`navbar-list ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
                     <li className="dropdown">
-                        <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={() => this.toggleSubmenu('resources')}>
+                        <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`}  >  Resources</Link>
                         </button>
                         <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`}>
-                        <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleLinkClick}>
+                        <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
   Blog
 </a>
 
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/about#section-reports' onClick={this.handleLinkClick}>Reports</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/about#section-reports' onClick={this.handleMenuAndLinkClick}>Reports</Link>
                         </div>
                     </li>
                     <li className="dropdown">
@@ -115,9 +122,9 @@ class Navbar extends Component {
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Community</Link>
                         </button>
                         <div className="dropdown-content">
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleLinkClick}>Impact</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleLinkClick}>Newsletter</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleLinkClick}>Success Story</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleMenuAndLinkClick}>Impact</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleMenuAndLinkClick}>Newsletter</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleMenuAndLinkClick}>Success Story</Link>
                         </div>
                     </li>
                     <li className="dropdown">
@@ -125,28 +132,28 @@ class Navbar extends Component {
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/about" onClick={this.handleLinkClick}> Get Involved</Link>
                         </button>
                         <div className="dropdown-content">
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleLinkClick}>Internship / Jobs</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleLinkClick}>Carrers</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleLinkClick}>Contact</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>Internship / Jobs</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>Carrers</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>Contact</Link>
                         </div>
                     </li>
             <li>
-              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
-                <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/about" onClick={this.handleLinkClick}>
+              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleMenuAndLinkClick}>
+                <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/about" onClick={this.handleMenuAndLinkClick}>
                   About
                 </Link>
               </button>
             </li>
             <li>
-              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
-                <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/join" onClick={this.handleLinkClick}>
+              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleMenuAndLinkClick}>
+                <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/join" onClick={this.handleMenuAndLinkClick}>
                   Join Us
                 </Link>
               </button>
             </li>
             <li>
-              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
-                <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleLinkClick}>
+              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleMenuAndLinkClick}>
+                <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>
                   Contact
                 </Link>
               </button>

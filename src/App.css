@@ -10,7 +10,7 @@ ul {
     font-size: 24px;
     /* Add more styling as needed */
   }
-  @media (max-width:480px) {
+  @media (max-width:620px) {
     .welcome-message {
     max-width: 100%;
     display: flex;

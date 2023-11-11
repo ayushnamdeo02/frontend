@@ -440,7 +440,7 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .about-container {
     max-width: 100%;
     /* Add styles for your content sections as needed */
@@ -854,5 +854,93 @@
   }
   .about-container .partners-section .partners-class .member-name, .about-container .partners-section .partners-class .member-designation {
     margin-left: 80px;
+  }
+}
+@media (max-width: 620px) and (min-width: 610px) and (max-width: 650px) {
+  .about-container .principles-data, .about-container .our-team-body, .about-container .team-members {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 621px) and (max-width: 850px) {
+  .about-container {
+    max-width: 100%;
+  }
+  .about-container .about-header {
+    background-color: black;
+    padding-top: 60px;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .about-container .about-nav {
+    display: none;
+  }
+  .about-container .about-nav-btn {
+    display: none;
+  }
+  .about-container .mission-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container .mission-section .mission-image {
+    width: 100%;
+  }
+  .about-container .mission-section .content-mission {
+    padding: 20px 15px;
+  }
+  .about-container .mission-section .content-mission .mission-heading {
+    margin-left: 0;
+    font-size: 40px;
+  }
+  .about-container .mission-section .content-mission .line {
+    width: 90%;
+  }
+  .about-container .mission-section .content-mission .mission-details {
+    font-size: 19px;
+  }
+  .about-container .work-section .work-mission {
+    padding: 20px 15px;
+  }
+  .about-container .work-section .work-mission .work-heading {
+    font-size: 40px;
+  }
+  .about-container .work-section .work-mission .work-details {
+    font-size: 19px;
+    padding-right: 0;
+  }
+  .about-container .work-section .work-image {
+    width: 100%;
+  }
+  .about-container .principles-section {
+    padding: 20px 15px;
+  }
+  .about-container .principles-section .principles-heading {
+    font-size: 40px;
+  }
+  .about-container .principles-section .principles-data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-container .who-section {
+    padding: 30px 15px;
+  }
+  .about-container .who-section .section-who-heading {
+    font-size: 40px;
+  }
+  .about-container .who-section .our-team-body {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-container .who-section .team-members {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-container .reports-section {
+    padding: 30px 15px;
+  }
+  .about-container .partners-section {
+    padding: 30px 15px;
   }
 }/*# sourceMappingURL=about.css.map */

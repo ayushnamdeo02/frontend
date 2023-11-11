@@ -9,4 +9,29 @@
   padding: 20px;
   width: 95%;
   height: 1000px;
+}
+
+@media (max-width: 620px) {
+  .FAQ-container .FAQ-header {
+    padding-top: 100px;
+    padding-left: 20px;
+    font-size: 40px;
+  }
+  .FAQ-container .pdfset {
+    padding: 20px;
+    width: 95%;
+    height: 1000px;
+  }
+}
+@media (min-width: 621px) and (max-width: 850px) {
+  .FAQ-container .FAQ-header {
+    padding-top: 100px;
+    padding-left: 20px;
+    font-size: 40px;
+  }
+  .FAQ-container .pdfset {
+    padding: 20px;
+    width: 95%;
+    height: 1000px;
+  }
 }/*# sourceMappingURL=faq.css.map */

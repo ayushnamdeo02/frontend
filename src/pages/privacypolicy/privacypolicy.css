@@ -9,4 +9,37 @@
   padding: 20px;
   width: 95%;
   height: 1000px;
+}
+
+@media (max-width: 620px) {
+  .privacypolicy-container {
+    margin-bottom: 20px;
+  }
+  .privacypolicy-container .privacypolicy-header {
+    background-color: black;
+    padding: 12% 5% 2%;
+    font-weight: 700;
+    color: white;
+    font-size: 90px;
+  }
+  .privacypolicy-container .pdfset {
+    padding: 20px;
+    width: 95%;
+    height: 1000px;
+  }
+}
+@media (min-width: 621px) and (max-width: 850px) {
+  .privacypolicy-container {
+    margin-bottom: 20px;
+  }
+  .privacypolicy-container .privacypolicy-header {
+    padding-top: 100px;
+    padding-left: 20px;
+    font-size: 40px;
+  }
+  .privacypolicy-container .pdfset {
+    padding: 20px;
+    width: 95%;
+    height: 1000px;
+  }
 }/*# sourceMappingURL=privacypolicy.css.map */

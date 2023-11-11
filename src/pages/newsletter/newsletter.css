@@ -9,13 +9,13 @@
   font-size: 90px;
 }
 
-@media (max-width: 720px) {
+@media (min-width: 621px) and (max-width: 850px) {
   .newsletter-page .newsletter-header {
     padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
     font-size: 60px; /* Reduced font size */
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .newsletter-page .newsletter-header {
     padding: 15% 5% 2%; /* More padding-top for mobile header */
     font-size: 40px; /* Further reduced font size for mobile */

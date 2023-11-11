@@ -131,7 +131,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .footer .footer-buttons {
     display: flex;
     flex-direction: column;
@@ -259,5 +259,61 @@
   .footer .lower .p2 {
     font-size: 21px;
     font-weight: 600;
+  }
+}
+@media (min-width: 621px) and (max-width: 850px) {
+  .footer {
+    /* Adjusting footer buttons for medium screens */
+    /* Adjusting columns for medium screens */
+    /* Adjusting the footer lower section */
+  }
+  .footer .footer-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+  }
+  .footer .footer-buttons .footer-button {
+    width: 100%; /* Slightly reduced width for better spacing */
+    font-size: 30px; /* Adjust font size for readability */
+  }
+  .footer .footer-columns {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 15px;
+  }
+  .footer .footer-columns .footer-column-resources {
+    display: none;
+  }
+  .footer .footer-columns .footer-column-find-us,
+  .footer .footer-columns .footer-column-contact-info {
+    flex: 1; /* Equal distribution of space */
+    text-align: center; /* Center-align text for consistency */
+  }
+  .footer .footer-columns .footer-column-find-us h3,
+  .footer .footer-columns .footer-column-contact-info h3 {
+    font-size: 28px; /* Adjust font size */
+  }
+  .footer .footer-columns .footer-column-find-us p, .footer .footer-columns .footer-column-find-us ul,
+  .footer .footer-columns .footer-column-contact-info p,
+  .footer .footer-columns .footer-column-contact-info ul {
+    font-size: 20px; /* Adjust font size for readability */
+  }
+  .footer .footer-columns .social-links-footer {
+    justify-content: center; /* Center-align social icons */
+  }
+  .footer .footer-column-pages {
+    justify-content: space-around; /* Evenly space out links */
+    font-size: 18px; /* Adjust font size */
+  }
+  .footer .lower {
+    flex-direction: row;
+    justify-content: space-between; /* Distribute space between elements */
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer .lower .p1, .footer .lower .p2 {
+    font-size: 16px; /* Adjust font size */
   }
 }/*# sourceMappingURL=footer.css.map */

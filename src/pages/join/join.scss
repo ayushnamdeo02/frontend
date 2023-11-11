@@ -138,7 +138,7 @@
   }
 }
 
-    @media (max-width: 480px) {
+    @media (max-width:620px) {
       .volunteer-container {
         max-width: 100%;
     .title-volunteer {
@@ -263,3 +263,128 @@
 }
 }
   }
+  @media (min-width:621px) and (max-width:850px){
+    .volunteer-container {
+      max-width: 100%;
+  .title-volunteer {
+      padding-top:80px;
+      padding-left: 40px;
+      font-weight: 700;
+      color: white;
+      font-size: 40px;
+  }
+  .volunteer-detail-page{
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .impactpage {
+        background-color: #000000;
+        margin-top: 20px;
+        
+        .impactheading {
+          text-align: center;
+          padding-top: 20px;
+          font-size: 52px;
+          color: #ffa200;
+          margin-bottom: 50px;
+        }
+        .impact_content{
+          display: grid;
+          grid-template-columns: repeat( 2, 1fr);
+          padding-left: 20px;
+          padding-right: 20px;
+          gap: 20px;
+          
+          .li_content_impact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            .logo {
+              width: 100px;
+            }
+          
+            .logo-desc-impact {
+              margin-top: 20px;
+              color: white;
+              text-align: center;
+            }
+          }
+          
+        }
+  
+      }
+
+  .volunteer-subheading1{
+      padding-top: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 47px;
+      font-style: normal;
+      margin-bottom: 5px;
+    }
+    .line {
+      width: 95%; 
+      height: 1px;
+      background-color: rgb(0, 0, 0);
+      margin-bottom: 5px;
+    }
+  .volunteer-form {
+      position: relative;
+        
+    .body-form{
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    .role,
+    .emailid,
+    .fullName,
+    .gender,
+    .dateOfBirth,
+    .contactNo,
+    .address {
+      margin-left: 5px;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .declaration {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      font-size: 18px;
+      text-align: justify;
+
+      input[type='checkbox'] {
+        margin-right: 5px;
+      }
+    }
+
+    button[type='submit'] {
+      width: 200px;
+      margin-top: 30px;
+      margin-left: 75px;
+      padding: 10px 15px;
+      background-color: #fffb00;
+      color: rgb(0, 0, 0);
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+  }
+}
+}
+}

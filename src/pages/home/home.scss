@@ -150,7 +150,7 @@
 }
   }
   
-  @media (max-width:400px) {
+  @media (max-width:620px) {
     .home-container {
       .home-header-video {
         position: sticky;
@@ -299,3 +299,113 @@
   }
   } 
   }
+  @media (min-width:621px) and (max-width:850px){
+    .home-container {
+      //.home-header-video {
+      
+     // }
+    
+    .principles-section{
+      background-color: #2846e6;
+      padding-left: 40px;
+      padding-right: 40px;
+      
+      .principles-heading{
+        padding-top: 40px;
+        font-size: 52px;
+        line-height: 48px;
+        color: #ffffff;
+      }
+      .line {
+        width: 100%; 
+        height: 2px;
+        background-color: white;
+        margin-top: -30px;
+      }
+      .principles-data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        padding-bottom: 40px;
+      
+        .principles-card {
+          padding: 20px;
+          border-radius: 8px;
+          color: #ffffff; 
+      
+          .principles-card-heading {
+            font-size: 2.5rem; 
+            font-weight: bold;
+          }
+      
+          .principles-card-details {
+            font-size: 21px; 
+            margin-top: 10px;
+            }
+        }
+      }        
+    }
+    .involved{
+      padding-left: 40px;
+      padding-right: 40px;
+     
+    .involved-title{
+      font-size: 52px;
+      font-weight: bold;
+      color: rgba(75, 75, 75, 0.958);
+    }
+    .line {
+      width: 100%; 
+      height: 2px;
+      background-color: rgba(83, 83, 83, 0.958);
+      margin-top: -30px;
+      
+    }
+    .involved-grid{
+      
+      display: grid;
+      grid-template-columns: 1fr 3fr ;
+      margin-top: 40px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 80px;
+      
+      .involved-datai{
+          background-color: rgb(253, 255, 136);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 5px;
+        height:190px;
+        width: auto;
+        h3{
+          font-size: 30px;
+          color: rgb(81, 81, 81);
+        }
+        
+      }
+      .involved-data{
+          background-color: rgb(171, 254, 226);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+        
+        p{
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center;
+          font-size: 23px;
+          color: #3c3c3c;
+        }
+        
+      }
+    }
+  }
+}
+}

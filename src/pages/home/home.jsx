@@ -47,7 +47,7 @@ class Home extends Component {
     return (
       <div className='home-container'>
          <div className='home-header-video'>
-          {windowWidth <= 480 ? (
+          {windowWidth <= 500 ? (
             <video width='100%' autoPlay loop muted playsInline>
               <source src={mobileVideoSrc} type="video/webm" />
               Your browser does not support the video tag.
