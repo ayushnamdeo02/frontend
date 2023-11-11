@@ -1050,18 +1050,18 @@
             }
  
             .team-members {
-                grid-template-columns: repeat(2, 1fr); // Two columns for medium screens
+                grid-template-columns: repeat(2, 1fr); 
                 margin-left: 0;
                 margin-right: 0;
             }
         }
 
         .reports-section {
-            padding: 30px 15px; // Adjust padding for medium screens
+            padding: 30px 15px; 
         }
 
         .partners-section {
-            padding: 30px 15px; // Adjust padding for medium screens
+            padding: 30px 15px; 
         }
     }
     
