@@ -368,7 +368,7 @@
     padding: 19.5px;
   }
 }
-@media (min-width: 621px) and (max-width: 850px) {
+@media (min-width: 621px) and (max-width: 1300px) {
   .main .header-section {
     position: relative;
     padding: 1px 15px;

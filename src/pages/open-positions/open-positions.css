@@ -22,7 +22,7 @@
   box-shadow: -5px -5px 10px 5px rgba(44, 44, 44, 0.5);
 }
 
-@media (min-width: 621px) and (max-width: 850px) {
+@media (min-width: 621px) and (max-width: 1300px) {
   .open-positions-page .open-positions-header {
     padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
     font-size: 60px; /* Reduced font size */

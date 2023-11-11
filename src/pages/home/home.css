@@ -264,7 +264,7 @@
     color: #3c3c3c;
   }
 }
-@media (min-width: 621px) and (max-width: 850px) {
+@media (min-width: 621px) and (max-width: 1300px) {
   .home-container .principles-section {
     background-color: #2846e6;
     padding-left: 40px;
