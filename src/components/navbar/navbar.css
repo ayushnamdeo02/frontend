@@ -16,7 +16,7 @@
 .main .header-section .social-media {
   display: flex;
   gap: 10px;
-  margin-left: -700px;
+  margin-left: -570px;
 }
 .main .header-section .social-media a {
   margin: 0 2px;
@@ -388,7 +388,7 @@
     color: #000000;
   }
   .main .header-section .social-media {
-    display: none;
+    margin-left: -35px;
   }
   .main .header-section .erp-info {
     display: flex;
