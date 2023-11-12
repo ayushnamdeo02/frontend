@@ -308,13 +308,14 @@
     gap: 50px;
   }
   .footer .lower {
-    flex-direction: row;
-    justify-content: space-between; /* Distribute space between elements */
+    flex-direction: column;
+    justify-content: center; /* Distribute space between elements */
     gap: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
   .footer .lower .p1, .footer .lower .p2 {
+    text-align: center;
     font-size: 16px; /* Adjust font size */
   }
 }/*# sourceMappingURL=footer.css.map */
