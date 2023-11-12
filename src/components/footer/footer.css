@@ -300,16 +300,17 @@
     font-size: 20px; /* Adjust font size for readability */
   }
   .footer .footer-columns .social-links-footer {
+    margin-left: 140px;
     justify-content: center; /* Center-align social icons */
   }
   .footer .footer-column-pages {
-    justify-content: space-around; /* Evenly space out links */
     font-size: 18px; /* Adjust font size */
+    gap: 50px;
   }
   .footer .lower {
     flex-direction: row;
     justify-content: space-between; /* Distribute space between elements */
-    gap: 30px;
+    gap: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
   }

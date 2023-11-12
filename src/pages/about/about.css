@@ -45,7 +45,7 @@
   font-weight: 700;
 }
 .about-container .mission-section .content-mission .line {
-  width: 100%;
+  width: 95%;
   height: 1px;
   background-color: rgb(0, 0, 0);
   margin-top: -30px;
@@ -68,7 +68,7 @@
   font-weight: 700;
 }
 .about-container .mission-section .content-vision .line {
-  width: 100%;
+  width: 98%;
   height: 1px;
   background-color: rgb(0, 0, 0);
   margin-top: -30px;
@@ -868,10 +868,19 @@
     font-size: 36px;
   }
   .about-container .about-nav {
-    display: none;
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+    padding: 9.8px 0;
+    height: 18px;
+    padding-left: 30px;
+    z-index: 500;
   }
   .about-container .about-nav-btn {
-    display: none;
+    font-size: 15px;
+    padding: 9px 14px;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   .about-container .mission-section {
     display: flex;
@@ -882,22 +891,43 @@
     width: 100%;
   }
   .about-container .mission-section .content-mission {
-    padding: 20px 15px;
+    padding: 10px 10px;
+    justify-content: center;
   }
   .about-container .mission-section .content-mission .mission-heading {
-    margin-left: 0;
+    text-align: center;
     font-size: 40px;
   }
-  .about-container .mission-section .content-mission .line {
-    width: 90%;
-  }
   .about-container .mission-section .content-mission .mission-details {
+    text-align: center;
     font-size: 19px;
+    padding-right: 0;
+  }
+  .about-container .mission-section .content-vision {
+    padding: 10px 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-container .mission-section .content-vision .vision-heading {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .about-container .mission-section .content-vision .vision-details {
+    text-align: center;
+    font-size: 19px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .about-container .work-section {
+    justify-content: center;
+    flex-direction: column;
   }
   .about-container .work-section .work-mission {
     padding: 20px 15px;
   }
   .about-container .work-section .work-mission .work-heading {
+    text-align: center;
     font-size: 40px;
   }
   .about-container .work-section .work-mission .work-details {
@@ -905,7 +935,11 @@
     padding-right: 0;
   }
   .about-container .work-section .work-image {
-    width: 100%;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .about-container .principles-section {
     padding: 20px 15px;
@@ -924,7 +958,7 @@
   }
   .about-container .who-section .our-team-body {
     display: grid;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: 20%;
     align-items: center;
     justify-content: space-between;

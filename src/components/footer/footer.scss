@@ -331,20 +331,22 @@
       }
 
       .social-links-footer {
+        margin-left: 140px;
         justify-content: center; /* Center-align social icons */
       }
     }
 
     /* Adjusting the footer lower section */
     .footer-column-pages {
-      justify-content: space-around; /* Evenly space out links */
+      
       font-size: 18px; /* Adjust font size */
+      gap: 50px;
     }
 
     .lower {
       flex-direction: row;
       justify-content: space-between; /* Distribute space between elements */
-      gap: 30px;
+      gap: 5px;
       padding-top: 20px;
       padding-bottom: 20px;
 
