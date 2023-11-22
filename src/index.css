@@ -1,13 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/cee991228eb6ebe44842f9073d8567a6?family=Founders+Grotesk+Cond+SmBd);
-@font-face {
-  font-family: "Founders Grotesk Cond SmBd";
-  src: url("https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.eot");
-  src: url("https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.svg#Founders Grotesk Cond SmBd")format("svg");
-}
+
 body {
   margin: 0;
   padding: 0;

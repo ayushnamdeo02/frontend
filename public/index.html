@@ -35,6 +35,7 @@
         }
         </script>
         
+        
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,7 +53,7 @@
     <meta name="twitter:description" content="Heeds Foundation is a NGO promoting education for diverse communities for the betterment of society." />
 
     <title>Heeds Foundation - Volunteer, Make a Difference, Create an Impact</title>
-
+    <link rel="preload" href="https://db.onlinewebfonts.com/t/cee991228eb6ebe44842f9073d8567a6.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Accessibility: Custom Font loading -->
     <link href="https://db.onlinewebfonts.com/c/cee991228eb6ebe44842f9073d8567a6?family=Founders+Grotesk+Cond+SmBd" rel="stylesheet">
 
@@ -69,7 +70,15 @@
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
+    <script>
+      // This script will load the non-critical CSS after the page has finished loading
+      window.onload = function() {
+        var link = document.createElement('link');
+        link.href = 'https://db.onlinewebfonts.com/c/cee991228eb6ebe44842f9073d8567a6?family=Founders+Grotesk+Cond+SmBd';
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
+      };
+    </script>
     <!-- Google Analytics Script -->
     <script>
         window.dataLayer = window.dataLayer || [];
