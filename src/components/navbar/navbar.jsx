@@ -163,7 +163,7 @@ class Navbar extends Component {
         <div className={`navbar-right ${isScrolled ? 'scrolled' : ''}`}>
           <ul className="nav-right-button">
             <li>
-              <button className='Donate-btn-nav'>Donate</button>
+              <button className='Donate-btn-nav' ><a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></button>
             </li>
             
           </ul>

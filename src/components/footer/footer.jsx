@@ -22,7 +22,7 @@ class Footer extends Component {
             <li><Link className='linkss' to='/about' onClick={this.handleLinkClick}>About</Link></li>
             <li><Link className='linkss' to='/contact' onClick={this.handleLinkClick}>Contact</Link></li>
             <li><Link className='linkss' to='/join' onClick={this.handleLinkClick}>Join Us</Link></li>
-            <li><Link className='linkss' to='/' >Donate</Link></li>
+            <li><Link className='linkss' to='/' ><a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></Link></li>
         </ul>
   </div>
           <div className="footer-column-find-us">
