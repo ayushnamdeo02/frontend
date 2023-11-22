@@ -16,7 +16,7 @@ class Home extends Component {
   }
 
   startCounting() {
-    const targetNumbers = [1123, 50, 5]; // Set your target numbers here
+    const targetNumbers = [3823, 60, 5]; // Set your target numbers here
 
     targetNumbers.forEach((target, index) => {
       const interval = setInterval(() => {
