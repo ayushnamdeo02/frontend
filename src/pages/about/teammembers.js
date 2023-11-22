@@ -4,7 +4,7 @@ import sudt from '../../assets/images/membersphotos/sudt.jpg';
 import bhaveshv from '../../assets/images/membersphotos/bhaveshv.jpg';
 import shrutisingh from '../../assets/images/membersphotos/shrutisingh.jpg';
 import shahwazm from '../../assets/images/membersphotos/shahwazm.jpg';
-
+import Ayush_n from '../../assets/images/membersphotos/ayushn.jpg';
 const teamMembers = [
   {
     name: 'MS. MAYURI KAMDI',
@@ -64,6 +64,17 @@ const teamMembers = [
     name: 'MR. SHAHWAZ MANSURI',
     designation: 'Design Committee Member',
     photoUrl: shahwazm, // Use the imported image directly
+    socialLinks: {
+      facebook: '/',
+      twitter: '/',
+      Instagram: '/',
+      linkedin: '/'
+    },
+  },
+  {
+    name: 'MR. AYUSH NAMDAO',
+    designation: 'Web designer/Developer',
+    photoUrl: Ayush_n, // Use the imported image directly
     socialLinks: {
       facebook: '/',
       twitter: '/',
