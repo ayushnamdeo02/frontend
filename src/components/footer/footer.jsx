@@ -14,7 +14,7 @@ class Footer extends Component {
       <footer className="footer">
         <div className="footer-buttons">
           <button className="footer-button contact" to='/about'><Link className='aa' to='/contact' onClick={this.handleLinkClick}>Contact Us</Link></button>
-          <button className="footer-button donate">Donate</button>
+          <button className="footer-button donate"><a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></button>
         </div>
         <div className="footer-columns">
         <div className="footer-column-resources">
@@ -22,7 +22,7 @@ class Footer extends Component {
             <li><Link className='linkss' to='/about' onClick={this.handleLinkClick}>About</Link></li>
             <li><Link className='linkss' to='/contact' onClick={this.handleLinkClick}>Contact</Link></li>
             <li><Link className='linkss' to='/join' onClick={this.handleLinkClick}>Join Us</Link></li>
-            <li><Link className='linkss' to='/' ><a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></Link></li>
+            <li><a className='linkss' href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></li>
         </ul>
   </div>
           <div className="footer-column-find-us">
