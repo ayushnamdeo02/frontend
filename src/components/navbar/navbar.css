@@ -27,6 +27,12 @@
   display: flex;
   align-items: center;
 }
+.main .header-section .erp-info a {
+  color: #000;
+}
+.main .header-section .erp-info a:hover {
+  color: blue;
+}
 .main .header-section .erp-info .contact, .main .header-section .erp-info .email {
   margin-left: 10px;
 }

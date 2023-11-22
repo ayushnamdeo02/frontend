@@ -77,7 +77,7 @@ class Navbar extends Component {
       <div className='main'> 
       <div className="header-section">
         <div class="header-content">
-            <div className="dte-code">REGD. NO : 1380/2023-19</div>
+            <div className="dte-code">File. NO : 1380/2023-19</div>
             <div className="social-media">
                 Follow us on:
                 <a href="https://facebook.com/Heedsfoundation/" className="facebook"><i className="fa fa-facebook"></i></a>
@@ -86,9 +86,8 @@ class Navbar extends Component {
                 <a href="https://youtube.com/heedsfoundation" className="youtube"><i className="fa fa-youtube"></i></a>
             </div>
             <div class="erp-info">
-                 
-                <span className="contact">📞 +91 8668353016</span>
-                <span className="email">✉️ heedsfoundation.ngo@gmail.com</span>
+                <span className="contact"><a href="callto:918788411441"> 📞 +91 8668353016 </a></span>
+                <span className="email"><a href="mailto:heedsfoundation.ngo@gmail.com"> ✉️ heedsfoundation.ngo@gmail.com </a> </span>
             </div>
         </div>
         </div>
@@ -129,7 +128,7 @@ class Navbar extends Component {
                     </li>
                     <li className="dropdown">
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
-                        <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/about" onClick={this.handleLinkClick}> Get Involved</Link>
+                        <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Get Involved</Link>
                         </button>
                         <div className="dropdown-content">
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>Internship / Jobs</Link>

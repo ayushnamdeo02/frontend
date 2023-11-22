@@ -29,6 +29,14 @@
   }
 
   .erp-info {
+    a{
+      color: #000;
+      
+      &:hover{
+        color: blue;
+      }
+
+    }
       display: flex;
       align-items: center;
 

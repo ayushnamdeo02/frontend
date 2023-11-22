@@ -34,7 +34,7 @@ class Footer extends Component {
           <div className="footer-column-contact-info">
             <h3>Contact Us</h3>
             
-            <p>(+91) 878 841 1441<br></br><span>heedsfoundation.ngo@gmail.com</span></p>
+            <p> <a href="callto:918788411441">(+91) 878 841 1441 </a> <br></br><span> <a href="mailto:heedsfoundation.ngo@gmail.com"> heedsfoundation.ngo@gmail.com </a> </span></p>
           </div>
           <div className="footer-column social-links">
             <div className='social-links-footer'>
