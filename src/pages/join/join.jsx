@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './join.css';
 import emailjs from 'emailjs-com';
-
+import { Helmet } from 'react-helmet';
 class Join extends Component {
   constructor(props) {
     super(props);
@@ -184,6 +184,12 @@ class Join extends Component {
       } = this.state;
     return (
       <div className="volunteer-container">
+        <Helmet>
+          <title>Join Heeds Foundation - Top NGO in Nagpur</title>
+          <meta name="description" content="Be a part of the change with Heeds Foundation, a leading NGO in Nagpur. Join us as a volunteer or donor to make a positive impact in healthcare, education, and community development." />
+          <meta name="keywords" content="Heeds Foundation, join NGO, volunteer in Nagpur, donate to NGO" />
+          {/* Additional meta tags as needed */}
+        </Helmet>
         <div className="title-volunteer">JOIN US</div>
         <div className='volunteer-detail-page'>
         <div className="impactpage">

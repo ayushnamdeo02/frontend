@@ -18,7 +18,7 @@ import Newsletter from './pages/newsletter/newsletter';
 import Successstory from './pages/sucessstory/successstory';
 import Internshipjobs from './pages/internship-jobs/internship-jobs';
 import Openpositions from './pages/open-positions/open-positions';
-
+import { Helmet } from 'react-helmet';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [showWelcome, setShowWelcome] = useState(false);
@@ -35,6 +35,10 @@ function App() {
 
   return (
     <Router>
+      <Helmet>
+            <title>Heeds Foundation | Home</title>
+            <meta name="description" content="Welcome to Example Website - a platform for volunteering, making a difference, and creating a positive impact. Join us today!" />
+          </Helmet>
       {isLoading ? (
         <LoadingScreen />
       ) : showWelcome ? (

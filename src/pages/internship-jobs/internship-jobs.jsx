@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './internship-jobs.css';
 import vairagi from '../../assets/images/partners/vairagi.jpg';
+import { Helmet } from 'react-helmet';
 function Internshipjobs() {
   const [data, setData] = useState([]);
   
@@ -15,6 +16,12 @@ function Internshipjobs() {
   
   return (
     <div className="internship-jobs-page">
+      <Helmet>
+        <title>Internship and Job Opportunities - Heeds Foundation</title>
+        <meta name="description" content="Explore internship and job opportunities with Heeds Foundation. Join us to make a difference in fields like education, healthcare, and community development." />
+        <meta name="keywords" content="Heeds Foundation, internships, job opportunities, careers, non-profit jobs" />
+        {/* Additional meta tags as needed */}
+      </Helmet>
       <div className="internship-jobs-header">OTHER INTERNSHIP / JOBS</div>
       <div className='internshipjobheader'>
         <div className= "internshipjobheading">LEARNING PARTNER</div>

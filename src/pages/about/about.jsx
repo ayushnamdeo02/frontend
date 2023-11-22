@@ -6,7 +6,7 @@ import './about.css';
 import { yourContent } from './constants';
 import teamMembers from './teammembers';
 import core from './core';
-
+import { Helmet } from 'react-helmet';
 import partners from './partners';
 
 
@@ -54,6 +54,12 @@ class About extends Component {
     const googleDriveEmbedLink = "https://drive.google.com/embeddedfolderview?id=1IWJDVxKTNzXn8NcKlyNfO7iqod3sq0ON#grid";
     return (
       <div className='about-container'>
+        <Helmet>
+                    <title>About Us - Heeds Foundation</title>
+                    <meta name="description" content="Learn about our mission as the top NGO in Nagpur, focused on healthcare, education, and community development." />
+                    <meta name="keywords" content="Nagpur NGO, community development, healthcare, education" />
+                    {/* You can add more meta tags as needed */}
+                </Helmet>
         <div className='about-header'>ABOUT US</div>
         <ul className='about-nav'>
           <li>

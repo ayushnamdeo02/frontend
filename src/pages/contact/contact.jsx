@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import './contact.css';
+import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
 
 class Contact extends Component {
@@ -75,6 +76,12 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-container">
+        <Helmet>
+                    <title>Contact Us - Heeds Foundation</title>
+                    <meta name="description" content="Get in touch with Heeds Foundation for updates and queries. Contact us via email or send us a message directly through our website." />
+                    <meta name="keywords" content="Heeds Foundation contact, NGO contact, volunteer contact" />
+                    {/* You can add more meta tags or structured data here */}
+                </Helmet>
         <div className="contact-header">CONTACT US</div>
         <div className="contact-page-data">
           <div className="get-update">

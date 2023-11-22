@@ -3,9 +3,17 @@ import './open-positions.css';
 import intern from '../../assets/images/p1.jpg';
 import hire from '../../assets/images/p2.jpg';
 import contribute from '../../assets/images/p3.png';
+import { Helmet } from 'react-helmet';
 function Openpositions() {
   return (
     <div className="open-positions-page">
+      <Helmet>
+        <title>Open Positions - Join Our Team</title>
+        <meta name="description" content="Explore the latest job openings and career opportunities with us. Join our team and contribute to meaningful projects and initiatives." />
+        <meta name="keywords" content="career opportunities, job openings, join our team, current vacancies" />
+        {/* Additional meta tags as needed */}
+      </Helmet>
+
       <div className="open-positions-header">OPEN POSITIONS</div>
       <div className='opp-elements'>
             <img className='opp-img' src={intern} alt='job1'></img>

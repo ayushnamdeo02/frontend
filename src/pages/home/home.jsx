@@ -3,7 +3,7 @@ import './home.css';
 import videohome from '../../assets/video/videohome.webm';
 import mobilevid from '../../assets/video/Videomobile.webm'
 import { yourContent } from '../about/constants';
-
+import { Helmet } from 'react-helmet';
 class Home extends Component {
   state = {
     numbers: [0, 0, 0],
@@ -46,6 +46,12 @@ class Home extends Component {
   const mobileVideoSrc = mobilevid;
     return (
       <div className='home-container'>
+        <Helmet>
+                    <title>Heeds Foundation - Empowering Communities</title>
+                    <meta name="description" content="Join us in our mission to empower communities through education, healthcare, and sustainable development. Discover how you can contribute, donate, or volunteer." />
+                    <meta name="keywords" content="community empowerment, education, healthcare, sustainable development, volunteer, donate,Nagpur,nagpur top ngo" />
+                    {/* Add additional meta tags as necessary */}
+                </Helmet>
          <div className='home-header-video'>
           {windowWidth <= 500 ? (
             <video width='100%' autoPlay loop muted playsInline>
