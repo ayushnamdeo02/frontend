@@ -14,7 +14,7 @@ class Footer extends Component {
       <footer className="footer">
         <div className="footer-buttons">
           <button className="footer-button contact" to='/about'><Link className='aa' to='/contact' onClick={this.handleLinkClick}>Contact Us</Link></button>
-          <button className="footer-button donate"><a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></button>
+          <button className="footer-button donate"><a className='aa' href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></button>
         </div>
         <div className="footer-columns">
         <div className="footer-column-resources">

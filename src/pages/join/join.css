@@ -118,6 +118,10 @@
   cursor: pointer;
   font-size: 18px;
 }
+.volunteer-container .volunteer-detail-page .volunteer-form .body-form button[type=submit]:hover {
+  background-color: #402cf4;
+  color: #ffffff;
+}
 
 @media (max-width: 620px) {
   .volunteer-container {

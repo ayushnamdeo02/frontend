@@ -75,10 +75,10 @@ class Home extends Component {
                   <div className="number">{number}+</div>
                   <div className="label">
                     {index === 0
-                      ? 'We reached'
+                      ? 'We Reached Count'
                       : index === 1
-                      ? 'Our Volunteers count'
-                      : 'Our partners count'}
+                      ? 'Our Volunteers Count'
+                      : 'Our Partners Count'}
                   </div>
                 </div>
               ))}
@@ -98,7 +98,7 @@ class Home extends Component {
         </div>
         <iframe title='social' src="https://embedsocial.com/api/pro_hashtag/08e4178120426ba9c6e800a4dc389034d32c9da4" width="100%" height="650px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
           <div className='involved'>
-            <h3 className='involved-title'>How to Get Involved/Support Us</h3>
+            <h3 className='involved-title'>How to Get Involved / Support Us</h3>
             <div className='line'></div>
             <div className='involved-grid'>
               <div className='involved-datai'>
@@ -114,7 +114,7 @@ class Home extends Component {
                 <p>Join our team of dedicated volunteers to help us make a difference in the lives of underserved children. Visit our website to learn more.</p>
                 </div>
                 <div className='involved-datai'>
-                <h3>Spread the word</h3>
+                <h3>Spread the Word</h3>
                 </div>
                 <div className='involved-data'>
                 <p>Help us to raise awareness about the importance of education and the work that we do. Follow us on social media and share our posts with your network.</p>

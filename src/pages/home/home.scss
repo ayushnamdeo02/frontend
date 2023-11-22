@@ -6,7 +6,6 @@
     }
   .ournumber{
     padding-top: 5px;
-    
     padding-left: 40px;
     padding-right: 40px;
     .ournumber-headling{
@@ -31,9 +30,12 @@
         .counting-box {
           text-align: center;
           justify-content: center;
+          display: grid;
+          gap: 20px;
+          
     
           .number {
-            font-size: 90px;
+            font-size: 80px;
             font-weight: bold;
             color: rgb(6, 190, 135);
           }

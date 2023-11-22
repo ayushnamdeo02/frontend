@@ -132,7 +132,11 @@
           border: none;
           cursor: pointer;
           font-size: 18px;
+          &:hover {
+            background-color: #402cf4;
+            color: #ffffff;
         }
+      }
       }
     }
   }

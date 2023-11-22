@@ -123,7 +123,7 @@ class Contact extends Component {
             <p>
               For Any Queries fill out the below form we will contact you
               within 24 hours or Mail us at{' '}
-              <span>heedsfoundation.ngo@gmail.com</span>
+              <span> <a href="mailto:heedsfoundation.ngo@gmail.com"> heedsfoundation.ngo@gmail.com </a></span>
             </p>
             <form onSubmit={this.handleSubmitForMessages} id="message-form">
               {/* Form fields for messages */}
