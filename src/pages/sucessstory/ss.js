@@ -1,6 +1,7 @@
 import prashik from '../../assets/images/photo/prashik.png'; 
 import leena from '../../assets/images/photo/leena.png';
 import shivani from '../../assets/images/photo/shivani.png';  
+
 const testimonialData = [
     {
       image: prashik,
