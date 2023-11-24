@@ -93,6 +93,7 @@
 
     .navbar-brand img {
       padding-left: 30px;
+      margin-top: 5px;
       width: 160px;
     }
   }
@@ -480,6 +481,10 @@
     }
   }
 }
+.navbar-container:hover .menu-button {
+  color: #000 !important;
+}
+
 }
 @media (min-width:621px) and (max-width:1300px) {
   .main {

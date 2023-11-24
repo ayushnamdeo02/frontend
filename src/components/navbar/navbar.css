@@ -78,6 +78,7 @@
 }
 .main .navbar-container .navbar-left .navbar-brand img {
   padding-left: 30px;
+  margin-top: 5px;
   width: 160px;
 }
 .main .navbar-container .navbar-mid {
@@ -402,6 +403,9 @@
     border: #000000 solid 1px;
     background-color: yellow;
     padding: 12px;
+  }
+  .navbar-container:hover .menu-button {
+    color: #000 !important;
   }
 }
 @media (min-width: 621px) and (max-width: 1300px) {
