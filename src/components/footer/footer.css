@@ -154,7 +154,8 @@
     background-color: rgb(0, 123, 255);
     width: 100%;
     height: 170px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+    margin-top: 2px;
   }
   .footer .footer-buttons .contact-btn:hover, .footer .footer-buttons .donate-btn:hover {
     background-color: yellow;

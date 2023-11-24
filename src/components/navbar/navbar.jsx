@@ -12,14 +12,17 @@ class Navbar extends Component {
       isScrolled: false,
       submenuOpen: { resources: false, community: false, involved: false },
     };
+    this.menuRef = React.createRef();
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    document.addEventListener('mousedown', this.handleOutsideClick);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    document.removeEventListener('mousedown', this.handleOutsideClick);
   }
 
   handleScroll = () => {
@@ -52,6 +55,12 @@ class Navbar extends Component {
     });
   };
 
+  handleOutsideClick = (event) => {
+    if (this.state.isMenuOpen && this.menuRef.current && !this.menuRef.current.contains(event.target)) {
+      this.closeMenu();
+    }
+  };
+
   toggleSubmenu = (menuName) => {
     this.setState(prevState => ({
       submenuOpen: {
@@ -81,16 +90,16 @@ class Navbar extends Component {
             </div>
         </div>
         </div>
-      <nav className={`navbar-container ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} 
-      onMouseEnter={this.handleLogoMouseEnter}
-      onMouseLeave={this.handleLogoMouseLeave}>
-        <div className="navbar-left">
+        <nav className={`navbar-container ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} 
+          onMouseEnter={this.handleLogoMouseEnter}
+          onMouseLeave={this.handleLogoMouseLeave}>
+          <div className="navbar-left">
             <Link className="navbar-brand" to="/">
               <img src={whitelogo} alt="Default Logo" className="default-logo" />
               <img src={logo} alt="Scrolled Logo" className="scrolled-logo" style={{ opacity: 0 }} />
             </Link>
           </div>
-        <div className={`navbar-mid ${isScrolled ? 'scrolled' : ''}`} >
+          <div ref={this.menuRef} className={`navbar-mid ${isScrolled ? 'scrolled' : ''}`}>
           <button className={`menu-button ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} onClick={this.toggleMenu}>
             Menu
           </button>
