@@ -13,9 +13,13 @@
 
 @media (max-width: 620px) {
   .FAQ-container .FAQ-header {
-    padding-top: 100px;
+    background-color: black;
+    padding-top: 95px;
     padding-left: 20px;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
   }
   .FAQ-container .pdfset {
     padding: 20px;

@@ -134,7 +134,6 @@
   border-right: rgb(0, 0, 0) solid 1px;
 }
 .main .navbar-container .navbar-list .nav-item::before {
-  content: "";
   position: absolute;
   left: 0;
   bottom: 0;

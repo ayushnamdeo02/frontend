@@ -8,7 +8,7 @@ class Navbar extends Component {
   handleLinkClick = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'auto'
     });
   };
   
@@ -41,7 +41,7 @@ class Navbar extends Component {
 
   handleScroll = () => {
     // Determine if the user has scrolled down a certain amount (e.g., 100 pixels)
-    if (window.scrollY > 100) {
+    if (window.scrollY > 1) {
       this.setState({ isScrolled: true });
     } else {
       this.setState({ isScrolled: false });

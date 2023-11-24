@@ -100,9 +100,13 @@
 @media (max-width:620px) {
   .contact-container {
     .contact-header {
-    padding-top: 100px;
-    padding-left:20px;
-    font-size: 40px;
+      background-color: black;
+      padding-top:95px;
+      padding-left: 20px;
+      font-weight: 700;
+      font-size: 45px;
+      text-align: center;
+      padding-bottom: 45px;
     }
 
     .contact-page-data {

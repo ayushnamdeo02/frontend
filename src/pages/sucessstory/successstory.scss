@@ -53,9 +53,11 @@
           .testimonial-text {
             font: 1em Founders Grotesk Cond;
             font-size: 17px;
-            text-align: justify;
-            margin-bottom: 10px;
-            font-weight: 300; // Check if the font supports this weight
+        text-align: justify;
+        margin-bottom: 10px;
+        font-weight: 300; // Adjust as per your font
+        max-height: 180px; // Set a fixed height
+        overflow-y: auto; // Enable vertical scrolling // Check if the font supports this weight
            }
 
           .testimonial-author {
@@ -63,26 +65,7 @@
             font-weight: bold;
           }
         }
-        button{
-          padding: 4px 8px;
-          margin-top: 10px;
-          font-size: 14px;
-          color: rgb(0, 0, 0);
-          background-color:transparent;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-    
-          &:hover {
-            background-color: darken(rgb(255, 255, 255), 10%);
-          }
-    
-          &:focus {
-            outline: none;
-            box-shadow: none;
-          }
-        }
+        
       }
     }
   }
@@ -100,8 +83,13 @@
 @media (max-width: 620px) {
   .successstory-page {
     .successstory-header {
-      padding: 15% 5% 2%;
-      font-size: 40px;
+      background-color: black;
+      padding-top:95px;
+      padding-left: 20px;
+      font-weight: 700;
+      font-size: 45px;
+      text-align: center;
+      padding-bottom: 45px;
     }
   }
 }

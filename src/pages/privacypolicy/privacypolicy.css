@@ -17,10 +17,12 @@
   }
   .privacypolicy-container .privacypolicy-header {
     background-color: black;
-    padding-top: 70px;
-    padding-left: 15px;
+    padding-top: 95px;
+    padding-left: 20px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
   }
   .privacypolicy-container .pdfset {
     padding: 20px;

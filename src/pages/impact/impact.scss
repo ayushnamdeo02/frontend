@@ -21,8 +21,13 @@
   @media (max-width:620px) {
     .impact-page {
       .impact-header {
-        padding: 15% 5% 2%; /* More padding-top for mobile header */
-        font-size: 40px; /* Further reduced font size for mobile */
+        background-color: black;
+        padding-top:95px;
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 45px;
+        text-align: center;
+        padding-bottom: 45px;
       }
   }
 }

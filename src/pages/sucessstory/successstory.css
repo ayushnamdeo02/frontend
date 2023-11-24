@@ -54,28 +54,12 @@
   text-align: justify;
   margin-bottom: 10px;
   font-weight: 300;
+  max-height: 180px;
+  overflow-y: auto;
 }
 .successstory-page .testimonials-section .testimonials-container .testimonial .testimonial-content .testimonial-author {
   font-size: 19px;
   font-weight: bold;
-}
-.successstory-page .testimonials-section .testimonials-container .testimonial button {
-  padding: 4px 8px;
-  margin-top: 10px;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.successstory-page .testimonials-section .testimonials-container .testimonial button:hover {
-  background-color: #e6e6e6;
-}
-.successstory-page .testimonials-section .testimonials-container .testimonial button:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 @media (min-width: 621px) and (max-width: 1300px) {
@@ -86,7 +70,12 @@
 }
 @media (max-width: 620px) {
   .successstory-page .successstory-header {
-    padding: 15% 5% 2%;
-    font-size: 40px;
+    background-color: black;
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
   }
 }/*# sourceMappingURL=successstory.css.map */
