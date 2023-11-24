@@ -8,16 +8,85 @@
   color: white;
   font-size: 90px;
 }
+.successstory-page .testimonials-section {
+  background-color: rgb(224, 224, 224);
+}
+.successstory-page .testimonials-section h2 {
+  padding-top: 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+.successstory-page .testimonials-section .testimonials-container {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial .testimonial-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid black;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial .testimonial-content {
+  padding-top: 70px;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial .testimonial-content .testimonial-text {
+  font: 1em Founders Grotesk Cond;
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial .testimonial-content .testimonial-author {
+  font-size: 19px;
+  font-weight: bold;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial button {
+  padding: 4px 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial button:hover {
+  background-color: #e6e6e6;
+}
+.successstory-page .testimonials-section .testimonials-container .testimonial button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 @media (min-width: 621px) and (max-width: 1300px) {
   .successstory-page .successstory-header {
-    padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
-    font-size: 60px; /* Reduced font size */
+    padding: 8% 5% 2%;
+    font-size: 60px;
   }
 }
 @media (max-width: 620px) {
   .successstory-page .successstory-header {
-    padding: 15% 5% 2%; /* More padding-top for mobile header */
-    font-size: 40px; /* Further reduced font size for mobile */
+    padding: 15% 5% 2%;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=successstory.css.map */
