@@ -13,8 +13,8 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <div className="footer-buttons">
-          <button className="footer-button contact" to='/about'><Link className='aa' to='/contact' onClick={this.handleLinkClick}>Contact Us</Link></button>
-          <button className="footer-button donate"><a className='aa' href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></button>
+        <Link className='contact-btn' to='/contact' onClick={this.handleLinkClick}><p className='a'>Contact Us</p></Link>
+        <a className='donate-btn' href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'><p className='a'>Donate</p></a>
         </div>
         <div className="footer-columns">
         <div className="footer-column-resources">

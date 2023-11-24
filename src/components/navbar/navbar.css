@@ -83,7 +83,7 @@
 .main .navbar-container .navbar-mid {
   display: flex;
   height: 60px;
-  margin-left: 30px;
+  margin-left: 200px;
   align-items: center;
   flex-grow: 1;
   justify-content: space-between;
@@ -234,7 +234,7 @@
   position: absolute;
   background-color: #ffffff;
   min-width: 160px;
-  min-height: 10px;
+  min-height: 5px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 100000000;
 }
@@ -243,6 +243,25 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+.main .navbar-brand img.default-logo,
+.main .navbar-brand img.scrolled-logo {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .navbar-container:hover .navbar-brand img.scrolled-logo {
+  opacity: 0;
+}
+.main .navbar-container:hover .navbar-brand img.default-logo {
+  opacity: 0;
+}
+.main .navbar-container:hover .navbar-brand img.scrolled-logo {
+  opacity: 1 !important;
+}
+.main .navbar-container:hover .navbar-brand img.default-logo {
+  opacity: 0 !important;
 }
 
 @media (max-width: 620px) {
@@ -289,54 +308,68 @@
     border: none;
   }
   .main .navbar-container .navbar-left .navbar-brand img {
-    margin-left: -35px;
+    margin-left: -20px;
     width: 140px;
   }
   .main .navbar-container .navbar-mid {
+    display: flex;
+    height: 60px;
+    margin-left: 230px;
+    align-items: left;
+    flex-grow: 0;
+    justify-content: space-between;
+    max-width: 100%;
     flex-grow: 0;
     border: none;
-    margin-left: 40px;
-    padding: 0px;
+    padding: 0;
   }
   .main .navbar-container .navbar-mid .menu-button {
     background: transparent;
     border: none;
     font-weight: 600;
     margin-left: 10px;
-    padding: 20px 20px;
+    padding: 13px 13px;
     display: block;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .main .navbar-container .navbar-mid .menu-button.scrolled {
+    color: #000000;
+  }
+  .main .navbar-container .navbar-mid .menu-button:hover {
+    color: #000000;
   }
   .main .navbar-container .navbar-mid .navbar-list {
+    display: grid;
     flex-direction: column;
     position: absolute;
     top: 70%;
-    border: none;
+    border: 1px solid black;
     left: 0;
-    max-width: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8901960784);
+    background-color: rgba(255, 255, 255, 0.9960784314);
     padding: auto;
     visibility: hidden;
     z-index: 1000;
-    opacity: 1;
+    opacity: 100%;
     transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
   }
   .main .navbar-container .navbar-mid .navbar-list.mobile-menu-open {
     visibility: visible;
-    opacity: 1;
+    opacity: 100%;
   }
   .main .navbar-container .navbar-mid .navbar-list .nav-item {
-    background: transparent;
-    border-right: none;
-    font-size: 20px;
+    width: 100%;
+    border: 1px solid black;
+    height: 50px;
   }
   .main .navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
-    margin-left: 0px;
+    padding-top: 3px;
+    padding-bottom: 2px;
     display: block;
+    width: 100%;
     color: #000;
-    padding: 12px 16px;
   }
   .main .navbar-container .navbar-mid .navbar-list .dropdown-content {
     position: static;
@@ -346,11 +379,6 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
-    font-weight: normal;
-  }
-  .main .navbar-container .navbar-mid .navbar-list .dropdown-content .nav-link {
-    color: #000000;
-    font-weight: normal;
   }
   .main .navbar-container .navbar-right {
     padding-right: 0px;
@@ -368,12 +396,12 @@
   }
   .main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     background: transparent;
     border: #000000 solid 1px;
     background-color: yellow;
-    padding: 19.5px;
+    padding: 12px;
   }
 }
 @media (min-width: 621px) and (max-width: 1300px) {

@@ -101,7 +101,7 @@
 .navbar-mid {
   display: flex;
   height: 60px;
-  margin-left: 30px;
+  margin-left: 200px;
   align-items: center;
   flex-grow: 1;
   justify-content: space-between;
@@ -277,7 +277,7 @@
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
-    min-height: 10px;
+    min-height: 5px;
     
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 100000000;
@@ -290,6 +290,32 @@
     }
   }
 }
+.navbar-brand img.default-logo,
+.navbar-brand img.scrolled-logo {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Show scrolled logo on hover over the navbar-container
+.navbar-container:hover .navbar-brand img.scrolled-logo {
+  opacity: 0;
+}
+
+// Hide default logo on hover over the navbar-container
+.navbar-container:hover .navbar-brand img.default-logo {
+  opacity: 0;
+}
+
+.navbar-container:hover .navbar-brand img.scrolled-logo {
+  opacity: 1 !important;
+}
+
+.navbar-container:hover .navbar-brand img.default-logo {
+  opacity: 0 !important;
+}
+
 }
 
 @media (max-width:620px) {
@@ -340,82 +366,91 @@
       top:0;
     }
     .navbar-left {
+      
       border: none;
 
       .navbar-brand img {
-        margin-left: -35px;
+        margin-left: -20px;
         width: 140px;
       }
     }
 
     .navbar-mid {
+      display: flex;
+      height: 60px;
+      margin-left: 230px;
+      align-items: left;
+      flex-grow: 0;
+      justify-content: space-between;
+      max-width: 100%;
       flex-grow: 0;
       border: none;
-      margin-left: 40px;
-      padding: 0px;
+      padding: 0;
+    
       .menu-button {
         background: transparent;
         border: none;
         font-weight: 600;
         margin-left: 10px;
-        padding: 20px 20px;
+        padding: 13px 13px;
         display: block;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 16px;
+        color: #ffffff;
+    &.scrolled {
+      color: #000000;
+    }
+    &:hover {
+      color: #000000;
+    }
       }
-
+    
       .navbar-list {
+        display: grid;
         flex-direction: column;
         position: absolute;
         top: 70%;
-        border: none;
+        border: 1px solid black;
         left: 0;
-        max-width: 100%;
-        width: 100%;
-        background-color: #ffffffe3; // Background color for the entire navbar list
+        background-color: #fffffffe; // Background color for the entire navbar list
         padding: auto;
         visibility: hidden;
         z-index: 1000;
-        opacity: 1;
+        opacity: 100%;
         transition: visibility 0s, opacity 0.5s linear;
+        width: 100%;
       
         &.mobile-menu-open {
           visibility: visible;
-          opacity: 1;
+          opacity: 100%;
         }
       
         .nav-item {
-          background: transparent;
-          border-right: none;
-          font-size: 20px;
-      
+          width: 100%; // Ensure full width for each nav item
+          border: 1px solid black;
+          height: 50px;
+    
           .nav-link {
-            margin-left: 0px;
+            padding-top: 3px;
+            padding-bottom: 2px;
             display: block;
+            width: 100%;
             color: #000; // Text color for navbar items
-            padding: 12px 16px; // Consistent padding for navbar items
           }
         }
       
         .dropdown-content {
           position: static; 
           box-shadow: none;
-          width: 100%;
+          width: 100%; // Ensure full width for dropdown content
           background-color: #ffffff00; // Same background as navbar list
           padding: 0; // Remove additional padding
           font-size: 20px;
           text-align: center;
-          font-weight: normal;
-          
-    .nav-link {
-      color: #000000;
-      font-weight: normal;
-    }
         }
       }
-      
-      
     }
+    
 
     .navbar-right {
       padding-right: 0px;
@@ -433,12 +468,12 @@
   
           .Donate-btn-nav {
             font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
             position: relative;
             background: transparent;
             border: #000000 solid 1px;
             background-color: yellow;
-            padding: 19.5px;
+            padding: 12px;
           }
         }
       }

@@ -1,68 +1,59 @@
 import React, { Component } from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logobgclear.png';
 import whitelogo from '../../assets/whitelogo.png';
 import './navbar.css';
 
 class Navbar extends Component {
-  handleLinkClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'auto'
-    });
-  };
-  
   constructor(props) {
     super(props);
     this.state = {
       isMenuOpen: false,
       isScrolled: false,
-      isHovered: false, 
       submenuOpen: { resources: false, community: false, involved: false },
     };
   }
-  handleLogoMouseEnter = () => {
-    this.setState({ isHovered: true });
-  };
 
-  // Event handler for logo mouse leave
-  handleLogoMouseLeave = () => {
-    this.setState({ isHovered: false });
-  };
   componentDidMount() {
-    // Add a scroll event listener when the component mounts
     window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    // Remove the scroll event listener when the component unmounts
     window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
-    // Determine if the user has scrolled down a certain amount (e.g., 100 pixels)
-    if (window.scrollY > 1) {
-      this.setState({ isScrolled: true });
-    } else {
-      this.setState({ isScrolled: false });
+    const scrolledLogo = document.querySelector('.scrolled-logo');
+    if (scrolledLogo) {
+      scrolledLogo.style.opacity = window.scrollY > 0 ? '1' : '0';
     }
+    this.setState({ isScrolled: window.scrollY > 0 });
   };
+
   closeMenu = () => {
     this.setState({ isMenuOpen: false });
   };
 
   toggleMenu = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       isMenuOpen: !prevState.isMenuOpen,
     }));
   };
+
   handleMenuAndLinkClick = () => {
     this.closeMenu();
     this.handleLinkClick();
   };
+
+  handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   toggleSubmenu = (menuName) => {
     this.setState(prevState => ({
-      isMenuOpen: false,
       submenuOpen: {
         ...prevState.submenuOpen,
         [menuName]: !prevState.submenuOpen[menuName]
@@ -71,8 +62,7 @@ class Navbar extends Component {
   };
 
   render() {
-    const { isMenuOpen, isScrolled, isHovered, submenuOpen } = this.state;
-    const logoSrc = isScrolled || isHovered ? logo : whitelogo;
+    const { isMenuOpen, isScrolled, submenuOpen } = this.state;
     return (
       <div className='main'> 
       <div className="header-section">
@@ -94,11 +84,12 @@ class Navbar extends Component {
       <nav className={`navbar-container ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} 
       onMouseEnter={this.handleLogoMouseEnter}
       onMouseLeave={this.handleLogoMouseLeave}>
-        <div className={`navbar-left ${isScrolled ? 'scrolled' : ''}`}  >
-          <Link className="navbar-brand" to="/">
-            <img src={logoSrc} alt="logo" />
-          </Link>
-        </div>
+        <div className="navbar-left">
+            <Link className="navbar-brand" to="/">
+              <img src={whitelogo} alt="Default Logo" className="default-logo" />
+              <img src={logo} alt="Scrolled Logo" className="scrolled-logo" style={{ opacity: 0 }} />
+            </Link>
+          </div>
         <div className={`navbar-mid ${isScrolled ? 'scrolled' : ''}`} >
           <button className={`menu-button ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} onClick={this.toggleMenu}>
             Menu
@@ -163,7 +154,7 @@ class Navbar extends Component {
         <div className={`navbar-right ${isScrolled ? 'scrolled' : ''}`}>
           <ul className="nav-right-button">
             <li>
-              <button className='Donate-btn-nav' ><a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></button>
+            <a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'><button className='Donate-btn-nav' >Donate</button></a>
             </li>
             
           </ul>
