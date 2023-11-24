@@ -566,8 +566,11 @@
           cursor: pointer;
           font-size: 18px;
 
-          &:hover{
-            color: #000;
+          &.scrolled {
+            color: #000000;
+          }
+          &:hover {
+            color: #000000;
           }
         }
 
@@ -648,4 +651,8 @@
       }
     }
   }
+  .navbar-container:hover .menu-button {
+    color: #000 !important;
+  }
+  
 }
