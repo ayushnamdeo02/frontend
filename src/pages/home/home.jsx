@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './home.css';
 import videohome from '../../assets/video/videohome.webm';
-import mobilevid from '../../assets/video/Videomobile.webm'
+import mobilevid from '../../assets/video/Videomobile.webm';
 import { yourContent } from '../about/constants';
 import { Helmet } from 'react-helmet';
 class Home extends Component {
