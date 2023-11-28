@@ -57,7 +57,7 @@ class About extends Component {
         <Helmet>
                     <title>About Us - Heeds Foundation</title>
                     <meta name="description" content="Learn about our mission as the top NGO in Nagpur, focused on healthcare, education, and community development." />
-                    <meta name="keywords" content="Nagpur NGO, Ngo in nagpur, Ngo in nagpur list, Top 10 ngo in nagpur, Top 10 ngo in nagpur for students, Top 10 ngo in nagpur for internship, ngo in nagpur list, ngo in nagpur for job, how to join ngo in nagpur, nagpur ngo contact number,ngo in nagpur for internship, Top ngo in nagpur, ngo in nagpur list, Ngo in nagpur for students, ngo in nagpur for job, ngo in nagpur for internship, how to join ngo in nagpur, ngo in nagpur to volunteer, Ayush Namdap, Pratik Meshram, Shivam Sontakke, Gaurav Borghare, Kartik Bhandari" />
+                    <meta name="keywords" content="Nagpur NGO, Ngo in nagpur, Ngo in nagpur list, Top 10 ngo in nagpur, Top 10 ngo in nagpur for students, Kuch acha krte hai, Kuch acha kuch khas krte hai, Top 10 ngo in nagpur for internship, ngo in nagpur list, ngo in nagpur for job, how to join ngo in nagpur, nagpur ngo contact number,ngo in nagpur for internship, Top ngo in nagpur, ngo in nagpur list, Ngo in nagpur for students, ngo in nagpur for job, ngo in nagpur for internship, how to join ngo in nagpur, ngo in nagpur to volunteer, Ayush Namdap, Pratik Meshram, Shivam Sontakke, Gaurav Borghare, Kartik Bhandari" />
                     {/* You can add more meta tags as needed */}
                 </Helmet>
         <div className='about-header'>ABOUT US</div>
