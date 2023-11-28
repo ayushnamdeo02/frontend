@@ -19,7 +19,7 @@ function Internshipjobs() {
       <Helmet>
         <title>Internship and Job Opportunities - Heeds Foundation</title>
         <meta name="description" content="Explore internship and job opportunities with Heeds Foundation. Join us to make a difference in fields like education, healthcare, and community development." />
-        <meta name="keywords" content="Heeds Foundation, internships, job opportunities, careers, non-profit jobs, Top 10 ngo in nagpur for internship, Ngo in nagpur for internship for freshers, List of ngo in nagpur for internship, Best ngo in nagpur for internship, ngo internship certificate, top 10 ngo in nagpur, ngo internship work from home, upay ngo nagpur" />
+        <meta name="keywords" content="Heeds Foundation, internships, job opportunities, careers, non-profit jobs, Top 10 ngo in nagpur for internship, NGO jobs in Nagpur, Ngo in nagpur for internship for freshers, List of ngo in nagpur for internship, Best ngo in nagpur for internship, ngo internship certificate, ngo internship certificate in nagpur, nagpur ngo internship certificate, top 10 ngo in nagpur, ngo internship work from home, upay ngo nagpur" />
         {/* Additional meta tags as needed */}
       </Helmet>
       <div className="internship-jobs-header">OTHER INTERNSHIP / JOBS</div>

@@ -187,7 +187,7 @@ class Join extends Component {
         <Helmet>
           <title>Join Heeds Foundation - Top NGO in Nagpur</title>
           <meta name="description" content="Be a part of the change with Heeds Foundation, a leading NGO in Nagpur. Join us as a volunteer or donor to make a positive impact in healthcare, education, and community development." />
-          <meta name="keywords" content="Heeds Foundation, join NGO, volunteer in Nagpur, donate to NGO" />
+          <meta name="keywords" content="Heeds Foundation, join NGO, volunteer in Nagpur, NGOs in Nagpur to volunteer, NGO in Nagpur to volunteer, donate to NGO, Social work ngo nagpur for students, Social work ngo nagpur for female, Social work ngo nagpur contact number, Best social work ngo nagpur, Ngo volunteering in nagpur for students, International ngo volunteering in nagpur, Government ngo volunteering in nagpur, Free ngo volunteering in nagpur, ngo in nagpur for internship, top 10 ngo in nagpur, upay ngo nagpur, ngo in nagpur for job" />
           {/* Additional meta tags as needed */}
         </Helmet>
         <div className="title-volunteer">JOIN US</div>
