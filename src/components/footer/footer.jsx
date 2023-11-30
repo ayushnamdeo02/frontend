@@ -65,7 +65,7 @@ class Footer extends Component {
          
         <div className='lower'>
             <p className='p1'>Copyright © 2023</p>
-            <p className='p2'>Designed with ❤️ From Heeds Foundation</p>
+            <p className='p2'>Designed with ❤️ From <a href="https://heedsfoundation.com/"> Heeds Foundation  </a> </p>
         </div>
       </footer>
     );

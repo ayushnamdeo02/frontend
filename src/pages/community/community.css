@@ -1,11 +1,9 @@
 .community-container .community-header {
   background-color: black;
-  padding-top: 95px;
-  padding-left: 20px;
+  padding: 12% 5% 2%;
   font-weight: 700;
-  font-size: 45px;
-  text-align: center;
-  padding-bottom: 45px;
+  font-size: 90px;
+  color: #ffffff;
 }
 .community-container .frameinsta {
   margin-left: 50px;
