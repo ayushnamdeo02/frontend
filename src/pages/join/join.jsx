@@ -4,6 +4,14 @@ import './join.css';
 import emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
 class Join extends Component {
+  componentDidMount() {
+    // Keywords string
+    const keywords = "education, community, empowerment, NGO, Heeds Foundation";
+
+    // Split keywords string into an array and log it
+    const keywordsArray = keywords.split(', ');
+    console.log(keywordsArray);
+}
   constructor(props) {
     super(props);
     this.state = {
@@ -183,7 +191,7 @@ class Join extends Component {
         dateOfBirthValid,
       } = this.state;
     return (
-      <div className="volunteer-container">
+      <div className="volunteer-container" data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <Helmet>
         <h1><title>Join Heeds Foundation - Top NGO in Nagpur</title></h1>
           <meta name="description" content="Be a part of the change with Heeds Foundation, a leading NGO in Nagpur. Join us as a volunteer or donor to make a positive impact in healthcare, education, and community development." />

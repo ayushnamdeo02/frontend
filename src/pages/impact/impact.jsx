@@ -3,6 +3,7 @@ import './impact.css';
 import { Helmet } from 'react-helmet';
 
 function Impact() {
+  
   return (
     <div className="impact-page">
       <Helmet>

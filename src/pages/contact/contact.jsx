@@ -4,6 +4,14 @@ import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
 
 class Contact extends Component {
+  componentDidMount() {
+    // Keywords string
+    const keywords = "education, community, empowerment, NGO, Heeds Foundation";
+
+    // Split keywords string into an array and log it
+    const keywordsArray = keywords.split(', ');
+    console.log(keywordsArray);
+}
   // Email.js configuration
   emailjsConfig = {
     serviceID: 'heedsfoundation',
@@ -75,7 +83,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-container">
+      <div className="contact-container" data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <Helmet>
         <h1><title>Contact Us - Heeds Foundation</title></h1>
                     <meta name="description" content="Get in touch with Heeds Foundation for updates and queries. Contact us via email or send us a message directly through our website." />

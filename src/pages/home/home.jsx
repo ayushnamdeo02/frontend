@@ -13,6 +13,11 @@ class Home extends Component {
   componentDidMount() {
     this.startCounting();
     window.addEventListener('resize', this.handleResize);
+    const keywords = "education, community, empowerment, NGO, Heeds Foundation";
+
+    // Split keywords string into an array and log it
+    const keywordsArray = keywords.split(', ');
+    console.log(keywordsArray);
   }
 
   startCounting() {
@@ -45,7 +50,7 @@ class Home extends Component {
     const { windowWidth } = this.state;
   const mobileVideoSrc = mobilevid;
     return (
-      <div className='home-container'>
+      <div className='home-container' data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <Helmet>
                     <h1><title>Heeds Foundation - Empowering Communities</title></h1>
                     <meta name="description" content="Join us in our mission to empower communities through education, healthcare, and sustainable development. Discover how you can contribute, donate, or volunteer." />

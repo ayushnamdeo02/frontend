@@ -30,7 +30,9 @@ class About extends Component {
     const sheetID = "1cZySwD141lWF33rhj1BV54MjMy32XDKb-08itj9En2A";
     const sheetName = "volunteers"; // Ensure this is the exact name of your worksheet/tab
     const url = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
-
+    const keywords = "education, community, empowerment, NGO, Heeds Foundation";
+        const keywordsArray = keywords.split(', ');
+        console.log(keywordsArray);
     const response = await fetch(url);
     const csvData = await response.text();
     const rows = csvData.split("\n");
@@ -53,7 +55,7 @@ class About extends Component {
 
     const googleDriveEmbedLink = "https://drive.google.com/embeddedfolderview?id=1IWJDVxKTNzXn8NcKlyNfO7iqod3sq0ON#grid";
     return (
-      <div className='about-container'>
+      <div className='about-container' data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <Helmet>
         <h1><title>About Us - Heeds Foundation</title></h1>
                     <meta name="description" content="Learn about our mission as the top NGO in Nagpur, focused on healthcare, education, and community development." />
@@ -137,7 +139,7 @@ class About extends Component {
         </ul>
         
         {/* Content Sections */}
-        <section id='section-mission' className='mission-section'>
+        <section id='section-mission' className='mission-section' data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <img className='mission-image' src={missionimgabout} alt='mission' />
         <div className='content-div'>
         <div className='content-mission'>
@@ -154,7 +156,7 @@ class About extends Component {
         </section>
         
         <section id='section-work' className='work-section'>
-      <div className='work-mission'>
+      <div className='work-mission' data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <h3 className='work-heading'>OUR WORK</h3>
         <div class="line"></div>
         <p className='work-details'>Our organization is dedicated to empowering communities through education, improving healthcare access, fostering sustainability, providing humanitarian aid, raising awareness, and collaborating for lasting change. Volunteers play a vital role in our mission to make a positive impact on people's lives.</p>
@@ -162,7 +164,7 @@ class About extends Component {
       <img className='work-image' src={img1} alt='Work' />
     </section>
         
-        <section id='section-principles' className='principles-section'>
+        <section id='section-principles' className='principles-section'> 
           <h3 className='principles-heading'>OUR PRINCIPLES</h3>
           <div class="line"></div>
           <div className='principles-data'>

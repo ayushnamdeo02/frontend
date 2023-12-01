@@ -4,9 +4,17 @@ import { Helmet } from 'react-helmet';
 import testimonialData from './ss';
 
 class Successstory extends Component {
+  componentDidMount() {
+    // Keywords string
+    const keywords = "education, community, empowerment, NGO, Heeds Foundation";
+
+    // Split keywords string into an array and log it
+    const keywordsArray = keywords.split(', ');
+    console.log(keywordsArray);
+}
   render() {
     return (
-      <div className="successstory-page">
+      <div className="successstory-page" data-keywords="education, community, empowerment, NGO, Heeds Foundation">
         <Helmet>
         <h1><title>Success Stories - Inspiring Journeys</title></h1>
           <meta name="description" content="Read the inspiring success stories from our community. Discover how our initiatives have made a real difference in people's lives." />
