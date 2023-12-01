@@ -3,7 +3,6 @@ import anishj from '../../assets/images/membersphotos/anishj.jpg';
 import sudt from '../../assets/images/membersphotos/sudt.jpg';
 import bhaveshv from '../../assets/images/membersphotos/bhaveshv.jpg';
 import shrutisingh from '../../assets/images/membersphotos/shrutisingh.jpg';
-import shahwazm from '../../assets/images/membersphotos/shahwazm.jpg';
 import Ayush_n from '../../assets/images/membersphotos/ayushn.jpg';
 const teamMembers = [
   {
@@ -53,17 +52,6 @@ const teamMembers = [
     name: 'MS. SHRUTI SINGH',
     designation: 'Girls Representative',
     photoUrl: shrutisingh, // Use the imported image directly
-    socialLinks: {
-      facebook: '/',
-      twitter: '/',
-      Instagram: '/',
-      linkedin: '/'
-    },
-  },
-  {
-    name: 'MR. SHAHWAZ MANSURI',
-    designation: 'Design Committee Member',
-    photoUrl: shahwazm, // Use the imported image directly
     socialLinks: {
       facebook: '/',
       twitter: '/',
