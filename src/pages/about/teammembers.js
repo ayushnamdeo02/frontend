@@ -61,7 +61,7 @@ const teamMembers = [
   },
   {
     name: 'MR. AYUSH NAMDEO',
-    designation: 'Web designer / Developer',
+    designation: 'Web Designer / Developer',
     photoUrl: Ayush_n, // Use the imported image directly
     socialLinks: {
       facebook: '/',
