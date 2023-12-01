@@ -8,13 +8,12 @@ class Faq extends Component {
     return (
       <div className='FAQ-container'>
         <Helmet>
-                    <title>FAQs - Heeds Foundation</title>
+        <h1><title>FAQs - Heeds Foundation</title></h1>
                     <meta name="description" content="Find answers to common questions about Heeds Foundation" />
                     <meta name="keywords" content="Heeds Foundation FAQ, NGO FAQ, NAGPUR TOP NGO" />
                 </Helmet>
         <div className="FAQ-header">FAQ </div>
         <iframe title="FAQ" className='pdfset' src={faqpdf}></iframe>
-
       </div>
     );
   }

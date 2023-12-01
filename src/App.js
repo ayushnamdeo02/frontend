@@ -24,7 +24,7 @@ function App()
   return (
     <Router>
       <Helmet>
-            <title>Heeds Foundation | Home</title>
+      <h1><title>Heeds Foundation | Home</title></h1>
             <meta name="description" content="Welcome to Example Website - a platform for volunteering, making a difference, and creating a positive impact. Join us today!" />
           </Helmet>
         <div>

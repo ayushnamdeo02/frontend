@@ -5,7 +5,7 @@ function Newsletter() {
   return (
     <div className="newsletter-page">
       <Helmet>
-        <title>Stay Updated - Newsletter Subscription</title>
+      <h1><title>Stay Updated - Newsletter Subscription</title></h1>
         <meta name="description" content="Subscribe to our newsletter to stay updated with the latest news, events, and stories. Join our community to be a part of the change." />
         <meta name="keywords" content="newsletter, updates, subscribe, news, events" />
         {/* Additional meta tags as needed */}

@@ -8,7 +8,7 @@ class Privacypolicy extends Component {
     return (
       <div className='privacypolicy-container'>
         <Helmet>
-          <title>Privacy Policy - Heeds Foundation</title>
+          <h1><title>Privacy Policy - Heeds Foundation</title></h1>
           <meta name="description" content="Review the Privacy Policy of Heeds Foundation. Learn about our commitment to protecting your personal data and privacy." />
           <meta name="keywords" content="Heeds Foundation, privacy policy, data protection, personal data" />
           {/* Additional meta tags as needed */}

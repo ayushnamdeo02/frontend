@@ -77,7 +77,7 @@ class Contact extends Component {
     return (
       <div className="contact-container">
         <Helmet>
-                    <title>Contact Us - Heeds Foundation</title>
+        <h1><title>Contact Us - Heeds Foundation</title></h1>
                     <meta name="description" content="Get in touch with Heeds Foundation for updates and queries. Contact us via email or send us a message directly through our website." />
                     <meta name="keywords" content="Heeds Foundation contact, NGO contact, NGO phone numbers in Nagpur, NGO helpline Nagpur, NGO volunteer opportunities, nagpur, Nagpur Ngo, Nagpur social work, food donation in nagpur, ngo india, volunteer contact, Kuch acha krte hai" />
                     {/* You can add more meta tags or structured data here */}

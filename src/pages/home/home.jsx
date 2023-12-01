@@ -47,7 +47,7 @@ class Home extends Component {
     return (
       <div className='home-container'>
         <Helmet>
-                    <title>Heeds Foundation - Empowering Communities</title>
+                    <h1><title>Heeds Foundation - Empowering Communities</title></h1>
                     <meta name="description" content="Join us in our mission to empower communities through education, healthcare, and sustainable development. Discover how you can contribute, donate, or volunteer." />
                     <meta name="keywords" content=" Heeds, Heeds nagpur, heed India, ngo internship certificate, nagpur ngo, nagpur ngo internship certificate, Non-governmental organization in Nagpur, Top Non Profit Organizations in Nagpur, ngo in nagpur near me, Heed, Heeds foundation india, top ngo nagpur, ngos of nagpur, ngo, foundation, genuine ngos in nagpur, community empowerment, education, healthcare, sustainable development, volunteer, donate, Nagpur, nagpur top ngo" />
                     {/* Add additional meta tags as necessary */}

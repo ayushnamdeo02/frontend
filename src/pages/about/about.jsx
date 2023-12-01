@@ -55,7 +55,7 @@ class About extends Component {
     return (
       <div className='about-container'>
         <Helmet>
-                    <title>About Us - Heeds Foundation</title>
+        <h1><title>About Us - Heeds Foundation</title></h1>
                     <meta name="description" content="Learn about our mission as the top NGO in Nagpur, focused on healthcare, education, and community development." />
                     <meta name="keywords" content="Nagpur NGO, Ngo in nagpur, Ngo in nagpur list, Top 10 ngo in nagpur, Top 10 ngo in nagpur for students, Kuch acha krte hai, Kuch acha kuch khas krte hai, Top 10 ngo in nagpur for internship, ngo in nagpur list, ngo in nagpur for job, how to join ngo in nagpur, nagpur ngo contact number, ngo in nagpur for internship, Top ngo in nagpur, ngo in nagpur list, Ngo in nagpur for students, ngo in nagpur for job, ngo in nagpur for internship, how to join ngo in nagpur, ngo in nagpur to volunteer, Ayush Namdap, Pratik Meshram, Shivam Sontakke, Gaurav Borghare, Kartik Bhandari, Bhavesh vaidya, Anish Jha" />
                     {/* You can add more meta tags as needed */}
@@ -141,12 +141,12 @@ class About extends Component {
         <img className='mission-image' src={missionimgabout} alt='mission' />
         <div className='content-div'>
         <div className='content-mission'>
-        <h3 className='mission-heading'>OUR MISSION</h3>
+        <h2 className='mission-heading'>OUR MISSION</h2>
         <div class="line"></div>
         <p className='mission-details'>To uplift the society in the field of healthcare, education and development of society.</p>
         </div>
         <div className='content-vision'>
-        <h3 className='vision-heading'>OUR VISION</h3>
+        <h2 className='vision-heading'>OUR VISION</h2>
         <div class="line"></div>
         <p className='vision-details'>To provide quality service and create future in the field of healthcare education to every Youth and upcoming generation.</p>
         </div>
