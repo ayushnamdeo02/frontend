@@ -9,7 +9,6 @@ import core from './core';
 import { Helmet } from 'react-helmet';
 import partners from './partners';
 
-
 class About extends Component {
   constructor(props) {
     super(props);
@@ -27,8 +26,8 @@ class About extends Component {
   
   
   async componentDidMount() {
-    const sheetID = "1cZySwD141lWF33rhj1BV54MjMy32XDKb-08itj9En2A";
-    const sheetName = "volunteers"; // Ensure this is the exact name of your worksheet/tab
+    const sheetID = process.env.REACT_APP_SHEET_ID;
+    const sheetName = process.env.REACT_APP_SHEET_NAME;
     const url = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
     const keywords = "education, community, empowerment, NGO, Heeds Foundation";
         const keywordsArray = keywords.split(', ');

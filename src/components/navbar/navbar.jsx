@@ -76,7 +76,7 @@ class Navbar extends Component {
       <div className='main'> 
       <div className="header-section">
         <div class="header-content">
-            <div className="dte-code">File. No. : 1380/2023-19</div>
+            <div className="dte-code">Reg. File No. : 1380/2023-19</div>
             <div className="social-media">
                 Follow us on:
                 <a href="https://facebook.com/Heedsfoundation/" className="facebook"><i className="fa fa-facebook"></i></a>
