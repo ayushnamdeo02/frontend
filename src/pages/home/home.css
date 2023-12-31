@@ -197,7 +197,7 @@
     padding-bottom: 40px;
   }
   .home-container .principles-section .principles-data .principles-card {
-    padding: 20px;
+    padding: 0px;
     border-radius: 8px;
   }
   .home-container .principles-section .principles-data .principles-card .principles-card-heading {
@@ -209,7 +209,6 @@
     margin-top: 5px;
   }
   .home-container .involved {
-    margin-left: 20px;
     padding-left: 10px;
     padding-right: 10px;
   }
