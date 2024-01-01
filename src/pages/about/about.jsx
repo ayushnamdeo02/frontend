@@ -13,7 +13,7 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visibleNamesCount: 20, // Initially display 20 names
+      visibleNamesCount: 200, // Initially display 200 names
       names: [], // Names will be fetched and stored here
     };
   }
@@ -247,7 +247,7 @@ class About extends Component {
             ))}
           </div>
           {visibleNamesCount < names.length && (
-            /*<button className='readme' onClick={this.showMoreNames}>Read More</button>*/
+            <button className='readme' onClick={this.showMoreNames}>Read More</button>
           )}
         </section>
         
