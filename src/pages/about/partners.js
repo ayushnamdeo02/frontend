@@ -7,7 +7,7 @@ const partners = [
     photoUrl: vairagi, // Use the imported image directly
   },
   {
-    name: 'JENHEET GENERICS',
+    name: 'JANHEET GENERICS',
     designation: 'MEDICAL PARTNER',
     photoUrl: janheet, // Use the imported image directly
   },
