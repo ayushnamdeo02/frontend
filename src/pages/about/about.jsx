@@ -149,7 +149,7 @@ class About extends Component {
         <div className='content-vision'>
         <h2 className='vision-heading'>OUR VISION</h2>
         <div class="line"></div>
-        <p className='vision-details'>To provide quality service and create future in the field of healthcare education to every Youth and upcoming generation.</p>
+        <p className='vision-details'>To create a world where every individual, regardless of their background or circumstances, has the opportunity to access quality education, healthcare, and support for their overall development.</p>
         </div>
         </div>
         </section>
@@ -247,7 +247,7 @@ class About extends Component {
             ))}
           </div>
           {visibleNamesCount < names.length && (
-            <button className='readme' onClick={this.showMoreNames}>Read More</button>
+            /*<button className='readme' onClick={this.showMoreNames}>Read More</button>*/
           )}
         </section>
         
