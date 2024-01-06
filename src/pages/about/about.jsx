@@ -233,9 +233,9 @@ class About extends Component {
                   <a href={member.socialLinks.linkedin} className="fa fa-linkedin" aria-label="LinkedIn"> </a>
                 </li>
               </ul>
-            </div> */}
+            </div> 
             
-          ))}
+          ))} */}
         </div>
         <h4 className='section-who-subheading1'>VOLUNTEERS</h4>
           <div class="line"></div>
