@@ -176,9 +176,9 @@ class About extends Component {
           </div>
         </section>
         
-        <section id='section-who' className='who-section'>
-           <h2 className='section-who-heading'>WHO WE ARE</h2>
-         { /* <h4 className='section-who-subheading1'>COMMITTIEE</h4>
+         <section id='section-who' className='who-section'>
+           { /*  <h2 className='section-who-heading'>WHO WE ARE</h2>
+           <h4 className='section-who-subheading1'>COMMITTIEE</h4>
           <div class="line"></div>
           <div className='team-members'>
         {teamMembers.map((member, index) => (
