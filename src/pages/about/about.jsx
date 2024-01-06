@@ -177,7 +177,7 @@ class About extends Component {
         </section>
         
         <section id='section-who' className='who-section'>
-          <h2 className='section-who-heading'>WHO WE ARE</h2>
+          { /* <h2 className='section-who-heading'>WHO WE ARE</h2>
           <h4 className='section-who-subheading1'>COMMITTIEE</h4>
           <div class="line"></div>
           <div className='team-members'>
@@ -233,7 +233,7 @@ class About extends Component {
                   <a href={member.socialLinks.linkedin} className="fa fa-linkedin" aria-label="LinkedIn"> </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             
           ))}
         </div>
