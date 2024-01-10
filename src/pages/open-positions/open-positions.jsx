@@ -18,7 +18,6 @@ function Openpositions() {
       <div className='opp-elements'>
             <img className='opp-img' src={intern} alt='job1'></img>
             <img className='opp-img' src={hire} alt='job2'></img>
-            <img className='opp-img' src={contribute} alt='job2'></img>
           </div>
     </div>
   );
