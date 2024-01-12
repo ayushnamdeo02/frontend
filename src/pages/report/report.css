@@ -42,10 +42,33 @@
     padding: 8% 5% 2%; /* Adjusted padding for smaller screens */
     font-size: 60px; /* Reduced font size */
   }
-  .report-page .opp-elements {
-    margin-left: 20px;
-    margin-right: 20px;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout for mid-sized devices */
+  .report-page .report-content {
+    background-color: #ebebeb;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+  }
+  .report-page .report-content .report-drive {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .report-page .report-content .documents-subheading {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 47px;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  .report-page .report-content .line {
+    width: 95%;
+    height: 0.8px;
+    background-color: rgb(0, 0, 0);
+  }
+  .report-page .report-content .certificate {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 250px;
   }
 }
 @media (max-width: 620px) {
@@ -58,14 +81,32 @@
     text-align: center;
     padding-bottom: 45px;
   }
-  .report-page .opp-elements {
-    margin-left: 10px;
-    margin-right: 10px;
-    grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
+  .report-page .report-content {
+    background-color: #ebebeb;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: -10px;
   }
-  .report-page .opp-elements .opp-img {
-    max-width: 100%; /* Image takes full width */
-    margin: 0 auto; /*Center align image */
-    box-shadow: -3px -3px 8px 3px rgba(44, 44, 44, 0.3); /* Slightly lighter shadow */
+  .report-page .report-content .report-drive {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+  }
+  .report-page .report-content .documents-subheading {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 47px;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  .report-page .report-content .line {
+    width: 95%;
+    height: 0.8px;
+    background-color: rgb(0, 0, 0);
+  }
+  .report-page .report-content .certificate {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 350px;
   }
 }/*# sourceMappingURL=report.css.map */
