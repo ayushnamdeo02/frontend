@@ -13,6 +13,12 @@
   font-weight: lighter;
   color: #000000;
 }
+.main .header-section .dte-code a {
+  color: #000;
+}
+.main .header-section .dte-code a:hover {
+  color: blue;
+}
 .main .header-section .social-media {
   display: flex;
   gap: 10px;
