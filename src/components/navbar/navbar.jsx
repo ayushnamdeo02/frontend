@@ -76,7 +76,7 @@ class Navbar extends Component {
       <div className='main'> 
       <div className="header-section">
         <div class="header-content">
-            <div className="dte-code">Reg. No: E-3921(NGP)</div>
+            <div className="dte-code">Reg.No: E-3921 (NGP)</div>
             <div className="social-media">
                 Follow us on:
                 <a href="https://facebook.com/Heedsfoundation/" className="facebook"><i className="fa fa-facebook"></i></a>
@@ -113,7 +113,7 @@ class Navbar extends Component {
   Blog
 </a>
 
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/about#section-reports' onClick={this.handleMenuAndLinkClick}>Reports</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/report' onClick={this.handleMenuAndLinkClick}>Reports</Link>
                         </div>
                     </li>
                     <li className="dropdown">
@@ -132,7 +132,7 @@ class Navbar extends Component {
                         </button>
                         <div className="dropdown-content">
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>Internship / Jobs</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>Careers</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>Carrers</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>Contact</Link>
                         </div>
                     </li>

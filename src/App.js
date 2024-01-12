@@ -17,6 +17,7 @@ import Newsletter from './pages/newsletter/newsletter';
 import Successstory from './pages/sucessstory/successstory';
 import Internshipjobs from './pages/internship-jobs/internship-jobs';
 import Openpositions from './pages/open-positions/open-positions';
+import Report from './pages/report/report'; 
 import { Helmet } from 'react-helmet';
 function App() 
 
@@ -43,6 +44,7 @@ function App()
             <Route path='/successstory' element={<Successstory />} />
             <Route path='/internship-jobs' element={<Internshipjobs />} />
             <Route path='/open-positions' element={<Openpositions />} />
+            <Route path='/report' element={<Report/>} />
           </Routes>
           <Footer />
         </div>
