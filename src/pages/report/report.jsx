@@ -17,13 +17,14 @@ class Report extends Component {
       </Helmet>
 
       <div className="report-header">REPORT</div>
+      <div className='report-content'>
       <iframe className='report-drive' frameborder="0" src={googleDriveEmbedLink} title="Google Drive Folder">
         </iframe>
 
         <h4 className='documents-subheading'>Documents</h4>
           <div class="line"></div>
         <img className="certificate" src={certificate} alt="" />
-    </div>
+    </div></div>
   );
 }}
 
