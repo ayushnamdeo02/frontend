@@ -7,7 +7,7 @@ import Ayush_n from '../../assets/images/membersphotos/ayushn.jpg';
 const teamMembers = [
   {
     name: 'MS. MAYURI KAMDI',
-    designation: 'Marketing Head',
+    designation: 'Event Head',
     photoUrl: mayurik, // Use the imported image directly
     socialLinks: {
       facebook: '/',
@@ -18,7 +18,7 @@ const teamMembers = [
   },
   {
     name: 'MR. ANISH JHA',
-    designation: 'Event Head',
+    designation: 'Public Relation (PR) Head',
     photoUrl: anishj, // Use the imported image directly
     socialLinks: {
       facebook: '/',
