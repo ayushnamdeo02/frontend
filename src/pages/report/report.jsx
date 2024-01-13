@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './report.css';
-import certificate from '../../assets/images/certificate.png';
+import certificate from '../../assets/images/certificate.webp';
 import { Helmet } from 'react-helmet';
 
 class Report extends Component {
