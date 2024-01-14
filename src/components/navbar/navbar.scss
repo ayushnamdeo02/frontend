@@ -2,7 +2,7 @@
   .header-content {
     display: flex;
     align-items: center;
-    padding: 1px 15px;
+    padding: 1px 10px;
   
     .dte-code {
       font-size: 0.8rem;
@@ -316,7 +316,7 @@
           position: sticky; 
           
       .dte-code {
-          font-weight: lighter;
+          font-weight: 700;
           
       }
     
@@ -465,4 +465,32 @@
 .navbar-container:hover .menu-button {
   color: #000 !important;
 }
+}
+@media (max-width:1100px) {
+ .main{
+  .header-content{
+    .social-media{
+      display: none;
+    }
+  }
+  .navbar-container{
+    max-height: 40px;
+    .navbar-left{
+      .navbar-brand img {
+        padding-left: 1%; 
+        width: 100px;
+      }
+    }
+    .navbar-right{
+      padding-right: 10px;
+      .nav-right-button{
+        li{
+          .Donate-btn-nav {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+ } 
 }
