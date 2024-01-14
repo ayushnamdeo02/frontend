@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css';
+import { Helmet } from 'react-helmet';
 
 class Footer extends Component {
   handleLinkClick = () => {
@@ -9,6 +10,10 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer-container">
+         <Helmet>
+          <title>Heeds Foundation - Community Welfare</title>
+          <meta name="description" content="Heeds Foundation is a non-profit organization dedicated to community welfare. Contact us for donations and inquiries." />
+        </Helmet>
         <div className='footer-btns'>
           <Link className="btns-style" to='/contact' onClick={this.handleLinkClick}>Contact</Link>
           <Link className="btns-style" to='/contact' onClick={this.handleLinkClick}>Donate</Link>
