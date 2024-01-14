@@ -1,8 +1,8 @@
-import pratikm from '../../assets/images/membersphotos/pratikm.jpg';
-import ayushn from '../../assets/images/membersphotos/ayushn.jpg';
-import kartikb from '../../assets/images/membersphotos/kartikb.jpg';
-import gauravb from '../../assets/images/membersphotos/gauravb.jpg';
-import shivams from '../../assets/images/membersphotos/shivams.jpg';
+import pratikm from '../../assets/images/membersphotos/pratikm.webp';
+import ayushn from '../../assets/images/membersphotos/ayushn.webp';
+import kartikb from '../../assets/images/membersphotos/kartikb.webp';
+import gauravb from '../../assets/images/membersphotos/gauravb.webp';
+import shivams from '../../assets/images/membersphotos/shivams.webp';
 const core = [
   {
     name: 'MR. PRATIK MESHRAM',

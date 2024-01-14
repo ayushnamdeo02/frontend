@@ -128,8 +128,6 @@
   line-height: 15px;
   font-weight: 500;
   background-color: transparent;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   border: none;
   border-right: rgb(255, 255, 255) solid 1px;
   position: relative;

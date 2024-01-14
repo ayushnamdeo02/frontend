@@ -1,5 +1,5 @@
-import vairagi from '../../assets/images/partners/vairagi.jpg';
-import janheet from '../../assets/images/partners/janheet.jpg';
+import vairagi from '../../assets/images/partners/vairagi.webp';
+import janheet from '../../assets/images/partners/janheet.webp';
 const partners = [
   {
     name: 'VAIRAGI LEARNING',

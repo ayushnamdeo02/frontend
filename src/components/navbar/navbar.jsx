@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logobgclear.png';
-import whitelogo from '../../assets/whitelogo.png';
+import logo from '../../assets/logobgclear.webp';
+import whitelogo from '../../assets/whitelogo.webp';
 import './navbar.css';
 
 class Navbar extends Component {

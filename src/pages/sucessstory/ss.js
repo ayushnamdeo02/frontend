@@ -1,7 +1,7 @@
-import prashik from '../../assets/images/photo/prashik.png'; 
-import leena from '../../assets/images/photo/leena.png';
-import shivani from '../../assets/images/photo/shivani.png';
-import priya from '../../assets/images/photo/priya.png';
+import prashik from '../../assets/images/photo/prashik.webp'; 
+import leena from '../../assets/images/photo/leena.webp';
+import shivani from '../../assets/images/photo/shivani.webp';
+import priya from '../../assets/images/photo/priya.webp';
 
 const testimonialData = [
     {

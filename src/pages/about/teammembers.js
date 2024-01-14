@@ -1,9 +1,9 @@
-import mayurik from '../../assets/images/membersphotos/mayurik.jpg';
-import anishj from '../../assets/images/membersphotos/anishj.jpg';
-import sudt from '../../assets/images/membersphotos/sudt.jpg';
-import bhaveshv from '../../assets/images/membersphotos/bhaveshv.jpg';
-import shrutisingh from '../../assets/images/membersphotos/shrutisingh.jpg';
-import Ayush_n from '../../assets/images/membersphotos/ayushn.jpg';
+import mayurik from '../../assets/images/membersphotos/mayurik.webp';
+import anishj from '../../assets/images/membersphotos/anishj.webp';
+import sudt from '../../assets/images/membersphotos/sudt.webp';
+import bhaveshv from '../../assets/images/membersphotos/bhaveshv.webp';
+import shrutisingh from '../../assets/images/membersphotos/shrutisingh.webp';
+import Ayush_n from '../../assets/images/membersphotos/ayushn.webp';
 const teamMembers = [
   {
     name: 'MS. MAYURI KAMDI',
