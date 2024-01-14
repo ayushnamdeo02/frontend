@@ -74,9 +74,8 @@ class Navbar extends Component {
     const { isMenuOpen, isScrolled, submenuOpen } = this.state;
     return (
       <div className='main'> 
-      <div className="header-section">
         <div class="header-content">
-            <div className="dte-code">Reg.No: <Link to='/report'>E-3921 (NGP)</Link> </div>
+          <Link className="dte-code" to='/report'>Reg.No: E-3921 (NGP)</Link>
             <div className="social-media">
                 Follow us on:
                 <a href="https://facebook.com/Heedsfoundation/" className="facebook"><i className="fa fa-facebook"></i></a>
@@ -85,14 +84,11 @@ class Navbar extends Component {
                 <a href="https://youtube.com/heedsfoundation" className="youtube"><i className="fa fa-youtube"></i></a>
             </div>
             <div class="erp-info">
-                <span className="contact"><a href="callto:918788411441"> 📞 +91 8668353016 </a></span>
-                <span className="email"><a href="mailto:heedsfoundation.ngo@gmail.com"> ✉️ heedsfoundation.ngo@gmail.com </a> </span>
+                <a  href="callto:918788411441"> 📞 +91 8668353016  </a>
+                <a  href="mailto:heedsfoundation.ngo@gmail.com"> ✉️ heedsfoundation.ngo@gmail.com </a> 
             </div>
         </div>
-        </div>
-        <nav className={`navbar-container ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} 
-          onMouseEnter={this.handleLogoMouseEnter}
-          onMouseLeave={this.handleLogoMouseLeave}>
+        <nav className={`navbar-container ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} onMouseEnter={this.handleLogoMouseEnter} onMouseLeave={this.handleLogoMouseLeave}>
           <div className="navbar-left">
             <Link className="navbar-brand" to="/">
               <img src={whitelogo} alt="Default Logo" className="default-logo" />

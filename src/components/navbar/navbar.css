@@ -1,57 +1,53 @@
-.main .header-section {
-  position: sticky;
-  background-color: transparent;
+.main .header-content {
+  display: flex;
+  align-items: center;
   padding: 1px 15px;
 }
-.main .header-section .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main .header-content .dte-code {
+  font-size: 0.8rem;
   color: #000000;
+  font-weight: 700;
 }
-.main .header-section .dte-code {
-  font-weight: lighter;
-  color: #000000;
-}
-.main .header-section .dte-code a {
-  color: #000;
-}
-.main .header-section .dte-code a:hover {
+.main .header-content .dte-code:hover {
   color: blue;
 }
-.main .header-section .social-media {
+.main .header-content .social-media {
   display: flex;
-  gap: 10px;
-  margin-left: -570px;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 2rem;
 }
-.main .header-section .social-media a {
+.main .header-content .social-media a {
   margin: 0 2px;
   text-decoration: none;
-  color: #ff742f;
+  color: #ff6200;
 }
-.main .header-section .erp-info {
+.main .header-content .erp-info {
   display: flex;
-  align-items: center;
+  margin-left: auto;
 }
-.main .header-section .erp-info a {
+.main .header-content .erp-info a {
+  font-size: 0.8rem;
   color: #000;
+  font-weight: 700;
+  text-decoration: none;
 }
-.main .header-section .erp-info a:hover {
+.main .header-content .erp-info a:hover {
   color: blue;
-}
-.main .header-section .erp-info .contact, .main .header-section .erp-info .email {
-  margin-left: 10px;
 }
 .main .navbar-container {
   position: fixed;
   max-width: 100%;
-  max-height: 60px;
-  top: 25px;
+  max-height: 50px;
+  top: 20px;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
   background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   align-items: center;
   z-index: 1000;
   border-bottom: #ffffff solid 1px;
@@ -83,14 +79,13 @@
   justify-content: flex-start;
 }
 .main .navbar-container .navbar-left .navbar-brand img {
-  padding-left: 30px;
-  margin-top: 5px;
-  width: 160px;
+  padding-left: 1%;
+  width: 155px;
 }
 .main .navbar-container .navbar-mid {
   display: flex;
-  height: 60px;
-  margin-left: 200px;
+  height: 50px;
+  margin-left: 13%;
   align-items: center;
   flex-grow: 1;
   justify-content: space-between;
@@ -100,10 +95,10 @@
   border-color: #000000;
 }
 .main .navbar-container .navbar-mid:hover .nav-item {
-  border-right-color: black; /* Change the border color to black on hover */
+  border-right-color: black;
 }
 .main .navbar-container .navbar-mid:hover .nav-item .nav-link {
-  color: black !important; /* Change the text color to black on hover */
+  color: black !important;
 }
 .main .navbar-container .navbar-mid.scrolled {
   border-color: #000000;
@@ -124,15 +119,17 @@
   align-items: center;
 }
 .main .navbar-container .navbar-list .nav-item {
-  height: 60px;
+  height: 50px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 15px;
   font-weight: 500;
   background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border: none;
   border-right: rgb(255, 255, 255) solid 1px;
   position: relative;
@@ -191,6 +188,7 @@
   padding-right: 30px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .main .navbar-container .navbar-right .nav-right-button {
   list-style: none;
@@ -199,16 +197,16 @@
   padding: 0;
 }
 .main .navbar-container .navbar-right .nav-right-button li {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 .main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1rem;
   position: relative;
   background: transparent;
   border: #000000 solid 1px;
   background-color: yellow;
-  padding: 19.5px;
+  padding: 29%;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 .main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav::before {
@@ -240,7 +238,7 @@
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 160px;
+  min-width: 140px;
   min-height: 5px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 100000000;
@@ -250,6 +248,11 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+.main .navbar-container .dropdown-content .nav-link:hover {
+  background-color: yellow;
 }
 .main .navbar-brand img.default-logo,
 .main .navbar-brand img.scrolled-logo {
@@ -271,62 +274,59 @@
   opacity: 0 !important;
 }
 
-@media (max-width: 620px) {
-  .main .header-section {
-    position: relative;
-    padding: 1px 15px;
+@media (max-width: 1100px) {
+  .main {
+    width: 100%;
   }
-  .main .header-section .header-content {
+  .main .header-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #000000;
-    font-size: 13px;
+    font-size: 1.2rem;
+    position: sticky;
   }
-  .main .header-section .dte-code {
+  .main .header-content .dte-code {
     font-weight: lighter;
-    color: #000000;
   }
-  .main .header-section .social-media {
-    display: None;
-  }
-  .main .header-section .erp-info {
+  .main .header-content .social-media {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-left: auto; /* Align to the right by pushing it to the right margin */
   }
-  .main .header-section .erp-info .contact {
-    display: None;
+  .main .header-content .social-media a {
+    margin: 0 2px;
+    text-decoration: none;
+    color: #ff6200;
   }
-  .main .header-section .erp-info .email {
-    margin-left: 1px;
+  .main .header-content .erp-info {
+    display: none;
   }
   .main .navbar-container {
     max-width: 100%;
-    top: 21.6px;
-    left: 0%;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    top: 17.2px;
+    left: 0;
     right: 0;
   }
   .main .navbar-container.scrolled {
     top: 0;
   }
   .main .navbar-container .navbar-left {
-    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .main .navbar-container .navbar-left .navbar-brand img {
-    margin-left: -20px;
-    width: 140px;
+    margin-top: 0.2rem;
+    width: 130px;
   }
   .main .navbar-container .navbar-mid {
     display: flex;
     height: 60px;
-    margin-left: 200px;
-    align-items: left;
+    margin-left: auto;
     flex-grow: 0;
     justify-content: space-between;
-    max-width: 100%;
-    flex-grow: 0;
     border: none;
     padding: 0;
   }
@@ -388,9 +388,9 @@
     text-align: center;
   }
   .main .navbar-container .navbar-right {
-    padding-right: 0px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
   .main .navbar-container .navbar-right .nav-right-button {
     list-style: none;
@@ -409,149 +409,6 @@
     border: #000000 solid 1px;
     background-color: yellow;
     padding: 12px;
-  }
-  .navbar-container:hover .menu-button {
-    color: #000 !important;
-  }
-}
-@media (min-width: 621px) and (max-width: 1300px) {
-  .main .header-section {
-    position: relative;
-    padding: 1px 15px;
-  }
-  .main .header-section .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #000000;
-    font-size: 13px;
-  }
-  .main .header-section .dte-code {
-    font-weight: lighter;
-    color: #000000;
-  }
-  .main .header-section .social-media {
-    margin-left: -35px;
-  }
-  .main .header-section .erp-info {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
-  .main .header-section .erp-info .contact {
-    display: none;
-  }
-  .main .header-section .erp-info .email {
-    margin-left: 1px;
-  }
-  .main .navbar-container {
-    max-width: 100%;
-    top: 22px;
-    left: 0;
-    right: 0;
-    padding-right: 20px;
-  }
-  .main .navbar-container.scrolled {
-    top: 0;
-  }
-  .main .navbar-container .navbar-left {
-    border: none;
-  }
-  .main .navbar-container .navbar-left .navbar-brand img {
-    align-items: flex-start;
-    margin-left: 35px;
-    width: 140px;
-  }
-  .main .navbar-container .navbar-mid {
-    display: flex;
-    flex-grow: 0;
-    border: none;
-    margin-left: 200px;
-    margin-right: 5px;
-    padding: 0;
-    margin-left: 70%;
-  }
-  .main .navbar-container .navbar-mid .menu-button {
-    background: transparent;
-    display: flex;
-    border: none;
-    font-weight: 600;
-    padding: 20px 20px;
-    text-align: end;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  .main .navbar-container .navbar-mid .menu-button.scrolled {
-    color: #000000;
-  }
-  .main .navbar-container .navbar-mid .menu-button:hover {
-    color: #000000;
-  }
-  .main .navbar-container .navbar-mid .navbar-list {
-    flex-direction: column;
-    position: absolute;
-    top: 70%;
-    left: 0;
-    max-width: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8901960784);
-    padding: auto;
-    visibility: hidden;
-    z-index: 1000;
-    opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear;
-  }
-  .main .navbar-container .navbar-mid .navbar-list.mobile-menu-open {
-    visibility: visible;
-    opacity: 1;
-  }
-  .main .navbar-container .navbar-mid .navbar-list .nav-item {
-    background: transparent;
-    border-right: none;
-    font-size: 20px;
-  }
-  .main .navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
-    margin-left: 0px;
-    display: block;
-    color: #000;
-    padding: 12px 16px;
-  }
-  .main .navbar-container .navbar-mid .navbar-list .dropdown-content {
-    position: static;
-    box-shadow: none;
-    min-width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 0;
-    text-align: center;
-    font-size: 20px;
-  }
-  .main .navbar-container .navbar-mid .navbar-list .dropdown-content .nav-link {
-    color: #000000;
-    font-weight: normal;
-  }
-  .main .navbar-container .navbar-right {
-    padding-right: 0px;
-    display: flex;
-    align-items: center;
-  }
-  .main .navbar-container .navbar-right .nav-right-button {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  .main .navbar-container .navbar-right .nav-right-button li {
-    margin-right: auto;
-  }
-  .main .navbar-container .navbar-right .nav-right-button li .Donate-btn-nav {
-    font-weight: 700;
-    font-size: 18px;
-    position: relative;
-    background: transparent;
-    border: #000000 solid 1px;
-    background-color: yellow;
-    padding: 19.5px;
   }
   .navbar-container:hover .menu-button {
     color: #000 !important;
