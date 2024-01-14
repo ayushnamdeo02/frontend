@@ -4,39 +4,33 @@ import './footer.css';
 
 class Footer extends Component {
   handleLinkClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   render() {
     return (
-      <footer className="footer">
-        <div className="footer-buttons">
-        <Link className='contact-btn' to='/contact' onClick={this.handleLinkClick}><p className='a'>Contact Us</p></Link>
-        <a className='donate-btn' href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'><p className='a'>Donate</p></a>
+      <footer className="footer-container">
+        <div className='footer-btns'>
+          <Link className="btns-style" to='/contact' onClick={this.handleLinkClick}>Contact</Link>
+          <Link className="btns-style" to='/contact' onClick={this.handleLinkClick}>Donate</Link>
         </div>
-        <div className="footer-columns">
-        <div className="footer-column-resources">
-        <ul>
-            <li><Link className='linkss' to='/about' onClick={this.handleLinkClick}>About</Link></li>
-            <li><Link className='linkss' to='/contact' onClick={this.handleLinkClick}>Contact</Link></li>
-            <li><Link className='linkss' to='/join' onClick={this.handleLinkClick}>Join Us</Link></li>
-            <li><a className='linkss' href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'>Donate</a></li>
-        </ul>
-  </div>
-          <div className="footer-column-find-us">
-            <h3>Find Us</h3>
-            <p>04, Vidyapati Nagar,<br />Nagpur, INDIA</p>
-
-            <text><a href='https://www.google.com/maps/place/Vidyapati+Nagar,+Digdoh,+Nildoh+ct,+Maharashtra/@21.1023649,79.0053228,17z/data=!4m10!1m2!2m1!1s04,+Vidyapati+Nagar+Hingna,Nagpur+location+map+link!3m6!1s0x3bd4955ab206377b:0xcbd0f820be57b105!8m2!3d21.1039916!4d79.0081715!15sCjMwNCwgVmlkeWFwYXRpIE5hZ2FyIEhpbmduYSxOYWdwdXIgbG9jYXRpb24gbWFwIGxpbmuSAQxuZWlnaGJvcmhvb2TgAQA!16s%2Fg%2F11gjp88xyb?entry=ttu'>Click Here for Map</a></text>
+        <div className='columns-footer'>
+        <div className='pages-link'>
+          <Link className='page-link' to='/about' onClick={this.handleLinkClick}>About</Link>
+          <Link className='page-link' to='/contact' onClick={this.handleLinkClick}>Contact</Link>
+          <Link className='page-link' to='/join' onClick={this.handleLinkClick}>Join Us</Link>
+          <Link className='page-link' to='/contact' onClick={this.handleLinkClick}>Donate</Link>
           </div>
-          <div className="footer-column-contact-info">
+          <div className='footer-find-us'>
+          <h3>Find Us</h3>
+            <p>04, Vidyapati Nagar,<br/>Nagpur, INDIA</p>
+            <a href='https://www.google.com/maps/place/Vidyapati+Nagar,+Digdoh,+Nildoh+ct,+Maharashtra/@21.1023649,79.0053228,17z/data=!4m10!1m2!2m1!1s04,+Vidyapati+Nagar+Hingna,Nagpur+location+map+link!3m6!1s0x3bd4955ab206377b:0xcbd0f820be57b105!8m2!3d21.1039916!4d79.0081715!15sCjMwNCwgVmlkeWFwYXRpIE5hZ2FyIEhpbmduYSxOYWdwdXIgbG9jYXRpb24gbWFwIGxpbmuSAQxuZWlnaGJvcmhvb2TgAQA!16s%2Fg%2F11gjp88xyb?entry=ttu'>Click Here for Map</a>
+          </div>
+          <div className="footer-contact-info">
             <h3>Contact Us</h3>
-            
-            <p> <a href="callto:918788411441">(+91) 878 841 1441 </a> <br></br><span> <a href="mailto:heedsfoundation.ngo@gmail.com"> heedsfoundation.ngo@gmail.com </a> </span></p>
+            <a href="callto:918788411441">(+91) 878 841 1441 </a> 
+            <a href="mailto:heedsfoundation.ngo@gmail.com"> heedsfoundation.ngo@gmail.com </a>
           </div>
-          <div className="footer-column social-links">
+          
             <div className='social-links-footer'>
             <div className="social-icon">
               <a href="https://facebook.com/Heedsfoundation/"><i className="fa fa-facebook"></i></a>
@@ -55,16 +49,13 @@ class Footer extends Component {
             </div>
             </div>
           </div>
-        </div>
-        
-            <ul className='footer-column-pages'>
-                <li><Link className='page-linkss' to='/privacypolicy' onClick={this.handleLinkClick}>PRIVACY POLICY</Link></li>
-                <li><Link className='page-linkss' to='/faq' onClick={this.handleLinkClick}>FAQ</Link></li>
-                <li><Link className='page-linkss' to='/termandcondition' onClick={this.handleLinkClick}>TERM OF USE</Link></li>
-            </ul>
-         
+          <div className='links-bottom'>
+            <Link className='link-page' to='/privacypolicy' onClick={this.handleLinkClick}>PRIVACY POLICY</Link>
+          <Link className='link-page' to='/faq' onClick={this.handleLinkClick}>FAQ</Link> 
+          <Link className='link-page' to='/termandcondition' onClick={this.handleLinkClick}>TERM OF USE</Link>
+          </div>  
         <div className='lower'>
-            <p className='p1'>Copyright © 2023</p>
+            <p className='p1'>Copyright © 2024</p>
             <p className='p2'>Designed with ❤️ From <a href="https://heedsfoundation.com/"> Heeds Foundation  </a> </p>
         </div>
       </footer>
