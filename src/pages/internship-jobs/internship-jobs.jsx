@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './internship-jobs.css';
-import vairagi from '../../assets/images/partners/vairagi.jpg';
+import vairagi from '../../assets/images/partners/vairagi.webp';
 import { Helmet } from 'react-helmet';
 function Internshipjobs() {
   const [data, setData] = useState([]);
