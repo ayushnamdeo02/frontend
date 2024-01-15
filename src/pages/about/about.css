@@ -252,12 +252,12 @@
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .about-container .about-header {
     font-size: 4rem;
   }
   .about-container .about-nav {
-    top: 20px; /* Adjust top spacing as needed */
+    top: 50px; /* Adjust top spacing as needed */
   }
   .about-container .about-nav-btn {
     font-size: 1rem;
@@ -297,6 +297,202 @@
   }
   .about-container .partners-section .partners-class img {
     width: 100%; /* Adjust image width as needed */
+  }
+}
+@media (max-width: 1024px) {
+  .about-container .about-header {
+    font-size: 4rem;
+  }
+  .about-container .about-nav {
+    top: 50px; /* Adjust top spacing as needed */
+  }
+  .about-container .about-nav-btn {
+    font-size: 1rem;
+  }
+  .about-container .work-section .work-heading {
+    font-size: 50px;
+  }
+  .about-container .work-section .work-details {
+    font-size: 21px;
+  }
+  .about-container .principles-section .principles-heading {
+    font-size: 52px;
+  }
+  .about-container .principles-section .principles-data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-container .principles-section .principles-data .principles-card .principles-card-heading {
+    font-size: 2.5rem;
+  }
+  .about-container .principles-section .principles-data .principles-card .principles-card-details {
+    font-size: 21px;
+  }
+  .about-container .who-section .section-who-heading {
+    font-size: 52px;
+  }
+  .about-container .who-section .section-who-subheading1 {
+    font-size: 45px;
+  }
+  .about-container .names-grid .name-item {
+    font-size: 1.22rem;
+  }
+  .about-container .reports-section .report-heading {
+    font-size: 52px;
+  }
+  .about-container .partners-section .partner-heading {
+    font-size: 52px;
+  }
+  .about-container .partners-section .partners-class img {
+    width: 100%; /* Adjust image width as needed */
+  }
+}
+@media (min-width: 769px) and (max-width: 915px) {
+  .about-container {
+    max-width: 100%;
+  }
+  .about-container .about-header {
+    padding-top: 20%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .about-container .about-nav {
+    display: none;
+  }
+  .about-container .mission-section {
+    flex-direction: column;
+  }
+  .about-container .mission-section .mission-image {
+    width: 100%;
+  }
+  .about-container .mission-section .content-mission .mission-heading {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .about-container .mission-section .content-mission .mission-details {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-right: 0;
+  }
+  .about-container .mission-section .content-vision .vision-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .about-container .mission-section .content-vision .vision-details {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .about-container .work-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-container .work-section .work-mission .work-heading {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .about-container .work-section .work-mission .work-details {
+    font-size: 1.2rem;
+    padding-right: 5px;
+  }
+  .about-container .work-section .work-image {
+    max-width: 100%;
+  }
+  .about-container .principles-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-container .principles-section .principles-heading {
+    padding-top: 40px;
+    font-size: 2.5rem;
+  }
+  .about-container .principles-section .line {
+    width: 100%;
+    height: 2px;
+    margin-top: -30px;
+  }
+  .about-container .principles-section .principles-data {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    padding-bottom: 40px;
+  }
+  .about-container .principles-section .principles-data .principles-card .principles-card-heading {
+    font-size: 1.5rem;
+  }
+  .about-container .principles-section .principles-data .principles-card .principles-card-details {
+    font-size: 1.3rem;
+  }
+  .about-container .who-section {
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+  .about-container .who-section .section-who-heading {
+    font-size: 2.3rem;
+  }
+  .about-container .who-section .section-who-subheading1 {
+    font-size: 1.8rem;
+  }
+  .about-container .who-section .line {
+    width: 95%;
+    height: 0.8px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -40px;
+  }
+  .about-container .who-section .names-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-left: 2%;
+  }
+  .about-container .who-section .names-grid .name-item {
+    padding: 8px;
+    background-color: #ffc400;
+    text-align: center;
+    font-size: 1.02rem;
+  }
+  .about-container .reports-section {
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+  .about-container .reports-section .report-heading {
+    font-size: 2.8rem;
+  }
+  .about-container .reports-section .line {
+    width: 95%;
+    height: 0.8px;
+    background-color: rgb(0, 0, 0);
+  }
+  .about-container .reports-section .report-drive {
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+  }
+  .about-container .partners-section {
+    padding-left: 20px;
+    padding-top: 1px;
+  }
+  .about-container .partners-section .partner-heading {
+    font-size: 2.5rem;
+  }
+  .about-container .partners-section .line {
+    width: 95%;
+    height: 0.8px;
+    background-color: rgb(0, 0, 0);
+  }
+  .about-container .partners-section .partners-class {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+    margin-right: 20px;
+    gap: 5%;
+  }
+  .about-container .partners-section .partners-class img {
+    width: 100%;
+  }
+  .about-container .partners-section .partners-class .member-name,
+  .about-container .partners-section .partners-class .member-designation {
+    margin-left: auto;
+    text-align: center;
   }
 }
 @media (max-width: 769px) {

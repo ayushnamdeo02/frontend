@@ -306,8 +306,582 @@
 }
 
 }
+@media (max-width:1440px) {
+  .main{
+    .header-content {
+      display: flex;
+      align-items: center;
+      padding: 1px 10px;
+    
+      .dte-code {
+        font-size: 0.8rem;
+        color: #000000;
+        font-weight: 700;
+        &:hover {
+          color: blue;
+        }
+      }
+    
+      .social-media {
+        display: flex;
+        gap: 5px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        a {
+          margin: 0 2px;
+          text-decoration: none;
+          color: #ff6200;
+          
+        }
+      }
+    
+      .erp-info {
+        display: flex;
+        margin-left: auto;
+        
+        a {
+          font-size: 0.8rem;
+          color: #000;
+          font-weight: 700;
+          text-decoration: none;
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+    
+  .navbar-container {
+    position: fixed;
+    max-width: 100%;
+    max-height: 50px;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    z-index: 1000;
+    border-bottom: #ffffff solid 1px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+   &:hover {
+      background-color: rgb(255, 255, 255);
+      border-bottom: #000000 solid 1px;
+  
+      .nav-item {
+        border-right: rgb(0, 0, 0) solid 1px;
+  
+        .nav-link {
+          color: rgb(0, 0, 0) !important; /* Change the text color to black on hover */
+        }
+      }
+    }
+  
+    &.scrolled {
+      background-color: #ffffff;
+      border-bottom: #000000 solid 1px;
+      top:0;
+      .nav-item {
+        border-right-color: black; /* Change the border color to black when scrolled */
+  
+        .nav-link {
+          color: #000000 !important; /* Change the text color to black when scrolled */
+        }
+      }
+    }
+  
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+  
+      .navbar-brand img {
+        padding-left: 1%; 
+        width: 155px;
+      }
+    }
+  .navbar-mid {
+    display: flex;
+    height: 50px;
+    margin-left: 18%;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: #ffffff solid 1px;
+    &:hover{
+      border-color: #000000;
+      .nav-item {
+        border-right-color: black; 
+        .nav-link {
+          color: black !important;
+        }
+      }
+    }
+    &.scrolled {
+      border-color: #000000;
+    }
+  
+    .menu-button {
+      display: none;
+      color: #ffffff;
+      &.scrolled {
+        color: #000000;
+      }
+      &.hover {
+        color: #000000;
+      }
+    }
+  }
+  .navbar-list {
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    .nav-item {
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      line-height: 15px;
+      font-weight: 500;
+      background-color: transparent;
+      
+      border: none;
+      border-right: rgb(255, 255, 255) solid 1px;
+      position: relative;
+      &.scrolled {
+        border-right: rgb(0, 0, 0) solid 1px;
+      }
+  
+      &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: yellow;
+        transition: height 1s ease, width 1s ease, background-color 0.3s ease;
+      }
+  
+      .nav-link {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        align-self: center;
+        justify-content: center;
+        color: #ffffff;
+        transition: color 1s ease;
+  
+        &.scrolled {
+          color: #000000;
+        }
+      }
+  
+      &:hover {
+        border-right: rgb(0, 0, 0) solid 1px;
+  
+        .nav-link {
+          color: rgb(255, 255, 255);
+        }
+  
+        &::before {
+          height: 3px;
+          width: 100%;
+          background-color: hsl(0, 0%, 0%);
+          border-right: rgb(0, 0, 0) solid 1px;
+        }
+      }
+    }
+  }
+  
+  
+    .navbar-right {
+     
+      .nav-right-button {
+        
+        li {
+          
+          .Donate-btn-nav {
 
-@media (max-width:1100px) {
+            }
+          }
+        }
+      }
+    }
+    
+      }
+    }
+@media (max-width:1024px) {
+  .main{
+    .header-content {
+      display: flex;
+      align-items: center;
+      padding: 1px 10px;
+    
+      .dte-code {
+        font-size: 0.8rem;
+        color: #000000;
+        font-weight: 700;
+        &:hover {
+          color: blue;
+        }
+      }
+    
+      .social-media {
+        display: flex;
+        gap: 5px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        a {
+          margin: 0 2px;
+          text-decoration: none;
+          color: #ff6200;
+          
+        }
+      }
+    
+      .erp-info {
+        display: flex;
+        margin-left: auto;
+        
+        a {
+          font-size: 0.8rem;
+          color: #000;
+          font-weight: 700;
+          text-decoration: none;
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+    
+  .navbar-container {
+    position: fixed;
+    max-width: 100%;
+    max-height: 50px;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    z-index: 1000;
+    border-bottom: #ffffff solid 1px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+   &:hover {
+      background-color: rgb(255, 255, 255);
+      border-bottom: #000000 solid 1px;
+  
+      .nav-item {
+        border-right: rgb(0, 0, 0) solid 1px;
+  
+        .nav-link {
+          color: rgb(0, 0, 0) !important; /* Change the text color to black on hover */
+        }
+      }
+    }
+  
+    &.scrolled {
+      background-color: #ffffff;
+      border-bottom: #000000 solid 1px;
+      top:0;
+      .nav-item {
+        border-right-color: black; /* Change the border color to black when scrolled */
+  
+        .nav-link {
+          color: #000000 !important; /* Change the text color to black when scrolled */
+        }
+      }
+    }
+  
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+  
+      .navbar-brand img {
+        padding-left: 1%; 
+        width: 155px;
+      }
+    }
+  .navbar-mid {
+    display: flex;
+    height: 50px;
+    margin-left: 18%;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: #ffffff solid 1px;
+    &:hover{
+      border-color: #000000;
+      .nav-item {
+        border-right-color: black; 
+        .nav-link {
+          color: black !important;
+        }
+      }
+    }
+    &.scrolled {
+      border-color: #000000;
+    }
+  
+    .menu-button {
+      display: none;
+      color: #ffffff;
+      &.scrolled {
+        color: #000000;
+      }
+      &.hover {
+        color: #000000;
+      }
+    }
+  }
+  .navbar-list {
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    .nav-item {
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      line-height: 15px;
+      font-weight: 500;
+      background-color: transparent;
+      
+      border: none;
+      border-right: rgb(255, 255, 255) solid 1px;
+      position: relative;
+      &.scrolled {
+        border-right: rgb(0, 0, 0) solid 1px;
+      }
+  
+      &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background-color: yellow;
+        transition: height 1s ease, width 1s ease, background-color 0.3s ease;
+      }
+  
+      .nav-link {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        align-self: center;
+        justify-content: center;
+        color: #ffffff;
+        transition: color 1s ease;
+  
+        &.scrolled {
+          color: #000000;
+        }
+      }
+  
+      &:hover {
+        border-right: rgb(0, 0, 0) solid 1px;
+  
+        .nav-link {
+          color: rgb(255, 255, 255);
+        }
+  
+        &::before {
+          height: 3px;
+          width: 100%;
+          background-color: hsl(0, 0%, 0%);
+          border-right: rgb(0, 0, 0) solid 1px;
+        }
+      }
+    }
+  }
+  
+  
+    .navbar-right {
+     
+      .nav-right-button {
+        
+        li {
+          
+          .Donate-btn-nav {
+
+            }
+          }
+        }
+      }
+    }
+    
+      }
+    }
+    @media (min-width:769px) and (max-width:886px) {
+      .main{
+        width: 100%;
+          .header-content {
+              display: flex;
+              font-size: 1.2rem;
+              position: sticky; 
+              
+          .dte-code {
+              font-weight: 700;
+              
+          }
+        
+          .social-media {
+            display: flex;
+            gap: 5px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: auto; /* Align to the right by pushing it to the right margin */
+            
+            a {
+              margin: 0 2px;
+              text-decoration: none;
+              color: #ff6200; 
+            }
+          }
+          
+        
+          .erp-info {
+              display: none;
+              
+        }
+      }
+      .navbar-container {
+        max-width: 100%;
+        backdrop-filter: blur(0px);
+        top: 17.2px;
+        left: 0;
+        right: 0;
+    
+        &.scrolled {
+          top:0;
+        }
+        .navbar-left {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; 
+          
+          .navbar-brand img {
+            margin-top: 0.2rem;
+            width: 130px;
+          }
+        }
+        
+    
+        .navbar-mid {
+          display: flex;
+          height: 60px;
+          margin-left: auto;
+          flex-grow: 0;
+          justify-content: space-between;
+          border: none;
+          padding: 0;
+        
+          .menu-button {
+            background: transparent;
+            border: none;
+            font-weight: 600;
+            margin-left: 10px;
+            padding: 13px 13px;
+            display: block;
+            cursor: pointer;
+            font-size: 16px;
+            color: #ffffff;
+        &.scrolled {
+          color: #000000;
+        }
+        &:hover {
+          color: #000000;
+        }
+          }
+        
+          .navbar-list {
+            display: grid;
+            flex-direction: column;
+            position: absolute;
+            top: 70%;
+            border: 1px solid black;
+            left: 0;
+            background-color: #fffffffe; // Background color for the entire navbar list
+            padding: auto;
+            visibility: hidden;
+            z-index: 1000;
+            opacity: 100%;
+            transition: visibility 0s, opacity 0.5s linear;
+            width: 100%;
+          
+            &.mobile-menu-open {
+              visibility: visible;
+              opacity: 100%;
+            }
+          
+            .nav-item {
+              width: 100%; // Ensure full width for each nav item
+              border: 1px solid black;
+              height: 50px;
+        
+              .nav-link {
+                padding-top: 3px;
+                padding-bottom: 2px;
+                display: block;
+                width: 100%;
+                color: #000; // Text color for navbar items
+              }
+            }
+          
+            .dropdown-content {
+              position: static; 
+              box-shadow: none;
+              width: 100%; // Ensure full width for dropdown content
+              background-color: #ffffff00; // Same background as navbar list
+              padding: 0; // Remove additional padding
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+        }
+        .navbar-right {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          
+          .nav-right-button {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+      
+            li {
+              margin-right: auto;
+      
+              .Donate-btn-nav {
+                font-weight: 700;
+                font-size: 16px;
+                position: relative;
+                background: transparent;
+                border: #000000 solid 1px;
+                background-color: yellow;
+                padding: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-container:hover .menu-button {
+      color: #000 !important;
+    }
+    }
+@media (max-width:769px) {
   .main{
     width: 100%;
       .header-content {
@@ -466,31 +1040,455 @@
   color: #000 !important;
 }
 }
-@media (max-width:1100px) {
- .main{
-  .header-content{
-    .social-media{
-      display: none;
+@media (max-width:426px) {
+  .main{
+    width: 100%;
+      .header-content {
+          display: flex;
+          font-size: 1.2rem;
+          position: sticky; 
+          
+      .dte-code {
+          font-weight: 700;
+          
+      }
+    
+      .social-media {
+        display: flex;
+        gap: 5px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-left: auto; /* Align to the right by pushing it to the right margin */
+        
+        a {
+          margin: 0 2px;
+          text-decoration: none;
+          color: #ff6200; 
+        }
+      }
+      
+    
+      .erp-info {
+          display: none;
+          
     }
   }
-  .navbar-container{
-    max-height: 40px;
-    .navbar-left{
+  .navbar-container {
+    max-width: 100%;
+    backdrop-filter: blur(0px);
+    top: 17.2px;
+    left: 0;
+    right: 0;
+
+    &.scrolled {
+      top:0;
+    }
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; 
+      
       .navbar-brand img {
-        padding-left: 1%; 
-        width: 100px;
+        margin-top: 0.2rem;
+        width: 130px;
       }
     }
-    .navbar-right{
-      padding-right: 10px;
-      .nav-right-button{
-        li{
+    
+
+    .navbar-mid {
+      display: flex;
+      height: 60px;
+      margin-left: auto;
+      flex-grow: 0;
+      justify-content: space-between;
+      border: none;
+      padding: 0;
+    
+      .menu-button {
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        margin-left: 10px;
+        padding: 13px 13px;
+        display: block;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+    &.scrolled {
+      color: #000000;
+    }
+    &:hover {
+      color: #000000;
+    }
+      }
+    
+      .navbar-list {
+        display: grid;
+        flex-direction: column;
+        position: absolute;
+        top: 70%;
+        border: 1px solid black;
+        left: 0;
+        background-color: #fffffffe; // Background color for the entire navbar list
+        padding: auto;
+        visibility: hidden;
+        z-index: 1000;
+        opacity: 100%;
+        transition: visibility 0s, opacity 0.5s linear;
+        width: 100%;
+      
+        &.mobile-menu-open {
+          visibility: visible;
+          opacity: 100%;
+        }
+      
+        .nav-item {
+          width: 100%; // Ensure full width for each nav item
+          border: 1px solid black;
+          height: 50px;
+    
+          .nav-link {
+            padding-top: 3px;
+            padding-bottom: 2px;
+            display: block;
+            width: 100%;
+            color: #000; // Text color for navbar items
+          }
+        }
+      
+        .dropdown-content {
+          position: static; 
+          box-shadow: none;
+          width: 100%; // Ensure full width for dropdown content
+          background-color: #ffffff00; // Same background as navbar list
+          padding: 0; // Remove additional padding
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+      .nav-right-button {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin-right: -10px;
+  
           .Donate-btn-nav {
-            font-size: 0.85rem;
+            font-weight: 700;
+            font-size: 16px;
+            position: relative;
+            background: transparent;
+            border: #000000 solid 1px;
+            background-color: yellow;
+            padding: 12px;
           }
         }
       }
     }
   }
- } 
+}
+.navbar-container:hover .menu-button {
+  color: #000 !important;
+}
+}
+@media (max-width:376px) {
+  .main{
+    width: 100%;
+      .header-content {
+          display: flex;
+          font-size: 1.2rem;
+          position: sticky; 
+          
+      .dte-code {
+          font-weight: 700;
+          
+      }
+    
+      .social-media {
+        display: flex;
+        gap: 5px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-left: auto; /* Align to the right by pushing it to the right margin */
+        
+        a {
+          margin: 0 2px;
+          text-decoration: none;
+          color: #ff6200; 
+        }
+      }
+      
+    
+      .erp-info {
+          display: none;
+          
+    }
+  }
+  .navbar-container {
+    max-width: 100%;
+    backdrop-filter: blur(0px);
+    top: 17.2px;
+    left: 0;
+    right: 0;
+
+    &.scrolled {
+      top:0;
+    }
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; 
+      
+      .navbar-brand img {
+        margin-top: 0.2rem;
+        width: 130px;
+      }
+    }
+    
+
+    .navbar-mid {
+      display: flex;
+      height: 60px;
+      margin-left: auto;
+      flex-grow: 0;
+      justify-content: space-between;
+      border: none;
+      padding: 0;
+    
+      .menu-button {
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        margin-left: 10px;
+        padding: 13px 13px;
+        display: block;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+    &.scrolled {
+      color: #000000;
+    }
+    &:hover {
+      color: #000000;
+    }
+      }
+    
+      .navbar-list {
+        display: grid;
+        flex-direction: column;
+        position: absolute;
+        top: 70%;
+        border: 1px solid black;
+        left: 0;
+        background-color: #fffffffe; // Background color for the entire navbar list
+        padding: auto;
+        visibility: hidden;
+        z-index: 1000;
+        opacity: 100%;
+        transition: visibility 0s, opacity 0.5s linear;
+        width: 100%;
+      
+        &.mobile-menu-open {
+          visibility: visible;
+          opacity: 100%;
+        }
+      
+        .nav-item {
+          width: 100%; // Ensure full width for each nav item
+          border: 1px solid black;
+          height: 50px;
+    
+          .nav-link {
+            padding-top: 3px;
+            padding-bottom: 2px;
+            display: block;
+            width: 100%;
+            color: #000; // Text color for navbar items
+          }
+        }
+      
+        .dropdown-content {
+          position: static; 
+          box-shadow: none;
+          width: 100%; // Ensure full width for dropdown content
+          background-color: #ffffff00; // Same background as navbar list
+          padding: 0; // Remove additional padding
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+      .nav-right-button {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin-right: -10px;
+  
+          .Donate-btn-nav {
+            font-weight: 700;
+            font-size: 16px;
+            position: relative;
+            background: transparent;
+            border: #000000 solid 1px;
+            background-color: yellow;
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-container:hover .menu-button {
+  color: #000 !important;
+}
+}
+@media (max-width:321px) {
+  .main{
+    width: 100%;
+      .header-content {
+          display: flex;
+          font-size: 0.8rem;
+          position: sticky; 
+          
+      .dte-code {
+          font-weight: 700;
+          
+      }
+    
+      .social-media {
+        display: none;
+        
+      }
+      
+    
+      .erp-info {
+          display: none;
+          
+    }
+  }
+  .navbar-container {
+    max-width: 100%;
+    height: 42px;
+    backdrop-filter: blur(0px);
+    top: 17.2px;
+    left: 0;
+    right: 0;
+
+    &.scrolled {
+      top:0;
+    }
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; 
+      
+      .navbar-brand img {
+        margin-top: 0.05rem;
+        width: 120px;
+      }
+    }
+    
+
+    .navbar-mid {
+      margin-left: auto;
+      border: none;
+      padding: 0;
+    
+      .menu-button {
+        background: transparent;
+        border: none;
+        
+        padding: 13px 13px;
+        display: block;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: #ffffff;
+    &.scrolled {
+      color: #000000;
+    }
+    &:hover {
+      color: #000000;
+    }
+      }
+    
+      .navbar-list {
+        top: 60%;
+      
+        &.mobile-menu-open {
+          visibility: visible;
+          opacity: 100%;
+        }
+      
+        .nav-item {
+          width: 100%; // Ensure full width for each nav item
+          border: 1px solid black;
+          height: 50px;
+    
+          .nav-link {
+            padding-top: 3px;
+            padding-bottom: 2px;
+            display: block;
+            width: 100%;
+            color: #000; // Text color for navbar items
+          }
+        }
+      
+        .dropdown-content {
+          position: static; 
+          box-shadow: none;
+          width: 100%; // Ensure full width for dropdown content
+          background-color: #ffffff00; // Same background as navbar list
+          padding: 0; // Remove additional padding
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+      .nav-right-button {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin-right: -10px;
+  
+          .Donate-btn-nav {
+            font-weight: 700;
+            font-size: 0.9rem;
+            position: relative;
+            background: transparent;
+            border: #000000 solid 1px;
+            background-color: yellow;
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-container:hover .menu-button {
+  color: #000 !important;
+}
 }
