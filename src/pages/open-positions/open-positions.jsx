@@ -1,8 +1,8 @@
 import React from 'react';
 import './open-positions.css';
-import intern from '../../assets/images/p1.jpg';
-import hire from '../../assets/images/p2.jpg';
-import contribute from '../../assets/images/p3.png';
+import intern from '../../assets/images/p1.webp';
+import hire from '../../assets/images/p2.webp';
+import contribute from '../../assets/images/p3.webp';
 import { Helmet } from 'react-helmet';
 function Openpositions() {
   return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import missionimgabout from '../../assets/images/missionimgabout.jpg';
-import img1 from '../../assets/images/img1.jpg';
+import missionimgabout from '../../assets/images/missionimgabout.webp';
+import img1 from '../../assets/images/img1.webp';
 import './about.css'; 
 import { yourContent } from './constants';
 import { Helmet } from 'react-helmet';
