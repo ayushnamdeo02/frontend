@@ -10,6 +10,7 @@ import Navbar from './components/navbar/navbar';
 import Privacypolicy from './pages/privacypolicy/privacypolicy';
 import Faq from './pages/FAQ/FAQ';
 import TC from './pages/termandcondition/termandcondition';
+import 'font-awesome/css/font-awesome.min.css';
 import Community from './pages/community/community';
 import Impact from './pages/impact/impact';
 import Newsletter from './pages/newsletter/newsletter';
