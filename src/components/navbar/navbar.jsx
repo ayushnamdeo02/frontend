@@ -84,7 +84,7 @@ class Navbar extends Component {
                 <a href="https://youtube.com/heedsfoundation" className="youtube"><i className="fa fa-youtube"></i></a>
             </div>
             <div class="erp-info">
-                <a  href="tel:918788411441"> 📞 +91 8668353016  </a>
+                <a  href="tel:+918788411441"> 📞 +91 8668353016  </a>
                 <a  href="mailto:heedsfoundation.ngo@gmail.com"> ✉️ heedsfoundation.ngo@gmail.com </a> 
             </div>
         </div>
