@@ -13,6 +13,9 @@ class Navbar extends Component {
       submenuOpen: { resources: false, community: false, involved: false },
     };
     this.menuRef = React.createRef();
+    this.resourcesSubmenu = React.createRef();
+    this.communitySubmenu = React.createRef();
+    this.involvedSubmenu = React.createRef();
   }
 
   componentDidMount() {
@@ -57,17 +60,39 @@ class Navbar extends Component {
 
   handleOutsideClick = (event) => {
     if (this.state.isMenuOpen && this.menuRef.current && !this.menuRef.current.contains(event.target)) {
-      this.closeMenu();
+      if (this.state.submenuOpen.resources) {
+        this.toggleSubmenu('resources');
+      } else if (this.state.submenuOpen.community) {
+        this.toggleSubmenu('community');
+      } else if (this.state.submenuOpen.involved) {
+        this.toggleSubmenu('involved');
+      } else {
+        this.closeMenu();
+      }
     }
   };
-
+  handleOutsideSubmenuClick = (event) => {
+    if (this.state.submenuOpen.resources && !this.resourcesSubmenu.current.contains(event.target)) {
+      this.toggleSubmenu('resources');
+    } else if (this.state.submenuOpen.community && !this.communitySubmenu.current.contains(event.target)) {
+      this.toggleSubmenu('community');
+    } else if (this.state.submenuOpen.involved && !this.involvedSubmenu.current.contains(event.target)) {
+      this.toggleSubmenu('involved');
+    }
+  };
   toggleSubmenu = (menuName) => {
     this.setState(prevState => ({
       submenuOpen: {
         ...prevState.submenuOpen,
         [menuName]: !prevState.submenuOpen[menuName]
       }
-    }));
+    }), () => {
+      if (this.state.submenuOpen[menuName]) {
+        document.addEventListener('mousedown', this.handleOutsideSubmenuClick);
+      } else {
+        document.removeEventListener('mousedown', this.handleOutsideSubmenuClick);
+      }
+    });
   };
 
   render() {
@@ -104,7 +129,7 @@ class Navbar extends Component {
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`}  >  Resources</Link>
                         </button>
-                        <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`}>
+                        <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`} style={{ marginTop: '1rem' }} ref={this.resourcesSubmenu}>
                         <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
   Blog
 </a>
@@ -116,7 +141,7 @@ class Navbar extends Component {
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Community</Link>
                         </button>
-                        <div className="dropdown-content">
+                        <div className={`dropdown-content ${submenuOpen.community ? 'open' : ''}`} style={{ marginTop: '1rem' }} ref={this.communitySubmenu}>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleMenuAndLinkClick}>Impact</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleMenuAndLinkClick}>Newsletter</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleMenuAndLinkClick}>Success Story</Link>
@@ -126,7 +151,7 @@ class Navbar extends Component {
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Get Involved</Link>
                         </button>
-                        <div className="dropdown-content">
+                        <div className={`dropdown-content ${submenuOpen.involved ? 'open' : ''}`} style={{ marginTop: '1rem' }} ref={this.involvedSubmenu}>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>Internship / Jobs</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>Carrers</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>Contact</Link>
