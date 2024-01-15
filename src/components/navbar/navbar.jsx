@@ -11,21 +11,25 @@ class Navbar extends Component {
       isMenuOpen: false,
       isScrolled: false,
       submenuOpen: { resources: false, community: false, involved: false },
+      isMobileMenuOpen: false,
     };
     this.menuRef = React.createRef();
     this.resourcesSubmenu = React.createRef();
     this.communitySubmenu = React.createRef();
     this.involvedSubmenu = React.createRef();
+    this.mobileMenuRef = React.createRef();
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     document.addEventListener('mousedown', this.handleOutsideClick);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
     document.removeEventListener('mousedown', this.handleOutsideClick);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   handleScroll = () => {
@@ -37,7 +41,7 @@ class Navbar extends Component {
   };
 
   closeMenu = () => {
-    this.setState({ isMenuOpen: false });
+    this.setState({ isMenuOpen: false, isMobileMenuOpen: false });
   };
 
   toggleMenu = () => {
@@ -71,6 +75,7 @@ class Navbar extends Component {
       }
     }
   };
+
   handleOutsideSubmenuClick = (event) => {
     if (this.state.submenuOpen.resources && !this.resourcesSubmenu.current.contains(event.target)) {
       this.toggleSubmenu('resources');
@@ -80,6 +85,7 @@ class Navbar extends Component {
       this.toggleSubmenu('involved');
     }
   };
+
   toggleSubmenu = (menuName) => {
     this.setState(prevState => ({
       submenuOpen: {
@@ -95,9 +101,22 @@ class Navbar extends Component {
     });
   };
 
+  handleResize = () => {
+    if (window.innerWidth <= 768) {
+      this.setState({ isMobileMenuOpen: false });
+    }
+  };
+
+  toggleMobileMenu = () => {
+    this.setState(prevState => ({
+      isMobileMenuOpen: !prevState.isMobileMenuOpen,
+    }));
+  };
+
   render() {
-    const { isMenuOpen, isScrolled, submenuOpen } = this.state;
+    const { isMenuOpen, isScrolled, submenuOpen, isMobileMenuOpen } = this.state;
     return (
+
       <div className='main'> 
         <div class="header-content">
           <Link className="dte-code" to='/report'>Reg.No: E-3921 (NGP)</Link>
