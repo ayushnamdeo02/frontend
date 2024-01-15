@@ -32,7 +32,7 @@ class Footer extends Component {
           </div>
           <div className="footer-contact-info">
             <h3>Contact Us</h3>
-            <a href="callto:918788411441">(+91) 878 841 1441 </a> 
+            <a href="tel:+918788411441">(+91) 878 841 1441 </a> 
             <a href="mailto:heedsfoundation.ngo@gmail.com"> heedsfoundation.ngo@gmail.com </a>
           </div>
           
