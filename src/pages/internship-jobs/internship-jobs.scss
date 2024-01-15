@@ -6,7 +6,7 @@
       padding: 12% 5% 2%;
       font-weight: 700;
       color: white;
-      font-size: 90px;
+      font-size: 4rem;
     }
     .internshipjobheader{
         margin-left: 40px;
@@ -65,8 +65,7 @@
       }
     }
   }
-
-  @media (max-width:620px){
+  @media (min-width:769px) and (max-width:883px){
     .internship-jobs-page{
       max-width: 100%;
     .internship-jobs-header {
@@ -105,29 +104,42 @@
     }
   }
 }
-
-@media (min-width:621px) and (max-width:1300px){
-  .internship-jobs-page{
-    max-width: 100%;
-  .internship-jobs-header {
-    background-color: black;
-    padding-top:80px;
-    padding-left: 20px;
-    font-weight: 700;
-    font-size: 50px;
-  }
-  .internshipjobheader{
-    img{
-      margin-top: -20px;
-    }
-    .internshipjobheading {
+  @media (max-width:768px){
+    .internship-jobs-page{
+      max-width: 100%;
+    .internship-jobs-header {
+      background-color: black;
+      padding-top:95px;
+      padding-left: 20px;
+      font-weight: 700;
+      font-size: 45px;
       text-align: center;
-      padding-top: 20px;
-      font-size: 42px;
-      color: #ffa200;
-      margin-bottom: 30px;
+      padding-bottom: 45px;
+    }
+    .internshipjobheader{
+      img{
+        margin-top: -20px;
+      }
+      .internshipjobheading {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 32px;
+        color: #ffa200;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .internship {
+    .internship-jobs-table {
+      font-size: 16px; /* Slightly smaller font size */
+
+      thead th, tbody td {
+        padding: 8px 10px; /* Reduce padding */
+      }
+
+      /* Make table scrollable on smaller screens */
+      overflow-x: auto;
+      display: block;
     }
   }
 }
-}
-  
