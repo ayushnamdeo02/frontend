@@ -149,8 +149,205 @@
   }
 }
   }
-  
-  @media (max-width:620px) {
+  @media(max-width:1024px) {
+    .home-container {
+      .home-header-video {
+        position: sticky;
+        max-width: 100%;
+        z-index: 100;
+      }
+    .ournumber{
+      padding-top: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .ournumber-headling{
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
+      }
+      .counting-container {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          
+          .counting-box { 
+               
+            .number {
+              font-size: 4rem;
+            }
+            .label {
+              margin-top: 15px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+    }
+    .principles-section{
+      padding-left: 20px;
+    padding-right: 20px;
+      .principles-heading{
+        font-size: 2.5rem;
+      }
+      .line {
+        width: 100%; 
+        height: 2px;
+        margin-top: -30px;
+      }
+      .principles-data {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5px; 
+        padding-bottom: 20px;
+      
+        .principles-card {
+          padding: 0px;      
+          .principles-card-heading {
+            font-size: 2rem; 
+            font-weight: bold;
+          }
+          .principles-card-details {
+            font-size: 21px; 
+            margin-top: 5px;
+            }
+        }
+      }        
+    }
+    .involved{
+      padding-left: 5%;
+      padding-right: 5%;
+     
+    .involved-title{
+      font-size: 3rem;
+    }
+    .involved-grid{
+      margin-top: 40px;
+      padding-left: 2%;
+      padding-bottom: 80px;
+      
+      .involved-datai{
+        padding: 3px;
+        height:auto;
+        width: auto;
+        h3{
+          font-size: 1.5rem;
+        }
+        
+      }
+      .involved-data{
+        padding: 8px;
+        width: auto;
+        p{
+          font: 1em Founders Grotesk Cond S;
+          margin: 3px;
+          padding-left: 5px;
+          padding-right:auto;
+          font-size: 1.5rem;
+        }
+        
+      }
+    }
+  }
+  } 
+  }
+  @media(max-width:820px) {
+    .home-container {
+      .home-header-video {
+        position: sticky;
+        max-width: 100%;
+        z-index: 100;
+      }
+    .ournumber{
+      padding-top: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .ournumber-headling{
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
+      }
+      .counting-container {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          
+          .counting-box { 
+               
+            .number {
+              font-size: 4rem;
+            }
+            .label {
+              margin-top: 15px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+    }
+    .principles-section{
+      padding-left: 20px;
+    padding-right: 20px;
+      .principles-heading{
+        font-size: 2.5rem;
+      }
+      .line {
+        width: 100%; 
+        height: 2px;
+        margin-top: -30px;
+      }
+      .principles-data {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5px; 
+        padding-bottom: 20px;
+      
+        .principles-card {
+          padding: 0px;      
+          .principles-card-heading {
+            font-size: 2rem; 
+            font-weight: bold;
+          }
+          .principles-card-details {
+            font-size: 21px; 
+            margin-top: 5px;
+            }
+        }
+      }        
+    }
+    .involved{
+      padding-left: 10%;
+      padding-right: 20%;
+     
+    .involved-title{
+      font-size: 2rem;
+    }
+    .involved-grid{
+      margin-top: 40px;
+      padding-left: 5%;
+      padding-bottom: 80px;
+      
+      .involved-datai{
+        padding: 3px;
+        height:auto;
+        width: auto;
+        h3{
+          font-size: 1.2rem;
+        }
+        
+      }
+      .involved-data{
+        padding: 5px;
+        width: auto;
+        p{
+          font: 1em Founders Grotesk Cond S;
+          margin: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 1.2rem;
+        }
+        
+      }
+    }
+  }
+  } 
+  }
+  @media (max-width:659px) {
     .home-container {
       .home-header-video {
         position: sticky;
@@ -160,54 +357,35 @@
     .ournumber{
       padding-top: 5px;
       
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
       .ournumber-headling{
-          padding-top: 40px;
-        font-size: 52px;
-        line-height: 48px;
-          color: rgba(4, 101, 221, 0.958);
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
       }
-      .line {
-          width: 100%; 
-          height: 2px;
-          background-color: rgba(4, 101, 221, 0.958);
-          margin-top: -30px;
-          
-        }
       .counting-container {
           padding-top: 70px;
           padding-bottom: 70px;
-          display: flex;
           flex-direction: column;
-          justify-content: space-around;
-      
-          .counting-box {
-            text-align: center;
-            justify-content: center;
-      
+          .counting-box { 
+               
             .number {
-              font-size: 90px;
-              font-weight: bold;
-              color: rgb(6, 190, 135);
+              font-size: 4rem;
             }
-      
             .label {
               margin-top: 15px;
-              font-size: 30px;
-              color: rgba(90, 90, 90, 0.958);
+              font-size: 1.5rem;
+
             }
           }
         }
     }
     .principles-section{
       padding-left: 20px;
-      padding-right: 20px;
-      
+    padding-right: 20px;
       .principles-heading{
-        padding-top: 40px;
-        font-size: 52px;
-        line-height: 48px;
+        font-size: 2.5rem;
       }
       .line {
         width: 100%; 
@@ -215,20 +393,16 @@
         margin-top: -30px;
       }
       .principles-data {
-        display: grid;
         grid-template-columns: repeat(1, 1fr); 
-        gap: 10px; 
-        padding-bottom: 40px;
+        gap: 5px; 
+        padding-bottom: 20px;
       
         .principles-card {
-          padding: 0px;
-          border-radius: 8px;
-      
+          padding: 0px;      
           .principles-card-heading {
-            font-size: 2.5rem; 
+            font-size: 2rem; 
             font-weight: bold;
           }
-      
           .principles-card-details {
             font-size: 21px; 
             margin-top: 5px;
@@ -237,64 +411,35 @@
       }        
     }
     .involved{
-      
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 10%;
+      padding-right: 20%;
      
     .involved-title{
-      font-size: 40px;
-      font-weight: bold;
-      color: rgba(75, 75, 75, 0.958);
-    }
-    .line {
-      width: 100%; 
-      height: 2px;
-      background-color: rgba(83, 83, 83, 0.958);
-      margin-top: -30px;
-      
+      font-size: 2rem;
     }
     .involved-grid{
-      
-      display: grid;
-      grid-template-columns: 1fr 3fr ;
       margin-top: 40px;
-      padding-left: 5px;
+      padding-left: 5%;
       padding-bottom: 80px;
       
       .involved-datai{
-          background-color: rgb(253, 255, 136);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
-        padding: 5px;
+        padding: 3px;
         height:auto;
         width: auto;
         h3{
-          font-size: 25px;
-          color: rgb(81, 81, 81);
+          font-size: 1.2rem;
         }
         
       }
       .involved-data{
-          background-color: rgb(171, 254, 226);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        border: 1px solid black;
         padding: 5px;
-        width: 250px;
+        width: auto;
         p{
           font: 1em Founders Grotesk Cond S;
-          margin: 7px;
-          padding-left: 10px;
-          padding-right: 10px;
-          text-align: center;
-          font-size: 20px;
-          color: #3c3c3c;
+          margin: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 1.2rem;
         }
         
       }
@@ -302,113 +447,402 @@
   }
   } 
   }
-  @media (min-width:621px) and (max-width:1300px){
+  @media (min-width:660px) and (max-width:769px) {
     .home-container {
-      //.home-header-video {
-      
-     // }
-    
+      .home-header-video {
+        position: sticky;
+        max-width: 100%;
+        z-index: 100;
+      }
+    .ournumber{
+      padding-top: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .ournumber-headling{
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
+      }
+      .counting-container {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          
+          .counting-box { 
+               
+            .number {
+              font-size: 4rem;
+            }
+            .label {
+              margin-top: 15px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+    }
     .principles-section{
-      background-color: #2846e6;
-      padding-left: 40px;
-      padding-right: 40px;
-      
+      padding-left: 20px;
+    padding-right: 20px;
       .principles-heading{
-        padding-top: 40px;
-        font-size: 52px;
-        line-height: 48px;
-        color: #ffffff;
+        font-size: 2.5rem;
       }
       .line {
         width: 100%; 
         height: 2px;
-        background-color: white;
         margin-top: -30px;
       }
       .principles-data {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-        padding-bottom: 40px;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 5px; 
+        padding-bottom: 20px;
       
         .principles-card {
-          padding: 20px;
-          border-radius: 8px;
-          color: #ffffff; 
-      
+          padding: 0px;      
           .principles-card-heading {
-            font-size: 2.5rem; 
+            font-size: 2rem; 
             font-weight: bold;
           }
-      
           .principles-card-details {
             font-size: 21px; 
-            margin-top: 10px;
+            margin-top: 5px;
             }
         }
       }        
     }
     .involved{
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 10%;
+      padding-right: 20%;
      
     .involved-title{
-      font-size: 52px;
-      font-weight: bold;
-      color: rgba(75, 75, 75, 0.958);
-    }
-    .line {
-      width: 100%; 
-      height: 2px;
-      background-color: rgba(83, 83, 83, 0.958);
-      margin-top: -30px;
-      
+      font-size: 2rem;
     }
     .involved-grid{
-      
-      display: grid;
-      grid-template-columns: 1fr 3fr ;
       margin-top: 40px;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 5%;
       padding-bottom: 80px;
       
       .involved-datai{
-          background-color: rgb(253, 255, 136);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
-        padding: 5px;
-        height:190px;
+        padding: 3px;
+        height:auto;
         width: auto;
         h3{
-          font-size: 30px;
-          color: rgb(81, 81, 81);
+          font-size: 1.2rem;
         }
         
       }
       .involved-data{
-          background-color: rgb(171, 254, 226);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        border: 1px solid black;
         padding: 5px;
-        
+        width: auto;
         p{
-          padding-left: 20px;
-          padding-right: 20px;
-          text-align: center;
-          font-size: 23px;
-          color: #3c3c3c;
+          font: 1em Founders Grotesk Cond S;
+          margin: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 1.2rem;
         }
         
       }
     }
   }
-}
-}
+  } 
+  }
+  @media (max-width:426px) {
+    .home-container {
+      .home-header-video {
+        position: sticky;
+        max-width: 100%;
+        z-index: 100;
+      }
+    .ournumber{
+      padding-top: 5px;
+      
+      padding-left: 20px;
+      padding-right: 20px;
+      .ournumber-headling{
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
+      }
+      .counting-container {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          flex-direction: column;
+          .counting-box { 
+               
+            .number {
+              font-size: 4rem;
+            }
+            .label {
+              margin-top: 15px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+    }
+    .principles-section{
+      padding-left: 20px;
+    padding-right: 20px;
+      .principles-heading{
+        font-size: 2.5rem;
+      }
+      .line {
+        width: 100%; 
+        height: 2px;
+        margin-top: -30px;
+      }
+      .principles-data {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 5px; 
+        padding-bottom: 20px;
+      
+        .principles-card {
+          padding: 0px;      
+          .principles-card-heading {
+            font-size: 2rem; 
+            font-weight: bold;
+          }
+          .principles-card-details {
+            font-size: 21px; 
+            margin-top: 5px;
+            }
+        }
+      }        
+    }
+    .involved{
+      padding-left: 10%;
+      padding-right: 20%;
+     
+    .involved-title{
+      font-size: 2rem;
+    }
+    .involved-grid{
+      margin-top: 40px;
+      padding-left: 5%;
+      padding-bottom: 80px;
+      
+      .involved-datai{
+        padding: 3px;
+        height:auto;
+        width: auto;
+        h3{
+          font-size: 1.2rem;
+        }
+        
+      }
+      .involved-data{
+        padding: 5px;
+        width: auto;
+        p{
+          font: 1em Founders Grotesk Cond S;
+          margin: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 1.2rem;
+        }
+        
+      }
+    }
+  }
+  } 
+  }
+  @media (max-width:376px) {
+    .home-container {
+      .home-header-video {
+        position: sticky;
+        max-width: 100%;
+        z-index: 100;
+      }
+    .ournumber{
+      padding-top: 5px;
+      
+      padding-left: 20px;
+      padding-right: 20px;
+      .ournumber-headling{
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
+      }
+      .counting-container {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          flex-direction: column;
+          .counting-box { 
+               
+            .number {
+              font-size: 4rem;
+            }
+            .label {
+              margin-top: 15px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+    }
+    .principles-section{
+      padding-left: 20px;
+    padding-right: 20px;
+      .principles-heading{
+        font-size: 2.5rem;
+      }
+      .line {
+        width: 100%; 
+        height: 2px;
+        margin-top: -30px;
+      }
+      .principles-data {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 5px; 
+        padding-bottom: 20px;
+      
+        .principles-card {
+          padding: 0px;      
+          .principles-card-heading {
+            font-size: 2rem; 
+            font-weight: bold;
+          }
+          .principles-card-details {
+            font-size: 21px; 
+            margin-top: 5px;
+            }
+        }
+      }        
+    }
+    .involved{
+      padding-left: 10px;
+      padding-right: 10px;
+     
+    .involved-title{
+      font-size: 2rem;
+    }
+    .involved-grid{
+      margin-top: 40px;
+      padding-left: 5px;
+      padding-bottom: 80px;
+      
+      .involved-datai{
+        padding: 3px;
+        height:auto;
+        width: 100px;
+        h3{
+          font-size: 1.2rem;
+        }
+        
+      }
+      .involved-data{
+        padding: 5px;
+        width: 200px;
+        p{
+          font: 1em Founders Grotesk Cond S;
+          margin: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 1.2rem;
+        }
+        
+      }
+    }
+  }
+  } 
+  }
+  @media (max-width:321px) {
+    .home-container {
+      .home-header-video {
+        position: sticky;
+        max-width: 100%;
+        z-index: 100;
+      }
+    .ournumber{
+      padding-top: 5px;
+      
+      padding-left: 20px;
+      padding-right: 20px;
+      .ournumber-headling{
+        padding-top: 10px;
+        font-size: 3rem;
+        color: rgba(4, 101, 221, 0.958);
+      }
+      .counting-container {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          flex-direction: column;
+          .counting-box { 
+               
+            .number {
+              font-size: 4rem;
+            }
+            .label {
+              margin-top: 15px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+    }
+    .principles-section{
+      padding-left: 20px;
+    padding-right: 20px;
+      .principles-heading{
+        font-size: 2.5rem;
+      }
+      .line {
+        width: 100%; 
+        height: 2px;
+        margin-top: -30px;
+      }
+      .principles-data {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 5px; 
+        padding-bottom: 20px;
+      
+        .principles-card {
+          padding: 0px;      
+          .principles-card-heading {
+            font-size: 2rem; 
+            font-weight: bold;
+          }
+          .principles-card-details {
+            font-size: 21px; 
+            margin-top: 5px;
+            }
+        }
+      }        
+    }
+    .involved{
+      padding-left: 10px;
+      padding-right: 10px;
+     
+    .involved-title{
+      font-size: 2rem;
+    }
+    .involved-grid{
+      margin-top: 40px;
+      padding-left: 5px;
+      padding-bottom: 80px;
+      
+      .involved-datai{
+        padding: 3px;
+        height:auto;
+        width: 70px;
+        h3{
+          font-size: 1rem;
+        }
+        
+      }
+      .involved-data{
+        padding: 5px;
+        width: 190px;
+        p{
+          font: 1em Founders Grotesk Cond S;
+          margin: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 1.2rem;
+        }
+        
+      }
+    }
+  }
+  } 
+  }
