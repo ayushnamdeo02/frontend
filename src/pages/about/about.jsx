@@ -173,8 +173,9 @@ class About extends Component {
         
          <section id='section-who' className='who-section'>
           <h2 className='section-who-heading'>WHO WE ARE</h2>
-        <h4 className='section-who-subheading1'>VOLUNTEERS</h4>
           <div class="line"></div>
+        <h4 className='section-who-subheading1'>VOLUNTEERS</h4>
+          
           <div className='names-grid'>
             {visibleNames.map((name, index) => (
               <div key={index} className='name-item'>
