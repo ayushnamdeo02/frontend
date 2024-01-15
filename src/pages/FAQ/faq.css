@@ -1,3 +1,7 @@
+.FAQ-container {
+  background-color: #f7f7f7;
+  color: #333;
+}
 .FAQ-container .FAQ-header {
   background-color: black;
   padding: 12% 5% 2%;
@@ -5,15 +9,31 @@
   color: white;
   font-size: 90px;
 }
-.FAQ-container .pdfset {
-  padding: 20px;
-  width: 95%;
-  height: 1000px;
+.FAQ-container .FAQ-body {
+  padding: 40px 60px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.FAQ-container .FAQ-body h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.FAQ-container .FAQ-body ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+.FAQ-container .FAQ-body ol li {
+  margin-bottom: 1rem;
+}
+.FAQ-container .FAQ-body ol li strong {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 620px) {
+@media screen and (max-width: 768px) {
   .FAQ-container .FAQ-header {
-    background-color: black;
     padding-top: 95px;
     padding-left: 20px;
     font-weight: 700;
@@ -21,21 +41,46 @@
     text-align: center;
     padding-bottom: 45px;
   }
-  .FAQ-container .pdfset {
-    padding: 20px;
-    width: 90%;
-    height: 1000px;
+  .FAQ-container .FAQ-body {
+    padding: 20px 10px;
   }
 }
-@media (min-width: 621px) and (max-width: 1300px) {
+@media screen and (max-width: 425px) {
   .FAQ-container .FAQ-header {
-    padding-top: 100px;
+    padding-top: 95px;
     padding-left: 20px;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
   }
-  .FAQ-container .pdfset {
-    padding: 20px;
-    width: 95%;
-    height: 1000px;
+  .FAQ-container .FAQ-body {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .FAQ-container .FAQ-header {
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .FAQ-container .FAQ-body {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .FAQ-container .FAQ-header {
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .FAQ-container .FAQ-body {
+    padding: 20px 10px;
   }
 }/*# sourceMappingURL=faq.css.map */
