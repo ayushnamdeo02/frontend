@@ -11,25 +11,18 @@ class Navbar extends Component {
       isMenuOpen: false,
       isScrolled: false,
       submenuOpen: { resources: false, community: false, involved: false },
-      isMobileMenuOpen: false,
     };
     this.menuRef = React.createRef();
-    this.resourcesSubmenu = React.createRef();
-    this.communitySubmenu = React.createRef();
-    this.involvedSubmenu = React.createRef();
-    this.mobileMenuRef = React.createRef();
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     document.addEventListener('mousedown', this.handleOutsideClick);
-    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
     document.removeEventListener('mousedown', this.handleOutsideClick);
-    window.removeEventListener('resize', this.handleResize);
   }
 
   handleScroll = () => {
@@ -41,7 +34,7 @@ class Navbar extends Component {
   };
 
   closeMenu = () => {
-    this.setState({ isMenuOpen: false, isMobileMenuOpen: false });
+    this.setState({ isMenuOpen: false });
   };
 
   toggleMenu = () => {
@@ -64,25 +57,7 @@ class Navbar extends Component {
 
   handleOutsideClick = (event) => {
     if (this.state.isMenuOpen && this.menuRef.current && !this.menuRef.current.contains(event.target)) {
-      if (this.state.submenuOpen.resources) {
-        this.toggleSubmenu('resources');
-      } else if (this.state.submenuOpen.community) {
-        this.toggleSubmenu('community');
-      } else if (this.state.submenuOpen.involved) {
-        this.toggleSubmenu('involved');
-      } else {
-        this.closeMenu();
-      }
-    }
-  };
-
-  handleOutsideSubmenuClick = (event) => {
-    if (this.state.submenuOpen.resources && !this.resourcesSubmenu.current.contains(event.target)) {
-      this.toggleSubmenu('resources');
-    } else if (this.state.submenuOpen.community && !this.communitySubmenu.current.contains(event.target)) {
-      this.toggleSubmenu('community');
-    } else if (this.state.submenuOpen.involved && !this.involvedSubmenu.current.contains(event.target)) {
-      this.toggleSubmenu('involved');
+      this.closeMenu();
     }
   };
 
@@ -92,31 +67,12 @@ class Navbar extends Component {
         ...prevState.submenuOpen,
         [menuName]: !prevState.submenuOpen[menuName]
       }
-    }), () => {
-      if (this.state.submenuOpen[menuName]) {
-        document.addEventListener('mousedown', this.handleOutsideSubmenuClick);
-      } else {
-        document.removeEventListener('mousedown', this.handleOutsideSubmenuClick);
-      }
-    });
-  };
-
-  handleResize = () => {
-    if (window.innerWidth <= 768) {
-      this.setState({ isMobileMenuOpen: false });
-    }
-  };
-
-  toggleMobileMenu = () => {
-    this.setState(prevState => ({
-      isMobileMenuOpen: !prevState.isMobileMenuOpen,
     }));
   };
 
   render() {
-    const { isMenuOpen, isScrolled, submenuOpen, isMobileMenuOpen } = this.state;
+    const { isMenuOpen, isScrolled, submenuOpen } = this.state;
     return (
-
       <div className='main'> 
         <div class="header-content">
           <Link className="dte-code" to='/report'>Reg.No: E-3921 (NGP)</Link>
@@ -148,7 +104,7 @@ class Navbar extends Component {
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`}  >  Resources</Link>
                         </button>
-                        <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`} style={{ marginTop: '1rem' }} ref={this.resourcesSubmenu}>
+                        <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`}>
                         <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
   Blog
 </a>
@@ -160,7 +116,7 @@ class Navbar extends Component {
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Community</Link>
                         </button>
-                        <div className={`dropdown-content ${submenuOpen.community ? 'open' : ''}`} style={{ marginTop: '1rem' }} ref={this.communitySubmenu}>
+                        <div className="dropdown-content">
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleMenuAndLinkClick}>Impact</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleMenuAndLinkClick}>Newsletter</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleMenuAndLinkClick}>Success Story</Link>
@@ -170,7 +126,7 @@ class Navbar extends Component {
                         <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Get Involved</Link>
                         </button>
-                        <div className={`dropdown-content ${submenuOpen.involved ? 'open' : ''}`} style={{ marginTop: '1rem' }} ref={this.involvedSubmenu}>
+                        <div className="dropdown-content">
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>Internship / Jobs</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>Carrers</Link>
                             <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>Contact</Link>

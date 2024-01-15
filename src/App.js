@@ -10,7 +10,6 @@ import Navbar from './components/navbar/navbar';
 import Privacypolicy from './pages/privacypolicy/privacypolicy';
 import Faq from './pages/FAQ/FAQ';
 import TC from './pages/termandcondition/termandcondition';
-import 'font-awesome/css/font-awesome.min.css';
 import Community from './pages/community/community';
 import Impact from './pages/impact/impact';
 import Newsletter from './pages/newsletter/newsletter';
@@ -20,8 +19,6 @@ import Openpositions from './pages/open-positions/open-positions';
 import Report from './pages/report/report'; 
 import Team from './pages/team/team';
 import { Helmet } from 'react-helmet';
-import { withRouter } from 'react-router-dom';
-const NavbarWithRouter = withRouter(Navbar);
 function App() 
 
 {
@@ -32,7 +29,7 @@ function App()
             <meta name="description" content="Welcome to Example Website - a platform for volunteering, making a difference, and creating a positive impact. Join us today!" />
           </Helmet>
         <div>
-        <NavbarWithRouter />
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
