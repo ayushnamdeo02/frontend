@@ -6,6 +6,7 @@ class Header extends Component {
         return(
         <div class="header-content">
           <Link className="dte-code" to='/report'>Reg.No: E-3921 (NGP)</Link>
+           <Link className='darpan'>Niti Aayog / NGO Darpan ID: MH/2024/0384990</Link>
             <div className="social-media">
                 Follow us on:
                 <a href="https://facebook.com/Heedsfoundation/" className="facebook"><i className="fa fa-facebook"></i></a>

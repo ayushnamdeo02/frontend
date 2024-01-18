@@ -11,6 +11,15 @@
 .header-content .dte-code:hover {
   color: blue;
 }
+.header-content .darpan {
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 700;
+  margin-left: 80px;
+}
+.header-content .darpan:hover {
+  color: blue;
+}
 .header-content .social-media {
   display: flex;
   gap: 5px;
