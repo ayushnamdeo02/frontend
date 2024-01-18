@@ -58,7 +58,7 @@ class Home extends Component {
                     {/* Add additional meta tags as necessary */}
                 </Helmet>
          <div className='home-header-video'>
-          {windowWidth <= 425 ? (
+          {windowWidth <= 620 ? (
             <video width='100%' autoPlay loop muted playsInline>
               <source src={mobileVideoSrc} type="video/webm" />
               Your browser does not support the video tag.
