@@ -313,6 +313,7 @@
   .navbar-container .navbar-mid .menu-button {
     display: none;
     color: #0fa4e9;
+    z-index: 1100;
   }
   .navbar-container .navbar-mid .menu-button.scrolled {
     color: #ea0909;
@@ -324,6 +325,7 @@
     margin-left: -40px;
     display: flex;
     align-items: center;
+    z-index: 1050;
   }
   .navbar-container .navbar-list .nav-item {
     height: 50px;
@@ -446,6 +448,7 @@
   .navbar-container .navbar-mid .menu-button {
     display: none;
     color: #ffffff;
+    z-index: 1100;
   }
   .navbar-container .navbar-mid .menu-button.scrolled {
     color: #000000;
@@ -457,6 +460,7 @@
     margin-left: -40px;
     display: flex;
     align-items: center;
+    z-index: 1050;
   }
   .navbar-container .navbar-list .nav-item {
     height: 50px;
@@ -516,6 +520,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
   .navbar-container.scrolled {
     top: 0;
@@ -548,6 +553,7 @@
     cursor: pointer;
     font-size: 16px;
     color: #ffffff;
+    z-index: 1100;
   }
   .navbar-container .navbar-mid .menu-button.scrolled {
     color: #000000;
@@ -565,7 +571,7 @@
     background-color: rgba(255, 255, 255, 0.9960784314);
     padding: auto;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 1050;
     opacity: 100%;
     transition: visibility 0s, opacity 0.5s linear;
     width: 100%;
@@ -594,6 +600,7 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
+    z-index: 1060;
   }
   .navbar-container .navbar-right {
     display: flex;
@@ -631,6 +638,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
   .navbar-container.scrolled {
     top: 0;
@@ -663,6 +671,7 @@
     cursor: pointer;
     font-size: 16px;
     color: #ffffff;
+    z-index: 1100;
   }
   .navbar-container .navbar-mid .menu-button.scrolled {
     color: #000000;
@@ -680,7 +689,7 @@
     background-color: rgba(255, 255, 255, 0.9960784314);
     padding: auto;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 1050;
     opacity: 100%;
     transition: visibility 0s, opacity 0.5s linear;
     width: 100%;
@@ -709,6 +718,7 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
+    z-index: 1060;
   }
   .navbar-container .navbar-right {
     display: flex;
@@ -746,6 +756,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
   .navbar-container.scrolled {
     top: 0;
@@ -778,6 +789,7 @@
     cursor: pointer;
     font-size: 16px;
     color: #ffffff;
+    z-index: 1100;
   }
   .navbar-container .navbar-mid .menu-button.scrolled {
     color: #000000;
@@ -795,7 +807,7 @@
     background-color: rgba(255, 255, 255, 0.9960784314);
     padding: auto;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 1050;
     opacity: 100%;
     transition: visibility 0s, opacity 0.5s linear;
     width: 100%;
@@ -824,6 +836,7 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
+    z-index: 1060;
   }
   .navbar-container .navbar-right {
     display: flex;
@@ -861,6 +874,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
   .navbar-container.scrolled {
     top: 0;
@@ -890,6 +904,7 @@
     margin-left: 10px;
     padding: 13px 13px;
     display: block;
+    z-index: 1100;
     cursor: pointer;
     font-size: 16px;
     color: #ffffff;
@@ -910,7 +925,7 @@
     background-color: rgba(255, 255, 255, 0.9960784314);
     padding: auto;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 1050;
     opacity: 100%;
     transition: visibility 0s, opacity 0.5s linear;
     width: 100%;
@@ -939,6 +954,7 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
+    z-index: 1060;
   }
   .navbar-container .navbar-right {
     display: flex;
@@ -977,6 +993,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
   .navbar-container.scrolled {
     top: 0;
@@ -998,6 +1015,7 @@
   .navbar-container .navbar-mid .menu-button {
     background: transparent;
     border: none;
+    z-index: 1100;
     padding: 13px 13px;
     display: block;
     cursor: pointer;
@@ -1012,6 +1030,7 @@
   }
   .navbar-container .navbar-mid .navbar-list {
     top: 60%;
+    z-index: 1050;
   }
   .navbar-container .navbar-mid .navbar-list.mobile-menu-open {
     visibility: visible;
@@ -1037,6 +1056,7 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
+    z-index: 1060;
   }
   .navbar-container .navbar-right {
     display: flex;

@@ -338,6 +338,7 @@
     .menu-button {
       display: none;
       color: #0fa4e9;
+      z-index: 1100;
       &.scrolled {
         color: #ea0909;
       }
@@ -350,6 +351,7 @@
     margin-left: -40px;
     display: flex;
     align-items: center;
+    z-index: 1050;
     .nav-item {
       height: 50px;
       padding-left: 10px;
@@ -485,6 +487,7 @@
     .menu-button {
       display: none;
       color: #ffffff;
+      z-index: 1100;
       &.scrolled {
         color: #000000;
       }
@@ -497,6 +500,7 @@
     margin-left: -40px;
     display: flex;
     align-items: center;
+    z-index: 1050;
     .nav-item {
       height: 50px;
       padding-left: 10px;
@@ -563,7 +567,7 @@
         top: 17.2px;
         left: 0;
         right: 0;
-    
+        z-index: 1000;
         &.scrolled {
           top:0;
         }
@@ -598,6 +602,7 @@
             cursor: pointer;
             font-size: 16px;
             color: #ffffff;
+            z-index: 1100;
         &.scrolled {
           color: #000000;
         }
@@ -616,7 +621,7 @@
             background-color: #fffffffe; // Background color for the entire navbar list
             padding: auto;
             visibility: hidden;
-            z-index: 1000;
+            z-index: 1050;
             opacity: 100%;
             transition: visibility 0s, opacity 0.5s linear;
             width: 100%;
@@ -648,6 +653,7 @@
               padding: 0; // Remove additional padding
               font-size: 20px;
               text-align: center;
+              z-index: 1060;
             }
           }
         }
@@ -689,7 +695,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
-
+    z-index: 1000;
     &.scrolled {
       top:0;
     }
@@ -724,6 +730,7 @@
         cursor: pointer;
         font-size: 16px;
         color: #ffffff;
+        z-index: 1100;
     &.scrolled {
       color: #000000;
     }
@@ -742,7 +749,7 @@
         background-color: #fffffffe; // Background color for the entire navbar list
         padding: auto;
         visibility: hidden;
-        z-index: 1000;
+        z-index: 1050;
         opacity: 100%;
         transition: visibility 0s, opacity 0.5s linear;
         width: 100%;
@@ -774,6 +781,7 @@
           padding: 0; // Remove additional padding
           font-size: 20px;
           text-align: center;
+          z-index: 1060;
         }
       }
     }
@@ -816,7 +824,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
-
+    z-index: 1000;
     &.scrolled {
       top:0;
     }
@@ -851,6 +859,7 @@
         cursor: pointer;
         font-size: 16px;
         color: #ffffff;
+        z-index: 1100;
     &.scrolled {
       color: #000000;
     }
@@ -869,7 +878,7 @@
         background-color: #fffffffe; // Background color for the entire navbar list
         padding: auto;
         visibility: hidden;
-        z-index: 1000;
+        z-index: 1050;
         opacity: 100%;
         transition: visibility 0s, opacity 0.5s linear;
         width: 100%;
@@ -901,6 +910,7 @@
           padding: 0; // Remove additional padding
           font-size: 20px;
           text-align: center;
+          z-index: 1060;
         }
       }
     }
@@ -943,7 +953,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
-
+    z-index: 1000;
     &.scrolled {
       top:0;
     }
@@ -975,6 +985,7 @@
         margin-left: 10px;
         padding: 13px 13px;
         display: block;
+        z-index: 1100;
         cursor: pointer;
         font-size: 16px;
         color: #ffffff;
@@ -996,7 +1007,7 @@
         background-color: #fffffffe; // Background color for the entire navbar list
         padding: auto;
         visibility: hidden;
-        z-index: 1000;
+        z-index: 1050;
         opacity: 100%;
         transition: visibility 0s, opacity 0.5s linear;
         width: 100%;
@@ -1028,6 +1039,7 @@
           padding: 0; // Remove additional padding
           font-size: 20px;
           text-align: center;
+          z-index: 1060;
         }
       }
     }
@@ -1070,7 +1082,7 @@
     top: 17.2px;
     left: 0;
     right: 0;
-
+    z-index: 1000;
     &.scrolled {
       top:0;
     }
@@ -1094,7 +1106,7 @@
       .menu-button {
         background: transparent;
         border: none;
-        
+        z-index: 1100;
         padding: 13px 13px;
         display: block;
         cursor: pointer;
@@ -1110,7 +1122,7 @@
     
       .navbar-list {
         top: 60%;
-      
+        z-index: 1050;
         &.mobile-menu-open {
           visibility: visible;
           opacity: 100%;
@@ -1138,6 +1150,7 @@
           padding: 0; // Remove additional padding
           font-size: 20px;
           text-align: center;
+          z-index: 1060;
         }
       }
     }
