@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logobgclear.webp';
-import whitelogo from '../../assets/whitelogo.webp';
+import logo from '../../assets/logobgclear.png';
+import whitelogo from '../../assets/whitelogo.png';
 import './navbar.css';
 
 class Navbar extends Component {
@@ -62,29 +62,32 @@ class Navbar extends Component {
   };
 
   toggleSubmenu = (menuName) => {
-    this.setState((prevState) => ({
-      isMenuOpen: !prevState.submenuOpen[menuName] ? true : prevState.isMenuOpen,
+    this.setState(prevState => ({
       submenuOpen: {
         ...prevState.submenuOpen,
-        [menuName]: !prevState.submenuOpen[menuName],
-      },
+        [menuName]: !prevState.submenuOpen[menuName]
+      }
     }));
   };
-  closeSubmenu = () => {
-    this.setState((prevState) => ({
-      submenuOpen: {
-        ...prevState.submenuOpen,
-        resources: false,
-        community: false,
-        involved: false,
-      },
-    }));
-  };
-  
 
   render() {
     const { isMenuOpen, isScrolled, submenuOpen } = this.state;
     return (
+      <div className='main'> 
+        <div class="header-content">
+          <Link className="dte-code" to='/report'>Reg.No: E-3921 (NGP)</Link>
+            <div className="social-media">
+                Follow us on:
+                <a href="https://facebook.com/Heedsfoundation/" className="facebook"><i className="fa fa-facebook"></i></a>
+                <a href="https://instagram.com/heedsfoundation?igshid=ZDc4ODBmNjlmNQ==" className="instagram"><i className="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/heeds-foundation/" className="linkedin"><i className="fa fa-linkedin"></i></a>
+                <a href="https://youtube.com/heedsfoundation" className="youtube"><i className="fa fa-youtube"></i></a>
+            </div>
+            <div class="erp-info">
+                <a  href="tel:8668353016"> 📞 +91 8668353016  </a>
+                <a  href="mailto:heedsfoundation.ngo@gmail.com"> ✉️ heedsfoundation.ngo@gmail.com </a> 
+            </div>
+        </div>
         <nav className={`navbar-container ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`} onMouseEnter={this.handleLogoMouseEnter} onMouseLeave={this.handleLogoMouseLeave}>
           <div className="navbar-left">
             <Link className="navbar-brand" to="/">
@@ -97,54 +100,40 @@ class Navbar extends Component {
             Menu
           </button>
           <ul className={`navbar-list ${isMenuOpen ? 'mobile-menu-open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
-            {['resources', 'community', 'involved'].map((menuName) => (
-              <li className="dropdown" key={menuName}>
-                <button className={`nav-item ${isScrolled ? 'scrolled' : ''} ${submenuOpen[menuName] ? 'open' : ''}`} onClick={() => { this.toggleSubmenu(menuName); this.closeMenu(); }}>
-                  {menuName.charAt(0).toUpperCase() + menuName.slice(1)}
-                </button>
-                <div className={`dropdown-content ${submenuOpen[menuName] ? 'open' : ''}`}>
-                  {/* Dropdown links for each submenu */}
-                  {menuName === 'resources' && (
-                    <>
-                      <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
-                        Blog
-                      </a>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/report' onClick={this.handleMenuAndLinkClick}>
-                        Reports
-                      </Link>
-                    </>
-                  )}
-                  {menuName === 'community' && (
-                    <>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleMenuAndLinkClick}>
-                        Impact
-                      </Link>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleMenuAndLinkClick}>
-                        Newsletter
-                      </Link>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleMenuAndLinkClick}>
-                        Success Story
-                      </Link>
-                    </>
-                  )}
-                  {menuName === 'involved' && (
-                    <>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>
-                        Internship / Jobs
-                      </Link>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>
-                        Careers
-                      </Link>
-                      <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>
-                        Contact
-                      </Link>
-                    </>
-                  )}
-                </div>
-              </li>
-            ))}
+                    <li className="dropdown">
+                        <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
+                        <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`}  >  Resources</Link>
+                        </button>
+                        <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`}>
+                        <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
+  Blog
+</a>
+
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/report' onClick={this.handleMenuAndLinkClick}>Reports</Link>
+                        </div>
+                    </li>
+                    <li className="dropdown">
+                        <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
+                        <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Community</Link>
+                        </button>
+                        <div className="dropdown-content">
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleMenuAndLinkClick}>Impact</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleMenuAndLinkClick}>Newsletter</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleMenuAndLinkClick}>Success Story</Link>
+                        </div>
+                    </li>
+                    <li className="dropdown">
+                        <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}>
+                        <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Get Involved</Link>
+                        </button>
+                        <div className="dropdown-content">
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/internship-jobs" onClick={this.handleMenuAndLinkClick}>Internship / Jobs</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/open-positions" onClick={this.handleMenuAndLinkClick}>Carrers</Link>
+                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/contact" onClick={this.handleMenuAndLinkClick}>Contact</Link>
+                        </div>
+                    </li>
             <li>
-              <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleMenuAndLinkClick}>
+            <button className={`nav-item ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleMenuAndLinkClick}>
                 <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/about" onClick={this.handleMenuAndLinkClick}>
                   About
                 </Link>
@@ -164,9 +153,9 @@ class Navbar extends Component {
                 </Link>
               </button>
             </li>
+            
           </ul>
         </div>
-        
         <div className={`navbar-right ${isScrolled ? 'scrolled' : ''}`}>
           <ul className="nav-right-button">
             <li>
@@ -176,6 +165,7 @@ class Navbar extends Component {
           </ul>
         </div>
       </nav>
+      </div>
     );
   }
 }
