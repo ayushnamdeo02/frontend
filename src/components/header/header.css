@@ -160,6 +160,9 @@
   .header-content .dte-code {
     font-weight: 700;
   }
+  .header-content .darpan {
+    display: none;
+  }
   .header-content .social-media {
     display: flex;
     gap: 5px;
@@ -184,6 +187,9 @@
   }
   .header-content .dte-code {
     font-weight: 700;
+  }
+  .header-content .darpan {
+    display: none;
   }
   .header-content .social-media {
     display: flex;
@@ -210,6 +216,9 @@
   .header-content .dte-code {
     font-weight: 700;
   }
+  .header-content .darpan {
+    display: none;
+  }
   .header-content .social-media {
     display: flex;
     gap: 5px;
@@ -234,6 +243,9 @@
   }
   .header-content .dte-code {
     font-weight: 700;
+  }
+  .header-content .darpan {
+    display: none;
   }
   .header-content .social-media {
     display: none;
