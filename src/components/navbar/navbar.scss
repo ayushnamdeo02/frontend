@@ -1,48 +1,4 @@
-.main{
-  .header-content {
-    display: flex;
-    align-items: center;
-    padding: 1px 10px;
-  
-    .dte-code {
-      font-size: 0.8rem;
-      color: #000000;
-      font-weight: 700;
-      &:hover {
-        color: blue;
-      }
-    }
-  
-    .social-media {
-      display: flex;
-      gap: 5px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      margin-left: 2rem;
-      a {
-        margin: 0 2px;
-        text-decoration: none;
-        color: #000000;
-      }
-    }
-  
-    .erp-info {
-      display: flex;
-      margin-left: auto;
-      
-      a {
-        font-size: 0.8rem;
-        color: #000;
-        font-weight: 700;
-        text-decoration: none;
-        &:hover {
-          color: blue;
-        }
-      }
-    }
-  }
-  
-.navbar-container {
+ .navbar-container {
   position: fixed;
   max-width: 100%;
   max-height: 50px;
@@ -303,55 +259,8 @@
 .navbar-container:hover .navbar-brand img.default-logo {
   opacity: 0 !important;
 }
-
-}
 @media (max-width:1440px) {
-  .main{
-    .header-content {
-      display: flex;
-      align-items: center;
-      padding: 1px 10px;
-    
-      .dte-code {
-        font-size: 0.8rem;
-        color: #000000;
-        font-weight: 700;
-        &:hover {
-          color: blue;
-        }
-      }
-    
-      .social-media {
-        display: flex;
-        gap: 5px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-left: 2rem;
-        a {
-          margin: 0 2px;
-          text-decoration: none;
-          color: #ff6200;
-          
-        }
-      }
-    
-      .erp-info {
-        display: flex;
-        margin-left: auto;
-        
-        a {
-          font-size: 0.8rem;
-          color: #000;
-          font-weight: 700;
-          text-decoration: none;
-          &:hover {
-            color: blue;
-          }
-        }
-      }
-    }
-    
-  .navbar-container {
+    .navbar-container {
     position: fixed;
     max-width: 100%;
     max-height: 50px;
@@ -510,56 +419,9 @@
         }
       }
     }
-    
-      }
     }
 @media (max-width:1024px) {
-  .main{
-    .header-content {
-      display: flex;
-      align-items: center;
-      padding: 1px 10px;
-    
-      .dte-code {
-        font-size: 0.8rem;
-        color: #000000;
-        font-weight: 700;
-        &:hover {
-          color: blue;
-        }
-      }
-    
-      .social-media {
-        display: flex;
-        gap: 5px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-left: 2rem;
-        a {
-          margin: 0 2px;
-          text-decoration: none;
-          color: #000000;
-          
-        }
-      }
-    
-      .erp-info {
-        display: flex;
-        margin-left: auto;
-        
-        a {
-          font-size: 0.8rem;
-          color: #000;
-          font-weight: 700;
-          text-decoration: none;
-          &:hover {
-            color: blue;
-          }
-        }
-      }
-    }
-    
-  .navbar-container {
+    .navbar-container {
     position: fixed;
     max-width: 100%;
     max-height: 50px;
@@ -718,42 +580,8 @@
         }
       }
     }
-    
-      }
     }
     @media (min-width:769px) and (max-width:886px) {
-      .main{
-        width: 100%;
-          .header-content {
-              display: flex;
-              font-size: 1.2rem;
-              position: sticky; 
-              
-          .dte-code {
-              font-weight: 700;
-              
-          }
-        
-          .social-media {
-            display: flex;
-            gap: 5px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-left: auto; /* Align to the right by pushing it to the right margin */
-            
-            a {
-              margin: 0 2px;
-              text-decoration: none;
-              color: #000000; 
-            }
-          }
-          
-        
-          .erp-info {
-              display: none;
-              
-        }
-      }
       .navbar-container {
         max-width: 100%;
         backdrop-filter: blur(0px);
@@ -879,40 +707,7 @@
     .navbar-container:hover .menu-button {
       color: #000 !important;
     }
-    }
 @media (max-width:769px) {
-  .main{
-    width: 100%;
-      .header-content {
-          display: flex;
-          font-size: 1.2rem;
-          position: sticky; 
-          
-      .dte-code {
-          font-weight: 700;
-          
-      }
-    
-      .social-media {
-        display: flex;
-        gap: 5px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-left: auto; /* Align to the right by pushing it to the right margin */
-        
-        a {
-          margin: 0 2px;
-          text-decoration: none;
-          color: #000000; 
-        }
-      }
-      
-    
-      .erp-info {
-          display: none;
-          
-    }
-  }
   .navbar-container {
     max-width: 100%;
     backdrop-filter: blur(0px);
@@ -1038,40 +833,8 @@
 .navbar-container:hover .menu-button {
   color: #000 !important;
 }
-}
+
 @media (max-width:426px) {
-  .main{
-    width: 100%;
-      .header-content {
-          display: flex;
-          font-size: 1.2rem;
-          position: sticky; 
-          
-      .dte-code {
-          font-weight: 700;
-          
-      }
-    
-      .social-media {
-        display: flex;
-        gap: 5px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-left: auto; /* Align to the right by pushing it to the right margin */
-        
-        a {
-          margin: 0 2px;
-          text-decoration: none;
-          color: #000000; 
-        }
-      }
-      
-    
-      .erp-info {
-          display: none;
-          
-    }
-  }
   .navbar-container {
     max-width: 100%;
     backdrop-filter: blur(0px);
@@ -1197,40 +960,8 @@
 .navbar-container:hover .menu-button {
   color: #000 !important;
 }
-}
+
 @media (max-width:376px) {
-  .main{
-    width: 100%;
-      .header-content {
-          display: flex;
-          font-size: 1.2rem;
-          position: sticky; 
-          
-      .dte-code {
-          font-weight: 700;
-          
-      }
-    
-      .social-media {
-        display: flex;
-        gap: 5px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-left: auto; /* Align to the right by pushing it to the right margin */
-        
-        a {
-          margin: 0 2px;
-          text-decoration: none;
-          color: #000000; 
-        }
-      }
-      
-    
-      .erp-info {
-          display: none;
-          
-    }
-  }
   .navbar-container {
     max-width: 100%;
     backdrop-filter: blur(0px);
@@ -1355,32 +1086,8 @@
 }
 .navbar-container:hover .menu-button {
   color: #000 !important;
-}
 }
 @media (max-width:321px) {
-  .main{
-    width: 100%;
-      .header-content {
-          display: flex;
-          font-size: 0.8rem;
-          position: sticky; 
-          
-      .dte-code {
-          font-weight: 700;
-          
-      }
-    
-      .social-media {
-        display: none;
-        
-      }
-      
-    
-      .erp-info {
-          display: none;
-          
-    }
-  }
   .navbar-container {
     max-width: 100%;
     height: 42px;
@@ -1489,5 +1196,4 @@
 }
 .navbar-container:hover .menu-button {
   color: #000 !important;
-}
 }

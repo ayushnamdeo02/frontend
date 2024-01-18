@@ -23,7 +23,7 @@
   border-right: rgb(0, 0, 0) solid 1px;
 }
 .navbar-container:hover .nav-item .nav-link {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important; /* Change the text color to black on hover */
 }
 .navbar-container.scrolled {
   background-color: #ffffff;
@@ -60,17 +60,17 @@
   border-right-color: black;
 }
 .navbar-container .navbar-mid:hover .nav-item .nav-link {
-  color: black !important;
+  color: rgb(0, 0, 0) !important;
 }
 .navbar-container .navbar-mid.scrolled {
   border-color: #000000;
 }
 .navbar-container .navbar-mid .menu-button {
   display: none;
-  color: #ffffff;
+  color: #12d9a7;
 }
 .navbar-container .navbar-mid .menu-button.scrolled {
-  color: #000000;
+  color: #07fd03;
 }
 .navbar-container .navbar-mid .menu-button.hover {
   color: #000000;
@@ -103,7 +103,7 @@
   bottom: 0;
   width: 0;
   height: 0;
-  background-color: yellow;
+  background-color: rgb(255, 94, 0);
   transition: height 1s ease, width 1s ease, background-color 0.3s ease;
 }
 .navbar-container .navbar-list .nav-item .nav-link {
@@ -111,11 +111,11 @@
   padding-bottom: 5px;
   align-self: center;
   justify-content: center;
-  color: #ffffff;
+  color: #f40808;
   transition: color 1s ease;
 }
 .navbar-container .navbar-list .nav-item .nav-link.scrolled {
-  color: #000000;
+  color: #f70303;
 }
 .navbar-container .navbar-list .nav-item:hover {
   border-right: rgb(0, 0, 0) solid 1px;
@@ -309,10 +309,10 @@
   }
   .navbar-container .navbar-mid .menu-button {
     display: none;
-    color: #ffffff;
+    color: #0fa4e9;
   }
   .navbar-container .navbar-mid .menu-button.scrolled {
-    color: #000000;
+    color: #ea0909;
   }
   .navbar-container .navbar-mid .menu-button.hover {
     color: #000000;
