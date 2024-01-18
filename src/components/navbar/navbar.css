@@ -68,6 +68,8 @@
 .navbar-container .navbar-mid .menu-button {
   display: none;
   color: #12d9a7;
+  z-index: 1100;
+  cursor: pointer;
 }
 .navbar-container .navbar-mid .menu-button.scrolled {
   color: #07fd03;
@@ -79,6 +81,7 @@
   margin-left: -40px;
   display: flex;
   align-items: center;
+  z-index: 1050;
 }
 .navbar-container .navbar-list .nav-item {
   height: 50px;
@@ -201,7 +204,7 @@
   min-width: 140px;
   min-height: 5px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 100000000;
+  z-index: 1060;
 }
 .navbar-container .dropdown-content .nav-link {
   color: #000;
