@@ -1,5 +1,5 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import './privacypolicy.css';
 
 const Privacypolicy = () => {
@@ -38,6 +38,13 @@ const Privacypolicy = () => {
 
         <h2>Children's Privacy</h2>
         <p>In Short: We do not collect personal information from children under the age of 13, and we do not knowingly market to or collect personal information from children under 18.</p>
+
+        <h2>Donation Privacy Policy</h2>
+        <p>In Short: When you make a donation to Heeds Foundation, we collect personal information necessary to process your donation, including your name, contact information, and payment details. We use this information to process your donation, issue receipts, and communicate with you regarding your donation.</p>
+
+        <p>We do not store credit card details nor do we share financial information with any third parties except for the sole purpose of processing donations.</p>
+
+        <p>If you have any concerns about the security of your donation or wish to inquire about how your donation information is handled, please contact us using the information provided at the end of this policy.</p>
 
         <h2>Changes to This Privacy Policy</h2>
         <p>In Short: We may update our privacy policy from time to time. You should therefore regularly review this page to ensure you are aware of any changes.</p>
