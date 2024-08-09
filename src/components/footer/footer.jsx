@@ -16,14 +16,14 @@ class Footer extends Component {
         </Helmet>
         <div className='footer-btns'>
           <Link className="btns-style" to='/contact' onClick={this.handleLinkClick}>Contact</Link>
-          <Link className="btns-style" to='/contact' onClick={this.handleLinkClick}>Donate</Link>
+          <Link className="btns-style" onClick={() => window.location.href = 'https://donation.heedsfoundation.org/'}>Donate</Link>
         </div>
         <div className='columns-footer'>
         <div className='pages-link'>
           <Link className='page-link' to='/about' onClick={this.handleLinkClick}>About</Link>
           <Link className='page-link' to='/contact' onClick={this.handleLinkClick}>Contact</Link>
           <Link className='page-link' to='/join' onClick={this.handleLinkClick}>Join Us</Link>
-          <Link className='page-link' to='/contact' onClick={this.handleLinkClick}>Donate</Link>
+          <Link className='page-link' onClick={() => window.location.href = 'https://donation.heedsfoundation.org/'}>Donate</Link>
           </div>
           <div className='footer-find-us'>
           <h3>Find Us</h3>
@@ -62,7 +62,7 @@ class Footer extends Component {
           </div>  
         <div className='lower'>
             <p className='p1'>Copyright © 2024</p>
-            <p className='p2'>Designed with ❤️ From <a href="https://heedsfoundation.com/"> Heeds Foundation  </a> </p>
+            <p className='p2'>Designed with ❤️ From <a href="https://heedsfoundation.org/"> Heeds Foundation  </a> </p>
         </div>
       </footer>
     );
