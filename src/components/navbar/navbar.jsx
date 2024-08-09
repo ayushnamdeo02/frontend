@@ -90,11 +90,13 @@ class Navbar extends Component {
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`}  >  Resources</Link>
                         </button>
                         <div className={`dropdown-content ${submenuOpen.resources ? 'open' : ''}`}>
-                        <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://heedsfoundation.blogspot.com/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
+                        <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://donation.heedsfoundation.org/blog/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
   Blog
 </a>
 
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to='/report' onClick={this.handleMenuAndLinkClick}>Reports</Link>
+<a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://donation.heedsfoundation.org/impact/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
+  Report
+</a>
                         </div>
                     </li>
                     <li className="dropdown">
@@ -102,9 +104,15 @@ class Navbar extends Component {
                         <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} onClick={this.handleLinkClick}> Community</Link>
                         </button>
                         <div className="dropdown-content">
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/impact" onClick={this.handleMenuAndLinkClick}>Impact</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/newsletter" onClick={this.handleMenuAndLinkClick}>Newsletter</Link>
-                            <Link className={`nav-link ${isScrolled ? 'scrolled' : ''}`} to="/successstory" onClick={this.handleMenuAndLinkClick}>Success Story</Link>
+                        <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://donation.heedsfoundation.org/impact/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
+  Impact
+</a>
+<a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://donation.heedsfoundation.org/get-involved/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
+  Newsletter
+</a>
+                            <a className={`nav-link ${isScrolled ? 'scrolled' : ''}`} href="https://donation.heedsfoundation.org/blog/" target="_blank" rel="noopener noreferrer" onClick={this.handleMenuAndLinkClick}>
+  Success Story
+</a>
                         </div>
                     </li>
                     <li className="dropdown">
@@ -144,7 +152,7 @@ class Navbar extends Component {
         <div className={`navbar-right ${isScrolled ? 'scrolled' : ''}`}>
           <ul className="nav-right-button">
             <li>
-            <a href='https://unstop.com/o/F819BNL?lb=nsYyVhWp'><button className='Donate-btn-nav' >Donate</button></a>
+            <a href='https://donation.heedsfoundation.org/'><button className='Donate-btn-nav' >Donate</button></a>
             </li>
             
           </ul>
