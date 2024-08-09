@@ -1,0 +1,86 @@
+.returnpolicy-container {
+  background-color: #f7f7f7;
+  color: #333;
+}
+.returnpolicy-container .returnpolicy-header {
+  background-color: black;
+  padding: 12% 5% 2%;
+  font-weight: 700;
+  color: white;
+  font-size: 90px;
+}
+.returnpolicy-container .returnpolicy-content {
+  padding: 40px 60px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.returnpolicy-container .returnpolicy-content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.returnpolicy-container .returnpolicy-content ul {
+  padding-left: 30px;
+  list-style-type: disc;
+}
+.returnpolicy-container .returnpolicy-content li {
+  margin-bottom: 10px;
+}
+.returnpolicy-container .returnpolicy-content p {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .returnpolicy-container .returnpolicy-header {
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .returnpolicy-container .returnpolicy-content {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .returnpolicy-container .returnpolicy-header {
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .returnpolicy-container .returnpolicy-content {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .returnpolicy-container .returnpolicy-header {
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .returnpolicy-container .returnpolicy-content {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .returnpolicy-container .returnpolicy-header {
+    padding-top: 95px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .returnpolicy-container .returnpolicy-content {
+    padding: 20px 10px;
+  }
+}/*# sourceMappingURL=returnpolicy.css.map */

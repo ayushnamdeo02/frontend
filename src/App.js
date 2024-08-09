@@ -8,6 +8,7 @@ import Footer from './components/footer/footer';
 import Contact from './pages/contact/contact';
 import Navbar from './components/navbar/navbar';
 import Privacypolicy from './pages/privacypolicy/privacypolicy';
+import Returnpolicy from './pages/returnpolicy/returnpolicy';
 import Faq from './pages/FAQ/FAQ';
 import TC from './pages/termandcondition/termandcondition';
 import 'font-awesome/css/font-awesome.min.css';
@@ -39,6 +40,7 @@ function App()
             <Route path="/contact" element={<Contact />} />
             <Route path="/join" element={<Join />} />
             <Route path='/privacypolicy' element={<Privacypolicy />} />
+            <Route path='/returnpolicy' element={<Returnpolicy/>}/>
             <Route path='/faq' element={<Faq />} />
             <Route path='/termandcondition' element={<TC />} />
             <Route path='/community' element={<Community />} />

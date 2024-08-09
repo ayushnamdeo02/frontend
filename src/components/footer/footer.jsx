@@ -56,6 +56,7 @@ class Footer extends Component {
           </div>
           <div className='links-bottom'>
             <Link className='link-page' to='/privacypolicy' onClick={this.handleLinkClick}>PRIVACY POLICY</Link>
+            <Link className='link-page' to='/returnpolicy' onClick={this.handleLinkClick}>RETURN POLICY</Link>
           <Link className='link-page' to='/faq' onClick={this.handleLinkClick}>FAQ</Link> 
           <Link className='link-page' to='/termandcondition' onClick={this.handleLinkClick}>TERM OF USE</Link>
           </div>  
