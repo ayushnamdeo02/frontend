@@ -39,6 +39,9 @@ const Privacypolicy = () => {
         <h2>Children's Privacy</h2>
         <p>In Short: We do not collect personal information from children under the age of 13, and we do not knowingly market to or collect personal information from children under 18.</p>
 
+        <h2>Heeds Foundation Refund Policy</h2>
+        <p>At Heeds Foundation, we are committed to supporting our mission through the generosity of our donors and supporters. Due to the nature of our operations, all donations and contributions are final, and we do not offer refunds for any amount of money under any circumstances. We appreciate your understanding and continued support of our mission. If you have any questions or concerns about this policy, please contact us at +91 8788411441. Thank you for your commitment to making a difference with Heeds Foundation.</p>
+
         <h2>Donation Privacy Policy</h2>
         <p>In Short: When you make a donation to Heeds Foundation, we collect personal information necessary to process your donation, including your name, contact information, and payment details. We use this information to process your donation, issue receipts, and communicate with you regarding your donation.</p>
 
