@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import './returnpolicy.css';
 
-const Privacypolicy = () => {
+const Returnpolicy = () => {
  return (
   <div className="returnpolicy-container">
   <Helmet>
